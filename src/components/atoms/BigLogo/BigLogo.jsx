@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./_BigLogo.scss";
+// import "./_BigLogo.scss";
 import Logo from "../../../assets/images/E5Logo-white 1.svg";
 
 export const BigLogo = () => (
