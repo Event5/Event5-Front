@@ -3,15 +3,16 @@ import React from "react";
 import { UserAccess } from "../components/templates";
 import img from "../assets/images/ImgLogin.svg";
 
-export function SignUp() {
+export function RegisterPage() {
   return (
-    <div>
+    <>
       <UserAccess
-        currentPage="Sign Up"
-        background="BackgroundOne"
+        page="register"
+        currentPage="Log In"
+        background="BackgroundTwo"
         src={img}
         alt="Welcome image"
       />
-    </div>
+    </>
   );
 }

@@ -1,16 +1,14 @@
 import React from "react";
-import { Login } from "../../organisms";
-import { HeaderPublic } from "../../molecules";
+import { Login, Register } from "../../organisms";
 
-export function UserAccess({ currentPage, background, src, alt }) {
+export function UserAccess({ page, currentPage, background, src, alt }) {
   return (
     <>
-      <HeaderPublic background={background} currentPage={currentPage} />
       <main className={`UserAccess ${background}`}>
         <figure>
           <img src={src} alt={alt} />
         </figure>
-        <Login />
+        {page === "login" ? <Login /> : <Register />}
       </main>
     </>
   );

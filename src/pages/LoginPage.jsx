@@ -7,6 +7,7 @@ export function LoginPage() {
   return (
     <>
       <UserAccess
+        page="login"
         currentPage="Log In"
         background="BackgroundOne"
         src={img}

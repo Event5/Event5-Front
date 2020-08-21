@@ -1,6 +1,6 @@
 .UserAccess {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 1fr 1fr;
   figure {
     width: 800px;
     height: 600px;

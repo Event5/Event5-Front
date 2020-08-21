@@ -1,0 +1,43 @@
+.LoginBox {
+  width: 500px;
+  height: 570px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: $light;
+  border-radius: 16px;
+  h2 {
+    margin-top: 110px;
+    width: 340px;
+  }
+  &__form {
+    margin-top: 30px;
+    width: 340px;
+    height: 240px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 30px 100px;
+    align-items: flex-end;
+    justify-items: center;
+    grid-row-gap: 40px;
+    input {
+      // margin-bottom: 40px;
+      width: 100%;
+      height: 30px;
+      border: none;
+      border-bottom: 1px solid $first;
+      color: $third-dark;
+    }
+  }
+  &__ToRegister {
+    margin-top: 24px;
+    font-weight: 300;
+    color: $third-darkest;
+    &-bold {
+      color: $third-darkest;
+      margin-left: 5px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}

@@ -54,6 +54,16 @@ a {
     background-color: $third-dark;
   }
 }
+.BtnLight {
+  background-color: $third;
+  color: $dark;
+  &:hover {
+    background-color: $third-light;
+  }
+  &:active {
+    background-color: $third-dark;
+  }
+}
 .BtnTransparent {
   background-color: transparent;
   color: $third-darkest;
