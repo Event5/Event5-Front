@@ -5,7 +5,13 @@ export function ButtonList({ buttons }) {
   return (
     <ul>
       {buttons.map((item) => {
-        return <Button text={item.text} caracteristics={item.caracteristics} />;
+        return (
+          <Button
+            key={item.key}
+            text={item.text}
+            caracteristics={item.caracteristics}
+          />
+        );
       })}
     </ul>
   );

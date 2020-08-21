@@ -1,32 +1,16 @@
 import React from "react";
 
-// import { ButtosnList } from "../../molecules";
+import logo from "../../../assets/images/E5Logo-blue-small.svg";
 
-export function Header() {
+import { ButtonList } from "../../molecules";
+
+export function Header({ buttons }) {
   return (
-    <h1>cac</h1>
-    // <header className={`HeaderPublic ${background}`}>
-    //   <ul>
-    //     <Button text="home" caracteristics="BtnTransparent BtnSmall" />
-    //     <Button text="about" caracteristics="BtnTransparent BtnSmall" />
-    //     <Button text={currentPage} caracteristics="BtnTransparent BtnSmall" />
-    //   </ul>
-    // </header>
+    <header className="Header">
+      <figure>
+        <img src={logo} alt="Event5's Logo" />
+      </figure>
+      <ButtonList buttons={buttons} />
+    </header>
   );
 }
-
-// import React from "react";
-
-// import { Button } from "../../atoms";
-
-// export function HeaderPublic({ background, currentPage }) {
-//   return (
-//     <header className={`HeaderPublic ${background}`}>
-//       <ul>
-//         <Button text="home" caracteristics="BtnTransparent BtnSmall" />
-//         <Button text="about" caracteristics="BtnTransparent BtnSmall" />
-//         <Button text={currentPage} caracteristics="BtnTransparent BtnSmall" />
-//       </ul>
-//     </header>
-//   );
-// }
