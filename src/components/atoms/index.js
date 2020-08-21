@@ -1,2 +1,2 @@
-export * from "./AtomDemo";
 export * from "./BigLogo";
+export * from "./Button";
