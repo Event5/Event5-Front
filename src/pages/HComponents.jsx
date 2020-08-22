@@ -5,6 +5,7 @@ import Icon from "../components/atoms/Icons/Icon";
 import { IconButton } from "../components/atoms/IconButton";
 import { MenuItem } from "../components/molecules/MenuItem";
 import { MenuItemSmall } from "../components/molecules/MenuItemSmall";
+import { IconName } from "../components/molecules/IconName";
 
 export function HComponents() {
   return (
@@ -95,6 +96,8 @@ export function HComponents() {
       <MenuItem icon="building" text="Organizations" />
       <h2>Menu Item Small</h2>
       <MenuItemSmall icon="info" text="Event Information" />
+      <h2>Icon Name</h2>
+      <IconName icon="github" name="Github" />
     </>
   );
 }
