@@ -4,3 +4,4 @@ export * from "./MenuItem";
 export * from "./InfoButtons";
 export * from "./Upload";
 export * from "./SaveNext";
+export * from "./ImageTitle";

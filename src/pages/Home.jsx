@@ -6,8 +6,10 @@ import {
   Upload,
   SaveNext,
   ButtonList,
+  ImageTitle,
 } from "../components/molecules";
 
+import img from "../assets/images/ImgLogin.svg";
 export function Home() {
   const btns = [
     [
@@ -40,8 +42,11 @@ export function Home() {
 
   return (
     <>
+      <div className="test">
+        <ImageTitle image={img} imageAlt="imagen" text="hola" />
+      </div>
       {/* <ButtonAlt text="hola" textcolor="light" /> */}
-      <ButtonList buttons={btns} />
+      {/* <ButtonList buttons={btns} /> */}
       {/* <SaveNext colorText="light" /> */}
       {/* <Upload buttonText="Upload Logo" photoSize="800px x 400px" /> */}
       <BigLogo />
