@@ -52,89 +52,89 @@ p {
   font-weight: 400;
 }
 
-.Button {
-  border: none;
-  border-radius: 16px;
-  text-transform: capitalize;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-}
-.BtnFirst {
-  background-color: $first;
-  color: $light;
-  &:hover {
-    background-color: $first-light;
-  }
-  &:active {
-    background-color: $first-dark;
-  }
-}
+// .Button {
+//   border: none;
+//   border-radius: 16px;
+//   text-transform: capitalize;
+//   font-style: normal;
+//   font-weight: 600;
+//   font-size: 18px;
+//   line-height: 22px;
+// }
+// .BtnFirst {
+//   background-color: $first;
+//   color: $light;
+//   &:hover {
+//     background-color: $first-light;
+//   }
+//   &:active {
+//     background-color: $first-dark;
+//   }
+// }
 
-.BtnSecond {
-  background-color: $second;
-  color: $dark;
-  &:hover {
-    background-color: $second-light;
-  }
-  &:active {
-    background-color: $second-dark;
-  }
-}
+// .BtnSecond {
+//   background-color: $second;
+//   color: $dark;
+//   &:hover {
+//     background-color: $second-light;
+//   }
+//   &:active {
+//     background-color: $second-dark;
+//   }
+// }
 
-.BtnThird {
-  background-color: $third;
-  color: $dark;
-  &:hover {
-    background-color: $third-light;
-  }
-  &:active {
-    background-color: $third-dark;
-  }
-}
+// .BtnThird {
+//   background-color: $third;
+//   color: $dark;
+//   &:hover {
+//     background-color: $third-light;
+//   }
+//   &:active {
+//     background-color: $third-dark;
+//   }
+// }
 
-.BtnLight {
-  background-color: $third;
-  color: $dark;
-  &:hover {
-    background-color: $third-light;
-  }
-  &:active {
-    background-color: $third-dark;
-  }
-}
+// .BtnLight {
+//   background-color: $third;
+//   color: $dark;
+//   &:hover {
+//     background-color: $third-light;
+//   }
+//   &:active {
+//     background-color: $third-dark;
+//   }
+// }
 
-.BtnTransparent {
-  background-color: transparent;
-  color: $third-darkest;
-  &:hover {
-    background-color: $third-light;
-  }
-  &:active {
-    background-color: $third-dark;
-  }
-}
+// .BtnTransparent {
+//   background-color: transparent;
+//   color: $third-darkest;
+//   &:hover {
+//     background-color: $third-light;
+//   }
+//   &:active {
+//     background-color: $third-dark;
+//   }
+// }
 
-.BtnSmall {
-  width: 190px;
-  height: 60px;
-}
+// .BtnSmall {
+//   width: 190px;
+//   height: 60px;
+// }
 
-.BtnRegular {
-  width: 260px;
-  height: 60px;
-}
+// .BtnRegular {
+//   width: 260px;
+//   height: 60px;
+// }
 
-.BtnLarge {
-  width: 350px;
-  height: 60px;
-}
+// .BtnLarge {
+//   width: 350px;
+//   height: 60px;
+// }
 
-.BackgroundOne {
-  background-color: $first-lightest;
-}
+// .BackgroundOne {
+//   background-color: $first-lightest;
+// }
 
-.BackgroundTwo {
-  background-color: $second-lightest;
-}
+// .BackgroundTwo {
+//   background-color: $second-lightest;
+// }

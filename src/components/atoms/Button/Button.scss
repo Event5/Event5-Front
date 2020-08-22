@@ -1,0 +1,44 @@
+.Button {
+  border: none;
+  padding: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  border-radius: 16px;
+  &-Primary {
+    &-First {
+      background-color: $first;
+      color: $light;
+      &:hover {
+        background-color: $first-lightest;
+        color: $first-dark;
+      }
+    }
+    &-Second {
+      background-color: $second;
+      color: $light;
+      &:hover {
+        background-color: $second-light;
+        color: $second-dark;
+      }
+    }
+    &-Light {
+      background-color: $light;
+      color: $first;
+      &:hover {
+        background-color: $first-dark;
+        color: $light;
+      }
+    }
+  }
+  &-Secondary {
+    border-radius: 4px;
+    background-color: $second;
+    color: $light;
+    &:hover {
+      background-color: $second-lightest;
+      color: $third-dark;
+    }
+  }
+}
