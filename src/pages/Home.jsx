@@ -1,28 +1,13 @@
 import React from "react";
-import { BigLogo, Input, Button } from "../components/atoms";
-import { Header } from "../components/organisms";
+import { BigLogo } from "../components/atoms";
+import { ImageMore } from "../components/molecules";
 
 export function Home() {
-  const btn = [
-    {
-      text: "home",
-      caracteristics: "BtnTransparent BtnSmall",
-    },
-    {
-      text: "about",
-      caracteristics: "BtnFirst BtnSmall",
-    },
-    {
-      text: "sing in",
-      caracteristics: "BtnTransparent BtnSmall",
-    },
-  ];
-
   return (
     <>
-      <Button text="testing" type="primary" color="first" />
-      <Input type="password" placeholder="caca" />
-      {/* <Header buttons={btn} /> */}
+      <div class="test">
+        <ImageMore />
+      </div>
       <BigLogo />
     </>
   );
