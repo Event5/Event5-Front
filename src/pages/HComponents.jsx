@@ -1,5 +1,7 @@
 import React from "react";
 
+import Avatar from "../assets/images/Avatar.png";
+
 import "../components/atoms/Icons/Icons.scss";
 import Icon from "../components/atoms/Icons/Icon";
 import { IconButton } from "../components/atoms/IconButton";
@@ -8,6 +10,7 @@ import { MenuItemSmall } from "../components/molecules/MenuItemSmall";
 import { IconName } from "../components/molecules/IconName";
 import { IconCard } from "../components/molecules/IconCard";
 import { Github } from "../components/molecules/Github";
+import { OrganizerCard } from "../components/molecules/OrganizerCard";
 
 export function HComponents() {
   return (
@@ -104,6 +107,12 @@ export function HComponents() {
       <IconCard icon="plus" text="Create Events and Organizations" />
       <h2>Github</h2>
       <Github />
+      <h2>Organizer Card</h2>
+      <OrganizerCard
+        photo={Avatar}
+        name="Name ORganizer"
+        email="organizer@event.com"
+      />
     </>
   );
 }

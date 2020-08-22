@@ -1,0 +1,19 @@
+.organizer-card {
+  &__container {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    width: 340px;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: $third-lightest;
+    img {
+      border-radius: 50px;
+    }
+  }
+  &__info {
+    strong {
+      color: $first;
+    }
+  }
+}
