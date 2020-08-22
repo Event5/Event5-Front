@@ -1,5 +1,5 @@
 import React from "react";
-import { BigLogo } from "../components/atoms";
+import { BigLogo, Input, Button } from "../components/atoms";
 import { Header } from "../components/organisms";
 
 export function Home() {
@@ -17,9 +17,12 @@ export function Home() {
       caracteristics: "BtnTransparent BtnSmall",
     },
   ];
+
   return (
     <>
-      <Header buttons={btn} />
+      <Button text="testing" type="primary" color="first" />
+      <Input type="password" placeholder="caca" />
+      {/* <Header buttons={btn} /> */}
       <BigLogo />
     </>
   );

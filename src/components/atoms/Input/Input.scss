@@ -1,0 +1,14 @@
+.Input {
+  min-height: 30px;
+  padding-left: 5px;
+  border: none;
+  font-size: 18px;
+  border: none;
+  color: $third-dark;
+  &-ColorFirst {
+    border-bottom: 1px solid $first;
+  }
+  &-ColorSecond {
+    border-bottom: 1px solid $second;
+  }
+}
