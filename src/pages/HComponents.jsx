@@ -7,6 +7,7 @@ import { MenuItem } from "../components/molecules/MenuItem";
 import { MenuItemSmall } from "../components/molecules/MenuItemSmall";
 import { IconName } from "../components/molecules/IconName";
 import { IconCard } from "../components/molecules/IconCard";
+import { Github } from "../components/molecules/Github";
 
 export function HComponents() {
   return (
@@ -101,6 +102,8 @@ export function HComponents() {
       <IconName icon="github" name="Github" />
       <h2>Icon Card</h2>
       <IconCard icon="plus" text="Create Events and Organizations" />
+      <h2>Github</h2>
+      <Github />
     </>
   );
 }
