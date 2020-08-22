@@ -2,6 +2,7 @@ import React from "react";
 
 import "../components/atoms/Icons/Icons.scss";
 import Icon from "../components/atoms/Icons/Icon";
+import { IconButton } from "../components/atoms/IconButton";
 
 export function HComponents() {
   return (
@@ -84,6 +85,7 @@ export function HComponents() {
         <span>plus</span>
       </p>
       <p></p>
+      <IconButton text="Publish Event" />
     </>
   );
 }
