@@ -1,54 +1,62 @@
 import React from "react";
-import { Button } from "../../atoms";
+import { Button, ButtonAlt } from "../../atoms";
 
 //ButtonList needs an objetcs' array in props
-// [
-//   (btnTranparent = [
-//     {
-//       color: "first",
-//       hover: "second",
-//     },
-//     {
-//       color: "first",
-//       hover: "second",
-//     },
-//   ]),
-//   (btnRegulars = [
-//     {
-//       key: 1,
-//       text: "home",
-//       type: "primary",
-//       color: "first",
-//     },
-//     {
-//       key: 2,
-//       text: "about",
-//       type: "primary",
-//       color: "second",
-//     },
-//     {
-//       key: 3,
-//       text: "home",
-//       type: "secondary",
-//     },
-//   ]),
+// const but = [
+//   {
+//     ButtonAlt: [
+//       {
+//         key: 1,
+//         text: "home",
+//         colorText: "third-darkest",
+//       },
+//       {
+//         key: 2,
+//         text: "about",
+//         colorText: "third-darkest",
+//       },
+//     ],
+//   },
+//   {
+//     Buttons: [
+//       {
+//         key: 3,
+//         text: "home",
+//         type: "primary",
+//         color: "first",
+//       },
+//       {
+//         key: 4,
+//         text: "about",
+//         type: "primary",
+//         color: "second",
+//       },
+//     ],
+//   },
 // ];
 
 export function ButtonList({ buttons }) {
   return (
-    <h1>test</h1>
-    // <ul className="ButtonList">
-    //   {buttons.map((item) => {
-    //     item.map
-    //     return (
-    //       <Button
-    //         key={item.key}
-    //         text={item.text}
-    //         type={item.type}
-    //         color={item.color}
-    //       />
-    //     );
-    //   })}
-    // </ul>
+    <ul className="ButtonList">
+      {buttons.map((item) => {
+        console.log(item);
+        return item.map((btn) => {
+          return btn.colorText ? (
+            <ButtonAlt
+              key={btn.key}
+              text={btn.text}
+              textcolor={btn.colorText}
+            />
+          ) : (
+            <Button
+              key={btn.key}
+              text={btn.text}
+              type={btn.type}
+              color={btn.color}
+            />
+          );
+        });
+      })}
+    </ul>
   );
 }

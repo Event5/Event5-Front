@@ -1,8 +1,7 @@
 import React from "react";
 
 //text of button
-//type "primary" or "secondary"
-//color for primary "first", "second", "light"  (secondary color it doesn´t write)
+//textcolor
 
 export function ButtonAlt({ text, textcolor }) {
   let color;
