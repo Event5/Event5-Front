@@ -5,6 +5,7 @@
 @import "../../components/atoms/BigLogo/BigLogo.scss";
 @import "../../components/atoms/Input/Input.scss";
 @import "../../components/atoms/Button/Button.scss";
+<<<<<<< HEAD
 @import "../../components/atoms/ButtonAlt/ButtonAlt.scss";
 
 //molecules
@@ -14,6 +15,15 @@
 @import "../../components//molecules/SaveNext/SaveNext.scss";
 @import "../../components//molecules/ButtonList/ButtonList.scss";
 @import "../../components//molecules/ImageTitle/ImageTitle.scss";
+=======
+@import "../../components/atoms/Icons/Icons.scss";
+
+//molecules
+@import "../../components/molecules/IconCard/IconCard.scss";
+@import "../../components/molecules/IconName/IconName.scss";
+@import "../../components/molecules/Github/Github.scss";
+@import "../../components/molecules/OrganizerCard/OrganizerCard.scss";
+>>>>>>> 71ea33f2fb51acfaa4802d06faf9d521a3478ef7
 
 //organisms
 @import "../../components/organisms/Header/Header.scss";

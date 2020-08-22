@@ -1,8 +1,22 @@
 .svg-icon {
-  margin-right: 16px;
+  margin-right: 8px;
   height: 1em;
   fill: currentcolor;
   /* currentColor acts as a variable by taking
       color the parent node. 
   */
+}
+
+.svg-icon-big {
+  height: 3em;
+  fill: currentcolor;
+  /* currentColor acts as a variable by taking
+      color the parent node. 
+  */
+}
+
+.svg-icon-close {
+  height: 1.5em;
+  fill: #ee4266;
+  margin: auto auto;
 }

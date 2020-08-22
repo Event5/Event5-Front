@@ -1,0 +1,17 @@
+.icon-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  min-height: 200px;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 16px;
+  background-color: $second;
+  p {
+    text-align: center;
+    margin-top: 16px;
+    color: $light;
+  }
+}
