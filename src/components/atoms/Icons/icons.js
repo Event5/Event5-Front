@@ -8,7 +8,7 @@ class Icon {
   }
 }
 
-// Object with all our icons.
+// Object with all the icons alphabetically ordered.
 const svgs = {
   arrow: new Icon(
     "0 0 32 32",
