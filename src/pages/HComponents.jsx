@@ -85,7 +85,12 @@ export function HComponents() {
         <span>plus</span>
       </p>
       <p></p>
-      <IconButton text="Publish Event" />
+      <IconButton
+        icon="plane"
+        text="Publish Event"
+        type="primary"
+        color="first"
+      />
     </>
   );
 }
