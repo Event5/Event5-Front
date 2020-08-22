@@ -4,7 +4,7 @@ import Icon from "../Icons/Icon";
 //text of button
 //type "primary" or "secondary"
 //color for primary "first", "second", "light"  (secondary color it doesn´t write)
-export function IconButton({ text, type, color, icon }) {
+export function IconButton({ text, type, color }) {
   let background;
   let typeOfButton;
   if (type === "secondary") {
