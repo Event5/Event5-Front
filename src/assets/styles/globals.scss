@@ -6,11 +6,50 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
 body {
   font-size: 18px;
 }
+
+h1 {
+  font-size: 44px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 34;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 34;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 24;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 24;
+  font-weight: 800;
+}
+
+h6 {
+  font-size: 24;
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
+  font-size: 18;
+  font-weight: 600;
+}
+
+p {
+  font-size: 18;
+  font-weight: 400;
 }
 
 .Button {
@@ -54,6 +93,7 @@ a {
     background-color: $third-dark;
   }
 }
+
 .BtnLight {
   background-color: $third;
   color: $dark;
@@ -64,6 +104,7 @@ a {
     background-color: $third-dark;
   }
 }
+
 .BtnTransparent {
   background-color: transparent;
   color: $third-darkest;
@@ -79,10 +120,12 @@ a {
   width: 190px;
   height: 60px;
 }
+
 .BtnRegular {
   width: 260px;
   height: 60px;
 }
+
 .BtnLarge {
   width: 350px;
   height: 60px;
@@ -91,6 +134,7 @@ a {
 .BackgroundOne {
   background-color: $first-lightest;
 }
+
 .BackgroundTwo {
   background-color: $second-lightest;
 }
