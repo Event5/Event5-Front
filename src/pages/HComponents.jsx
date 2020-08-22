@@ -11,6 +11,7 @@ import { IconName } from "../components/molecules/IconName";
 import { IconCard } from "../components/molecules/IconCard";
 import { Github } from "../components/molecules/Github";
 import { OrganizerCard } from "../components/molecules/OrganizerCard";
+import { SidebarMenu } from "../components/organisms/SidebarMenu";
 
 export function HComponents() {
   return (
@@ -110,9 +111,11 @@ export function HComponents() {
       <h2>Organizer Card</h2>
       <OrganizerCard
         photo={Avatar}
-        name="Name ORganizer"
+        name="Name Organizer"
         email="organizer@event.com"
       />
+      <h2>SideMenu</h2>
+      <SidebarMenu />
     </>
   );
 }

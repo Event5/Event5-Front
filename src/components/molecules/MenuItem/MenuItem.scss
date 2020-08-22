@@ -1,0 +1,11 @@
+.menu-item {
+  margin-bottom: 16px;
+  fill: $first-light;
+  color: $first-light;
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover {
+    fill: $first-dark;
+    color: $first-dark;
+  }
+}
