@@ -5,8 +5,11 @@
 @import "../../components/atoms/BigLogo/BigLogo.scss";
 @import "../../components/atoms/Input/Input.scss";
 @import "../../components/atoms/Button/Button.scss";
+@import "../../components/atoms/Icons/Icons.scss";
 
 //molecules
+@import "../../components/molecules/IconCard/IconCard.scss";
+@import "../../components/molecules/IconName/IconName.scss";
 
 //organisms
 @import "../../components/organisms/Header/Header.scss";
