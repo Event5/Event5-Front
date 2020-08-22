@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "../../atoms/Icons/Icons.scss";
 import Icon from "../../atoms/Icons/Icon";
 
 export function MenuItemSmall({ icon, text, link }) {

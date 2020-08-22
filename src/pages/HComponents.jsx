@@ -1,6 +1,7 @@
 import React from "react";
 
 import Avatar from "../assets/images/Avatar.png";
+import AssociateLogo from "../assets/images/associate-img.png";
 
 import "../components/atoms/Icons/Icons.scss";
 import Icon from "../components/atoms/Icons/Icon";
@@ -12,6 +13,7 @@ import { IconCard } from "../components/molecules/IconCard";
 import { Github } from "../components/molecules/Github";
 import { OrganizerCard } from "../components/molecules/OrganizerCard";
 import { SidebarMenu } from "../components/organisms/SidebarMenu";
+import { AssociateCard } from "../components/organisms/AssociateCard";
 
 export function HComponents() {
   return (
@@ -116,6 +118,12 @@ export function HComponents() {
       />
       <h2>SideMenu</h2>
       <SidebarMenu />
+      <h2>Associate Card</h2>
+      <AssociateCard
+        logo={AssociateLogo}
+        name="Conejo"
+        url="www.conejoestelar.com"
+      />
     </>
   );
 }
