@@ -1,13 +1,11 @@
 import React from "react";
 import { BigLogo } from "../components/atoms";
-import { ImageMore } from "../components/molecules";
+import { ImageMore, InfoButtons, Upload } from "../components/molecules";
 
 export function Home() {
   return (
     <>
-      <div className="test">
-        <ImageMore />
-      </div>
+      <Upload buttonText="Upload Logo" photoSize="800px x 400px" />
       <BigLogo />
     </>
   );
