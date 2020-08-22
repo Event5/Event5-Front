@@ -1,11 +1,11 @@
 import React from "react";
 
-import icon from "../../../assets/icons/icon-plus.svg";
+import { Icon } from "../../atoms";
 
 export function ImageMore() {
   return (
     <div className="ImageMore">
-      <img src={icon} alt="Icon Plus" />
+      <Icon svg="plus" classes="svg-icon" title="Icon" />
       <span>More</span>
     </div>
   );

@@ -5,7 +5,7 @@ import { ImageMore } from "../components/molecules";
 export function Home() {
   return (
     <>
-      <div class="test">
+      <div className="test">
         <ImageMore />
       </div>
       <BigLogo />
