@@ -1,6 +1,6 @@
 import React from "react";
 
-import Icon from "../../atoms/Icons/Icon";
+import { Icon } from "../../atoms/Icons/Icon";
 import "./IconName.scss";
 
 export function IconName({ icon, name }) {

@@ -6,3 +6,5 @@ export * from "./AssociateCard";
 export * from "./SectionTitle";
 export * from "./SidebarMenuSmall";
 export * from "./ImageCard";
+export * from "./EventCard";
+export * from "./OrganizationCard";

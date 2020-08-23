@@ -1,0 +1,20 @@
+.event-card {
+  padding: 24px;
+  border-radius: 16px;
+  background-color: $light;
+  h3 {
+    color: $first;
+  }
+  div {
+    h6 {
+      color: $third-dark;
+    }
+    p {
+      color: $first;
+    }
+  }
+  &__numeralia {
+    display: flex;
+    flex-direction: row;
+  }
+}

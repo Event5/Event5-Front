@@ -1,6 +1,6 @@
 import React from "react";
 
-import Icon from "../Icons/Icon";
+import { Icon } from "../Icons/Icon";
 //text of button
 //type "primary" or "secondary"
 //color for primary "first", "second", "light"  (secondary color it doesn´t write)

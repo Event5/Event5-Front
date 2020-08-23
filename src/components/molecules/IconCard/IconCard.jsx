@@ -1,6 +1,6 @@
 import React from "react";
 
-import Icon from "../../atoms/Icons/Icon";
+import { Icon } from "../../atoms/Icons/Icon";
 import "../../../assets/styles/Main.scss";
 
 export function IconCard({ icon, text }) {

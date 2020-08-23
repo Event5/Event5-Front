@@ -1,7 +1,7 @@
 import React from "react";
 
 import eventIcon from "../../../assets/images/favicon.png";
-import Icon from "../../atoms/Icons/Icon";
+import { Icon } from "../../atoms/Icons/Icon";
 
 export function SidebarMenuSmall() {
   return (

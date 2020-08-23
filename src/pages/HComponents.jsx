@@ -3,7 +3,7 @@ import React from "react";
 import Avatar from "../assets/images/Avatar.png";
 import AssociateLogo from "../assets/images/associate-img.png";
 
-import Icon from "../components/atoms/Icons/Icon";
+import { Icon } from "../components/atoms/Icons/Icon";
 import { IconButton } from "../components/atoms/IconButton";
 import { MenuItem } from "../components/molecules/MenuItem";
 import { MenuItemSmall } from "../components/molecules/MenuItemSmall";
@@ -16,6 +16,8 @@ import { AssociateCard } from "../components/organisms/AssociateCard";
 import { SectionTitle } from "../components/organisms/SectionTitle";
 import { SidebarMenuSmall } from "../components/organisms/SidebarMenuSmall";
 import { ImageCard } from "../components/organisms/ImageCard";
+import { EventCard } from "../components/organisms/EventCard";
+import { OrganizationCard } from "../components/organisms/OrganizationCard";
 
 export function HComponents() {
   return (
@@ -145,6 +147,9 @@ export function HComponents() {
         btnColor="light"
       />
       <h2>EventCard</h2>
+      <EventCard />
+      <h2>OrganizationCard</h2>
+      <OrganizationCard />
     </>
   );
 }
