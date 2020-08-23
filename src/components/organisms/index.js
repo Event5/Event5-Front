@@ -5,3 +5,4 @@ export * from "./EventFooter";
 export * from "./Footer";
 export * from "./ConferenceCard";
 export * from "./SetupEvent";
+export * from "./SpeakerCard";

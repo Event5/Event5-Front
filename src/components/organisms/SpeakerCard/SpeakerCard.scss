@@ -1,0 +1,75 @@
+.SpeakerCard {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 100%;
+  grid-column-gap: 8px;
+  @include tablet {
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+    grid-column-gap: 8px;
+  }
+  @include phone {
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+    grid-column-gap: 8px;
+  }
+  @include phone-small {
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+    grid-column-gap: 8px;
+  }
+  &__Photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    img {
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+      @include tablet {
+        height: 60%;
+        width: 60%;
+      }
+      @include phone {
+        height: 70%;
+        width: 70%;
+      }
+      @include phone-small {
+        height: 80%;
+        width: 80%;
+      }
+    }
+  }
+  &__Info {
+    padding: 0 8px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    &-Name {
+      display: flex;
+      align-items: center;
+      @include tablet {
+        justify-content: center;
+      }
+      @include phone {
+        justify-content: center;
+      }
+      @include phone-small {
+        justify-content: center;
+      }
+      h4 {
+        // padding-left: 8px;
+        margin-right: 8px;
+        text-transform: capitalize;
+        color: $second;
+      }
+    }
+    &-Icon {
+      color: $first;
+    }
+    &-Bio {
+      overflow-y: scroll;
+    }
+  }
+}

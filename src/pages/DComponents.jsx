@@ -1,5 +1,6 @@
 import React from "react";
 
+import img from "../assets/images/E5Logo-blue.svg";
 import { Button, Input } from "../components/atoms";
 import { ButtonList, InfoButtons } from "../components/molecules";
 import {
@@ -10,18 +11,24 @@ import {
   SignUp,
   ConferenceCard,
   SetupEvent,
+  SpeakerCard,
 } from "../components/organisms";
 
 export function DComponents() {
   return (
     <>
-      {/* <Input type="text" placeholder="caca" /> */}
       <div>
-        <SetupEvent
-          title="Setup Event"
-          description="Lorem ipsum dolor sit amet, consectetur ad"
+        <SpeakerCard
+          speakerPhoto={img}
+          speakerName="den"
+          speakerRole="react"
+          biography="platzi master cohort 3"
         />
       </div>
+      {/* <SetupEvent
+          title="Setup Event"
+          description="Lorem ipsum dolor sit amet, consectetur ad"
+        /> */}
       {/* <div>
         <ConferenceCard
           sessionTitle="la de hoy"
