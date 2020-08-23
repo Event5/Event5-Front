@@ -7,14 +7,14 @@ import {
   EventFooter,
   Footer,
   Login,
-  Register,
+  SignUp,
 } from "../components/organisms";
 
 export function DComponents() {
   return (
     <>
       <div>
-        <Register />
+        <SignUp />
       </div>
       {/* <p>
         <Register />
