@@ -1,0 +1,16 @@
+.about-page__hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 40px auto;
+  div {
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: $first;
+    }
+  }
+}

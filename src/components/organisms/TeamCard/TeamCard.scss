@@ -1,0 +1,23 @@
+.team-card {
+  width: 90%;
+  min-height: 300px;
+  margin: 8px;
+  border-radius: 8px;
+  padding: 24px;
+  background-color: $second;
+  img {
+    width: 100%;
+  }
+  h4 {
+    color: $light;
+  }
+  p {
+    color: $light;
+    margin-bottom: 16px;
+  }
+  svg {
+    fill: $light;
+    height: 1.2em;
+    margin-right: 16px;
+  }
+}

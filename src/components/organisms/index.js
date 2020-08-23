@@ -8,3 +8,6 @@ export * from "./SidebarMenuSmall";
 export * from "./ImageCard";
 export * from "./EventCard";
 export * from "./OrganizationCard";
+export * from "./TeamCard";
+export * from "./AboutHero";
+export * from "./AboutDescription";
