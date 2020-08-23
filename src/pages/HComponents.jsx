@@ -15,6 +15,7 @@ import { SidebarMenu } from "../components/organisms/SidebarMenu";
 import { AssociateCard } from "../components/organisms/AssociateCard";
 import { SectionTitle } from "../components/organisms/SectionTitle";
 import { SidebarMenuSmall } from "../components/organisms/SidebarMenuSmall";
+import { ImageCard } from "../components/organisms/ImageCard";
 
 export function HComponents() {
   return (
@@ -135,6 +136,15 @@ export function HComponents() {
       />
       <h2>SidebarMenuSmall</h2>
       <SidebarMenuSmall />
+      <h2>ImageCard</h2>
+      <ImageCard
+        title="Your event is now live!"
+        classes="update"
+        btnText="See Event"
+        btnType="primary"
+        btnColor="light"
+      />
+      <h2>EventCard</h2>
     </>
   );
 }
