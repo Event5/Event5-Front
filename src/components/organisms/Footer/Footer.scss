@@ -1,0 +1,44 @@
+.Footer {
+  height: 330px;
+  display: flex;
+  align-items: center;
+  padding-left: calc(50% - 100px);
+  &__Logos {
+    height: 120px;
+    img {
+      object-fit: contain;
+      height: 100%;
+    }
+    @include tablet {
+      height: 100px;
+    }
+    @include phone {
+      height: 80px;
+    }
+    @include phone-small {
+      height: 80px;
+    }
+  }
+  @include desktop {
+    padding: 0px;
+    justify-content: center;
+  }
+  @include tablet {
+    height: 300px;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include phone {
+    height: 280px;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include phone-small {
+    height: 240px;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
