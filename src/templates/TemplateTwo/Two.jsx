@@ -11,7 +11,7 @@ import { Sponsors } from "./src/components/organisms/Sponsors";
 
 export function TemplateTwo() {
   return (
-    <>
+    <main className="template-two-body">
       <Header />
       <Hero />
       <Information />
@@ -20,6 +20,6 @@ export function TemplateTwo() {
       <Register />
       <Sponsors />
       {/* <Footer /> */}
-    </>
+    </main>
   );
 }
