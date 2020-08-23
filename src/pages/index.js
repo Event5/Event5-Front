@@ -3,6 +3,7 @@ export * from "./LoginPage";
 export * from "./RegisterPage";
 export * from "./NotFound";
 export * from "./HComponents";
+export * from "./DComponents";
 export * from "./OrganizerEditEvent";
 export * from "./OrganizerEvents";
 export * from "./AdminOrganizations";

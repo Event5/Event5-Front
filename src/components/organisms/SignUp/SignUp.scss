@@ -1,4 +1,4 @@
-.LoginBox {
+.SignUpBox {
   margin: 0 auto;
   max-width: 500px;
   height: 570px;
@@ -23,15 +23,26 @@
   &__Form {
     margin-top: 30px;
     width: 100%;
-    height: 240px;
+    height: 340px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30px 30px 100px;
+    grid-template-rows: 30px 30px 30px 10px 60px;
     align-items: flex-end;
     justify-items: center;
     grid-row-gap: 40px;
-    &__Btn {
+    &__Options {
+      margin: 0 auto;
       width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      label {
+        margin-left: 10px;
+        width: 44%;
+      }
+      input {
+        font-size: 56px;
+      }
     }
   }
   &__ToRegister {

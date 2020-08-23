@@ -1,0 +1,30 @@
+.EventFooter {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $first;
+  &__Text {
+    color: $first-lightest;
+  }
+  &__Logo {
+    width: 180px;
+    height: 80px;
+    img {
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  @include tablet {
+    flex-direction: column;
+    height: 200px;
+    font-size: 14px;
+  }
+  @include phone-small {
+    flex-direction: column;
+    height: 180px;
+    font-size: 12px;
+  }
+}

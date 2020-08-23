@@ -6,6 +6,10 @@ import {
   RegisterPage,
   NotFound,
   HComponents,
+  DComponents,
+} from "../pages";
+
+import {
   OrganizerEditEvent,
   OrganizerEvents,
   AdminOrganizations,
@@ -37,6 +41,7 @@ const App = () => {
         <Route exact path="/admin-basic" component={AdminBasicInfo} />
         {/* Pagina de prueba de componentes, borrar. */}
         <Route exact path="/HComponents" component={HComponents} />
+        <Route exact path="/den" component={DComponents} />
         {/* Templates */}
         <Route exact path="/template-two" component={TemplateTwo} />
         <Route component={NotFound} />

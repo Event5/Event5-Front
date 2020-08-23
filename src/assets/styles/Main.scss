@@ -1,5 +1,6 @@
 @import "./Variables.scss";
 @import "./Globals.scss";
+@import "./mixins.scss";
 
 //atoms
 @import "../../components/atoms/BigLogo/BigLogo.scss";
@@ -29,6 +30,12 @@
 //organisms
 @import "../../components/organisms/Header/Header.scss";
 @import "../../components/organisms/Login/Login.scss";
+@import "../../components/organisms/EventFooter/EventFooter.scss";
+@import "../../components/organisms/Footer/Footer.scss";
+@import "../../components/organisms/SignUp/SignUp.scss";
+@import "../../components/organisms/ConferenceCard/ConferenceCard.scss";
+@import "../../components/organisms/SetupEvent/SetupEvent.scss";
+@import "../../components/organisms/SpeakerCard/SpeakerCard.scss";
 @import "../../components/organisms/SidebarMenu/SidebarMenu.scss";
 @import "../../components/organisms/AssociateCard/AssociateCard.scss";
 @import "../../components/organisms/SectionTitle/SectionTitle.scss";

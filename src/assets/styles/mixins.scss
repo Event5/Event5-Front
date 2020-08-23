@@ -1,0 +1,27 @@
+/*----------------------------------------------------- Responsive Display */
+
+@mixin phone-small {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+@mixin phone {
+  @media (min-width: 321px) and (max-width: 413px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 414px) and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin desktop-large {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
