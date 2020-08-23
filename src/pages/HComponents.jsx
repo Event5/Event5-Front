@@ -3,7 +3,6 @@ import React from "react";
 import Avatar from "../assets/images/Avatar.png";
 import AssociateLogo from "../assets/images/associate-img.png";
 
-import "../components/atoms/Icons/Icons.scss";
 import Icon from "../components/atoms/Icons/Icon";
 import { IconButton } from "../components/atoms/IconButton";
 import { MenuItem } from "../components/molecules/MenuItem";
@@ -14,6 +13,8 @@ import { Github } from "../components/molecules/Github";
 import { OrganizerCard } from "../components/molecules/OrganizerCard";
 import { SidebarMenu } from "../components/organisms/SidebarMenu";
 import { AssociateCard } from "../components/organisms/AssociateCard";
+import { SectionTitle } from "../components/organisms/SectionTitle";
+import { SidebarMenuSmall } from "../components/organisms/SidebarMenuSmall";
 
 export function HComponents() {
   return (
@@ -121,9 +122,19 @@ export function HComponents() {
       <h2>Associate Card</h2>
       <AssociateCard
         logo={AssociateLogo}
-        name="Conejo"
+        name="Conejo Estelar"
         url="www.conejoestelar.com"
       />
+      <h2>Section Title</h2>
+      <SectionTitle
+        title="Título de Evento"
+        description="Descripción del evento"
+        btnText="New Event"
+        btnType="primary"
+        btnColor="light"
+      />
+      <h2>SidebarMenuSmall</h2>
+      <SidebarMenuSmall />
     </>
   );
 }

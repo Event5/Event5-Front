@@ -1,0 +1,17 @@
+.section-title {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 32px auto;
+  }
+  &__info {
+    h1 {
+      color: $light;
+    }
+    p {
+      color: $first-dark;
+    }
+  }
+}
