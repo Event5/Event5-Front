@@ -1,0 +1,14 @@
+.btnTwo {
+  margin: 16px 0px;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 56px;
+  background-color: $second;
+  color: $first-dark;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    background-color: $first-light;
+    color: $first-dark;
+  }
+}

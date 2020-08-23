@@ -1,13 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import "../../atoms/Icons/Icons.scss";
-import Icon from "../../atoms/Icons/Icon";
+import { Icon } from "../../atoms/Icons/Icon";
 
-export function MenuItemSmall({ icon, text }) {
+export function MenuItemSmall({ icon, text, link }) {
   return (
-    <h6>
-      <Icon svg={icon} classes="svg-icon" title={icon} />
-      {text}
-    </h6>
+    <Link to={link}>
+      <h6 className="menu-item-small">
+        <Icon svg={icon} classes="svg-icon" title={icon} />
+        {text}
+      </h6>
+    </Link>
   );
 }

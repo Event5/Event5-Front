@@ -1,0 +1,17 @@
+.conference-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 500px;
+  min-height: 260px;
+  margin: 8px;
+  border-radius: 16px;
+  padding: 32px;
+  background-color: $first-light;
+  color: $first-dark;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

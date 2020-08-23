@@ -1,9 +1,9 @@
 import React from "react";
 
 import Avatar from "../assets/images/Avatar.png";
+import AssociateLogo from "../assets/images/associate-img.png";
 
-import "../components/atoms/Icons/Icons.scss";
-import Icon from "../components/atoms/Icons/Icon";
+import { Icon } from "../components/atoms/Icons/Icon";
 import { IconButton } from "../components/atoms/IconButton";
 import { MenuItem } from "../components/molecules/MenuItem";
 import { MenuItemSmall } from "../components/molecules/MenuItemSmall";
@@ -11,6 +11,13 @@ import { IconName } from "../components/molecules/IconName";
 import { IconCard } from "../components/molecules/IconCard";
 import { Github } from "../components/molecules/Github";
 import { OrganizerCard } from "../components/molecules/OrganizerCard";
+import { SidebarMenu } from "../components/organisms/SidebarMenu";
+import { AssociateCard } from "../components/organisms/AssociateCard";
+import { SectionTitle } from "../components/organisms/SectionTitle";
+import { SidebarMenuSmall } from "../components/organisms/SidebarMenuSmall";
+import { ImageCard } from "../components/organisms/ImageCard";
+import { EventCard } from "../components/organisms/EventCard";
+import { OrganizationCard } from "../components/organisms/OrganizationCard";
 
 export function HComponents() {
   return (
@@ -110,9 +117,39 @@ export function HComponents() {
       <h2>Organizer Card</h2>
       <OrganizerCard
         photo={Avatar}
-        name="Name ORganizer"
+        name="Name Organizer"
         email="organizer@event.com"
       />
+      <h2>SideMenu</h2>
+      <SidebarMenu />
+      <h2>Associate Card</h2>
+      <AssociateCard
+        logo={AssociateLogo}
+        name="Conejo Estelar"
+        url="www.conejoestelar.com"
+      />
+      <h2>Section Title</h2>
+      <SectionTitle
+        title="Título de Evento"
+        description="Descripción del evento"
+        btnText="New Event"
+        btnType="primary"
+        btnColor="light"
+      />
+      <h2>SidebarMenuSmall</h2>
+      <SidebarMenuSmall />
+      <h2>ImageCard</h2>
+      <ImageCard
+        title="Your event is now live!"
+        classes="update"
+        btnText="See Event"
+        btnType="primary"
+        btnColor="light"
+      />
+      <h2>EventCard</h2>
+      <EventCard />
+      <h2>OrganizationCard</h2>
+      <OrganizationCard />
     </>
   );
 }

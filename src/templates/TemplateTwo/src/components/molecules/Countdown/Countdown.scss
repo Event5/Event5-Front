@@ -1,0 +1,13 @@
+.countdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 24px auto;
+  h1 {
+    color: $second;
+  }
+  h4 {
+    color: $light;
+  }
+}

@@ -1,11 +1,10 @@
 import React from "react";
 
-import Icon from "../../atoms/Icons/Icon";
+import { Icon } from "../../atoms/Icons/Icon";
 
 export function OrganizerCard({ photo, name, email }) {
   return (
     <div className="organizer-card__container">
-      <img src={photo} alt="Avatar" />
       <div className="organizer-card__info">
         <p>
           <strong>{name}</strong>

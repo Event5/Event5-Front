@@ -1,0 +1,18 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  min-height: 50vh;
+  margin: 24px auto;
+  border-radius: 16px;
+  background-color: $first-dark;
+  h1 {
+    color: $light;
+    margin-bottom: 24px;
+  }
+  h4 {
+    color: $second;
+  }
+}

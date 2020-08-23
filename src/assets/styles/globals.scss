@@ -52,6 +52,11 @@ p {
   font-weight: 400;
 }
 
+.app-layout {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
 // .Button {
 //   border: none;
 //   border-radius: 16px;

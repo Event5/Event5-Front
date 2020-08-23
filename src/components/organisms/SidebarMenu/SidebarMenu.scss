@@ -1,0 +1,12 @@
+.dashboard-menu {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 16px;
+  background-color: $light;
+}

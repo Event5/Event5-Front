@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+// --------------------------------- Colors
+
+$first: #004643;
+$first-dark: #001e1d;
+$first-light: #abd1c6;
+$second: #f9bc60;
+$light: #fffffe;
+
+// --------------------------------- Typography
+
+h1 {
+  font-weight: 800;
+  font-size: 65px;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 34px;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.template-two-body {
+  background-color: $first;
+}

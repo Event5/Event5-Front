@@ -7,6 +7,7 @@
 @import "../../components/atoms/Input/Input.scss";
 @import "../../components/atoms/Button/Button.scss";
 @import "../../components/atoms/ButtonAlt/ButtonAlt.scss";
+@import "../../components/atoms/Avatar/Avatar.scss";
 
 //molecules
 @import "../../components/molecules/ImageMore/ImageMore.scss";
@@ -16,10 +17,13 @@
 @import "../../components//molecules/ButtonList/ButtonList.scss";
 @import "../../components//molecules/ImageTitle/ImageTitle.scss";
 @import "../../components/atoms/Icons/Icons.scss";
+@import "../../components/molecules/TextArea/TextArea.scss";
 
 //molecules
 @import "../../components/molecules/IconCard/IconCard.scss";
 @import "../../components/molecules/IconName/IconName.scss";
+@import "../../components/molecules/MenuItemSmall/MenuItemSmall.scss";
+@import "../../components/molecules/MenuItem/MenuItem.scss";
 @import "../../components/molecules/Github/Github.scss";
 @import "../../components/molecules/OrganizerCard/OrganizerCard.scss";
 
@@ -32,6 +36,14 @@
 @import "../../components/organisms/ConferenceCard/ConferenceCard.scss";
 @import "../../components/organisms/SetupEvent/SetupEvent.scss";
 @import "../../components/organisms/SpeakerCard/SpeakerCard.scss";
+@import "../../components/organisms/SidebarMenu/SidebarMenu.scss";
+@import "../../components/organisms/AssociateCard/AssociateCard.scss";
+@import "../../components/organisms/SectionTitle/SectionTitle.scss";
+@import "../../components/organisms/SidebarMenuSmall/SidebarMenuSmall.scss";
+@import "../../components/organisms/ImageCard/ImageCard.scss";
+@import "../../components/organisms/OrganizationCard/OrganizationCard.scss";
+@import "../../components/organisms/EventCard/EventCard.scss";
 
 //templates
 @import "../../components/templates/UserAccess/UserAccess.scss";
+@import "../../components/templates/Content/Content.scss";

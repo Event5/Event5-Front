@@ -1,0 +1,15 @@
+.associate-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  min-height: 260px;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: $light;
+  h5 {
+    margin: 8px 0 0 0;
+  }
+  p {
+    margin-bottom: 16px;
+  }
+}

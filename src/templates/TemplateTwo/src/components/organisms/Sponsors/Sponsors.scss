@@ -1,0 +1,17 @@
+.sponsors {
+  margin: 80px auto;
+  width: 80%;
+  h2 {
+    color: $second;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  &-first {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &-second {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

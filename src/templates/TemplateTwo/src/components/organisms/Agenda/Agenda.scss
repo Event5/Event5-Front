@@ -1,0 +1,19 @@
+.agenda {
+  width: 80%;
+  margin: 80px auto;
+  h2 {
+    color: $second;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    h2 {
+      color: $first-dark;
+      text-align: left;
+      margin-bottom: 8px;
+    }
+  }
+}

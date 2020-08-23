@@ -20,3 +20,23 @@
   fill: #ee4266;
   margin: auto auto;
 }
+
+.svg-icon__menu {
+  height: 32px;
+  fill: $first;
+  margin: 16px 0;
+  cursor: pointer;
+  &:hover {
+    fill: $first-dark;
+  }
+}
+
+.svg-icon__menu--small {
+  height: 24px;
+  fill: $first;
+  margin: 8px 0;
+  cursor: pointer;
+  &:hover {
+    fill: $first-dark;
+  }
+}

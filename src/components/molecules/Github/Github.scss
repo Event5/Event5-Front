@@ -5,10 +5,13 @@
   align-items: center;
   width: 300px;
   margin: 24px;
-  color: $first-light;
+  h6 {
+    margin: 0;
+    font-size: 18px;
+  }
   p {
     font-weight: 600;
-    margin-top: 16px;
+    margin-top: 8px;
     color: $second;
   }
 }
