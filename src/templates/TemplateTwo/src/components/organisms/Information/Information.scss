@@ -1,0 +1,16 @@
+.information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 40px auto;
+  &__container {
+    grid-column-start: 2;
+    h2 {
+      color: $second;
+      margin-bottom: 16px;
+    }
+    p {
+      color: $first-light;
+    }
+  }
+}

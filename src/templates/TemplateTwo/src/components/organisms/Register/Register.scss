@@ -1,0 +1,14 @@
+.register {
+  width: 80%;
+  margin: 40px auto;
+  border-radius: 16px;
+  padding: 40px;
+  background-color: $first-light;
+  h2 {
+    text-align: center;
+    color: $first-dark;
+  }
+  form {
+    text-align: center;
+  }
+}

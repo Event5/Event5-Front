@@ -1,0 +1,20 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 40px auto;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    h6 {
+      color: $first-light;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        color: $second;
+      }
+    }
+  }
+}

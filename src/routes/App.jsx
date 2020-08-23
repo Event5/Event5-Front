@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Home, LoginPage, RegisterPage, NotFound, HComponents } from "../pages";
 
+import { TemplateTwo } from "../templates/TemplateTwo";
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -11,6 +13,8 @@ const App = () => {
         <Route exact path="/register" component={RegisterPage} />
         {/* Pagina de prueba de componentes, borrar. */}
         <Route exact path="/HComponents" component={HComponents} />
+        {/* Templates */}
+        <Route exact path="/TemplateTwo" component={TemplateTwo} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
