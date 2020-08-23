@@ -1,6 +1,55 @@
 .Header {
+  margin: 0 auto;
+  max-width: 1300px;
+  height: 150px;
   display: flex;
-  padding: 0 16px 0 16px;
   justify-content: space-between;
   align-items: center;
+  @include tablet {
+    height: 120px;
+  }
+  @include phone {
+    height: 100px;
+  }
+  @include phone-small {
+    height: 100px;
+  }
+  &__Nav {
+    width: 50%;
+    @include desktop {
+      margin-right: 10px;
+      width: 70%;
+    }
+    @include tablet {
+      display: none;
+    }
+    @include phone {
+      display: none;
+    }
+    @include phone-small {
+      display: none;
+    }
+  }
+  &__Logo {
+    width: 200px;
+    img {
+      object-fit: contain;
+      width: 100%;
+    }
+    @include desktop {
+      width: 180px;
+    }
+    @include tablet {
+      margin-left: 16px;
+      width: 160px;
+    }
+    @include phone {
+      margin-left: 16px;
+      width: 160px;
+    }
+    @include phone-small {
+      margin-left: 16px;
+      width: 160px;
+    }
+  }
 }
