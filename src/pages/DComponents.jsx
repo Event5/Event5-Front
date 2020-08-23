@@ -13,6 +13,10 @@ import {
 export function DComponents() {
   return (
     <>
+      {/* <Header />>
+      <div>
+        <Login />
+      </div> */}
       <div>
         <SignUp />
       </div>
