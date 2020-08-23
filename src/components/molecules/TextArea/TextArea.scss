@@ -1,0 +1,12 @@
+.TextArea{
+    & input{
+        width: 347px;
+        height: 156px;
+        border: 2px solid $first;
+        color: $third;
+    }
+    & label{
+        font-weight: 600px;
+        color: $third;
+    }
+}
