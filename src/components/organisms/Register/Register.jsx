@@ -1,21 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { Button } from "../../atoms";
+import { Button, Input } from "../../atoms";
 
 export function Register() {
   return (
-    <div className="LoginBox">
+    <div className="RegisterBox">
       <h2>Sign UP</h2>
-      <form className="LoginBox__form" action="">
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <Button text="Log in" caracteristics="BtnFirst BtnRegular" />
+      <form className="RegisterBox__Form" action="">
+        <Input type="text" placeholder="UserName" />
+        <Input type="email" placeholder="Email" />
+        <Input type="password" placeholder="Password" />
+        <div className="RegisterBox__Form__Options">
+          <input id="userType" type="radio" />
+          <label htmlFor="">Admin</label>
+          <input id="userType" type="radio" />
+          <label htmlFor="">Organizer</label>
+        </div>
+        <Button text="Register" type="primary" color="second" />
       </form>
-      <div className="LoginBox__ToRegister">
-        <span>I don't have an account</span>
-        <Link to="/register">
-          <span className="LoginBox__ToRegister-bold">Create One</span>
+      <div className="RegisterBox__ToRegister">
+        <span>I already have an account</span>
+        <Link to="/login">
+          <span className="RegisterBox__ToRegister-bold">Log In</span>
         </Link>
       </div>
     </div>
