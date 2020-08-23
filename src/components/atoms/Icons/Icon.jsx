@@ -4,7 +4,7 @@ import React from "react";
 import svgs from "./icons";
 
 // Name of the icon with the property svg.
-const Icon = ({ svg, classes, title }) => {
+export const Icon = ({ svg, classes, title }) => {
   // Condicional returns null if doesn't match with any name of the svgs object.
   // Structure of the SVG element, uses the data of our icons archive and the properties.
   const svgRender = svgs[svg] || svgs.default;
@@ -20,4 +20,4 @@ const Icon = ({ svg, classes, title }) => {
   );
 };
 
-export default Icon;
+// export default Icon;

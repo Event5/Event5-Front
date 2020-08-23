@@ -1,0 +1,17 @@
+.SaveNext {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  &__BtnText {
+    background-color: transparent;
+    border-radius: 16px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    &-First {
+      color: $first-dark;
+    }
+    &-Light {
+      color: $light;
+    }
+  }
+}
