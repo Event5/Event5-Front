@@ -35,13 +35,14 @@ export function Header({ buttons }) {
     ],
   ];
 
+  const props = buttons ? buttons : mock;
   return (
     <header className="Header">
       <figure className="Header__Logo">
         <img src={logo} alt="Event5' Logo" />
       </figure>
       <nav className="Header__Nav">
-        <ButtonList buttons={mock} />
+        <ButtonList buttons={props} />
       </nav>
     </header>
   );

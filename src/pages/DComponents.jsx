@@ -2,12 +2,15 @@ import React from "react";
 
 import { Button } from "../components/atoms";
 import { ButtonList } from "../components/molecules";
-import { Header, EventFooter, Footer } from "../components/organisms";
+import { Header, EventFooter, Footer, Login } from "../components/organisms";
 
 export function DComponents() {
   return (
     <>
-      <Header />
+      <p>
+        <Login />
+      </p>
+      {/* <Header />
       <br></br>
       <br></br>
       <br></br>
@@ -15,7 +18,7 @@ export function DComponents() {
       <br></br>
       <br></br>
       <br></br>
-      <EventFooter />;
+      <EventFooter />; */}
     </>
   );
 }

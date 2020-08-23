@@ -1,18 +1,28 @@
 .LoginBox {
-  width: 500px;
+  margin: 0 auto;
+  max-width: 500px;
   height: 570px;
   display: flex;
   flex-flow: column;
   align-items: center;
   background-color: $light;
   border-radius: 16px;
+  @include tablet {
+    width: 90%;
+  }
+  @include phone {
+    width: 90%;
+  }
+  @include phone-small {
+    width: 90%;
+  }
   h2 {
     margin-top: 110px;
-    width: 340px;
+    width: 100%;
   }
   &__form {
     margin-top: 30px;
-    width: 340px;
+    width: 100%;
     height: 240px;
     display: grid;
     grid-template-columns: 1fr;
@@ -20,19 +30,17 @@
     align-items: flex-end;
     justify-items: center;
     grid-row-gap: 40px;
-    input {
-      // margin-bottom: 40px;
-      width: 100%;
-      height: 30px;
-      border: none;
-      border-bottom: 1px solid $first;
-      color: $third-dark;
-    }
   }
   &__ToRegister {
     margin-top: 24px;
     font-weight: 300;
     color: $third-darkest;
+    @include phone {
+      font-size: 12px;
+    }
+    @include phone-small {
+      font-size: 12px;
+    }
     &-bold {
       color: $third-darkest;
       margin-left: 5px;
