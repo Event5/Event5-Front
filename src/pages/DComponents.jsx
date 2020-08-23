@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button } from "../components/atoms";
+import { Button, Input } from "../components/atoms";
 import { ButtonList, InfoButtons } from "../components/molecules";
 import {
   Header,
@@ -9,12 +9,20 @@ import {
   Login,
   SignUp,
   ConferenceCard,
+  SetupEvent,
 } from "../components/organisms";
 
 export function DComponents() {
   return (
     <>
+      {/* <Input type="text" placeholder="caca" /> */}
       <div>
+        <SetupEvent
+          title="Setup Event"
+          description="Lorem ipsum dolor sit amet, consectetur ad"
+        />
+      </div>
+      {/* <div>
         <ConferenceCard
           sessionTitle="la de hoy"
           date="03/11/2020"
@@ -24,7 +32,7 @@ export function DComponents() {
           BottomBtn="Dennis Allan Velez Quintanar"
           colortBottonBtn="second"
         />
-      </div>
+      </div> */}
       {/* <Header />>
       <div>
         <Login />
