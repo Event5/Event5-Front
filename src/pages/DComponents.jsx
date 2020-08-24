@@ -17,14 +17,16 @@ import {
 export function DComponents() {
   return (
     <>
-      <div>
+      <Header />
+      <Login />
+      {/* <div>
         <SpeakerCard
           speakerPhoto={img}
           speakerName="den"
           speakerRole="react"
           biography="platzi master cohort 3"
         />
-      </div>
+      </div> */}
       {/* <SetupEvent
           title="Setup Event"
           description="Lorem ipsum dolor sit amet, consectetur ad"

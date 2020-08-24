@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import {
   Home,
   LoginPage,
-  RegisterPage,
+  SignUpPage,
   NotFound,
   HComponents,
   DComponents,
@@ -25,7 +25,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={LoginPage} />
-        <Route exact path="/register" component={RegisterPage} />
+        <Route exact path="/register" component={SignUpPage} />
         <Route exact path="/about" component={About} />
         <Route
           exact

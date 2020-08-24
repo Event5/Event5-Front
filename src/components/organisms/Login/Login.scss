@@ -11,9 +11,11 @@
     width: 90%;
   }
   @include phone {
+    margin: 32px auto;
     width: 90%;
   }
   @include phone-small {
+    margin: 32px auto;
     width: 90%;
   }
   h2 {

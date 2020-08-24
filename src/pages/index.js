@@ -1,6 +1,6 @@
 export * from "./Home";
 export * from "./LoginPage";
-export * from "./RegisterPage";
+export * from "./SignUpPage";
 export * from "./NotFound";
 export * from "./HComponents";
 export * from "./DComponents";

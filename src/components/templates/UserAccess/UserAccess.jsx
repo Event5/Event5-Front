@@ -1,5 +1,5 @@
 import React from "react";
-import { Login, Register, Header } from "../../organisms";
+import { Login, SignUp, Header } from "../../organisms";
 
 export function UserAccess({ page, buttons, background, src, alt }) {
   return (
@@ -10,7 +10,7 @@ export function UserAccess({ page, buttons, background, src, alt }) {
           <img src={src} alt={alt} />
         </figure>
         <div className="UserAccess__Log">
-          {page === "login" ? <Login /> : <Register />}
+          {page === "login" ? <Login /> : <SignUp />}
         </div>
       </main>
     </>

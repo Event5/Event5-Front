@@ -3,7 +3,7 @@ import React from "react";
 import { UserAccess } from "../components/templates";
 import img from "../assets/images/ImgLogin.svg";
 
-export function LoginPage() {
+export function SignUpPage() {
   const btn = [
     //this array are ButtonAlt Components
     [
@@ -22,26 +22,24 @@ export function LoginPage() {
         text: "Log In",
         colorText: "third-darkest",
       },
-    ],
-    // This array are Button Components
-    [
       {
         key: 4,
-        text: "Sing Up",
-        type: "primaryt",
-        color: "second",
+        text: "Sign Up",
+        colorText: "third-darkest",
       },
     ],
+    // This array are Button Components
+    [],
   ];
   return (
     <>
       <UserAccess
         buttons={btn}
-        page="login"
+        page="register"
         currentPage="Log In"
-        background="BackgroundOne"
+        background="BackgroundTwo"
         src={img}
-        alt="Welcome Again image"
+        alt="Welcome image"
       />
     </>
   );
