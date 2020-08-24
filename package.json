@@ -4,7 +4,7 @@
   "description": "event5 web app",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
+    "build:webpack": "webpack --mode production",
     "start:client": "webpack-dev-server --open --mode development",
     "start": "node server.js",
     "server:dev": "nodemon server.js"
