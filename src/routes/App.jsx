@@ -7,7 +7,7 @@ import {
   NotFound,
   HComponents,
   DComponents,
-  SComponents,
+  SComponents
 } from "../pages";
 
 import {

@@ -1,3 +1,9 @@
-.name-twitter{
+.NameTwitter{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
     color: $second;
+}
+.TwitterIcon{
+    fill: $first;
 }

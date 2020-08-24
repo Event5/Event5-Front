@@ -1,14 +1,13 @@
 import React from "react";
 
 import { Icon } from "../../atoms/Icons/Icon";
-import "./NameTwitter.scss";
 
-export function NameTwitter({speakerName, twitterUrl }) {
+export function NameTwitter({ speakerName, twitterUrl }) {
   return (
-    <div className="name-twitter">
+    <div className="NameTwitter">
       <h5>{speakerName}</h5>
       <a href={twitterUrl}>
-        <Icon svg="twitter" classes="svg-icon" title={`${speakerName}'s Twitter`} />
+        <Icon svg="twitter" classes="svg-icon" title={`${speakerName}'s Twitter`} className="TwitterIcon"/>
       </a>
     </div>  
   );

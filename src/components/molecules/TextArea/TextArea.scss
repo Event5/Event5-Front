@@ -6,6 +6,9 @@
         display: block;
         color: $third;
     }
+    & input:hover{
+        border: 2px solid $first-dark;
+    }
     & label{
         font-weight: 600px;
         color: $third;
