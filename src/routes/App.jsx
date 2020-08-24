@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import {
-  Home,
+  HomePage,
   LoginPage,
   SignUpPage,
   NotFoundPage,
@@ -23,7 +23,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={HomePage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/register" component={SignUpPage} />
         <Route exact path="/about" component={About} />

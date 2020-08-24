@@ -25,7 +25,7 @@ export function Header({ buttons, background }) {
         colorText: "third-darkest",
       },
       {
-        key: 2,
+        key: 3,
         text: "Log In",
         colorText: "third-darkest",
       },

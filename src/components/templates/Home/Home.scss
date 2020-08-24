@@ -1,0 +1,118 @@
+.Home__Hero {
+  margin: 0 auto;
+  padding: 160px 0;
+  background-color: $first;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "HeroInfo HeroImg";
+  justify-content: center;
+  grid-column-gap: 80px;
+  &__Info {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: HeroInfo;
+    max-width: 500px;
+    justify-self: flex-end;
+    span {
+      color: $light;
+      font-size: 105px;
+      line-height: 115px;
+      font-style: normal;
+      font-weight: 800;
+    }
+    &-BtnContainer {
+      max-width: 300px;
+    }
+  }
+  &__Img {
+    grid-area: HeroImg;
+    max-width: 500px;
+    max-height: 460px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.Home__ArticleContainer {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.Home__Article {
+  max-height: 500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "ArticleLeft ArticleRight";
+  justify-content: center;
+  grid-column-gap: 80px;
+  &-Info {
+    height: 100%;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      color: $first;
+      margin-bottom: 16px;
+    }
+  }
+  &-Img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 520px;
+    height: 100%;
+    img {
+      padding: 80px 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &-Left {
+    grid-area: ArticleLeft;
+    justify-self: flex-end;
+  }
+  &-Right {
+    grid-area: ArticleRight;
+    justify-self: flex-end;
+  }
+}
+
+.Home__Tools {
+  h2 {
+    text-align: center;
+    color: $first;
+  }
+  &-Buttons {
+    display: flex;
+    padding: 32px 0;
+    justify-content: center;
+    color: $light;
+  }
+}
+
+.Home__CallToAction {
+  background: $first;
+  padding: 80px 0 60px 0;
+  h1 {
+    margin-bottom: 24px;
+    text-align: center;
+    color: $light;
+    text-transform: uppercase;
+  }
+  &-Btn {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+}
