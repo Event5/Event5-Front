@@ -36,6 +36,7 @@ export function LoginPage() {
   return (
     <>
       <UserAccess
+        headerBackground="first"
         buttons={btn}
         page="login"
         currentPage="Log In"

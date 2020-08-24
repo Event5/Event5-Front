@@ -34,6 +34,7 @@ export function SignUpPage() {
   return (
     <>
       <UserAccess
+        headerBackground="second"
         buttons={btn}
         page="register"
         currentPage="Log In"

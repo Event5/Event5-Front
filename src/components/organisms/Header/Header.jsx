@@ -6,10 +6,10 @@ import { ButtonList } from "../../molecules";
 
 export function Header({ buttons, background }) {
   let backgroundColor;
-  if (background === "fisrt") {
-    backgroundColor = "BackgroundFirst";
+  if (background === "first") {
+    backgroundColor = "Backgroundfirst";
   } else if (background === "second") {
-    backgroundColor = "BackgroundSecond";
+    backgroundColor = "Backgroundsecond";
   }
   const mock = [
     //this array are ButtonAlt Components
