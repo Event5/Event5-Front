@@ -1,12 +1,13 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import {
-  Home,
+  HomePage,
   LoginPage,
-  RegisterPage,
-  NotFound,
+  SignUpPage,
+  NotFoundPage,
   HComponents,
   DComponents,
+  SComponents
 } from "../pages";
 
 import {
@@ -23,9 +24,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={HomePage} />
         <Route exact path="/login" component={LoginPage} />
-        <Route exact path="/register" component={RegisterPage} />
+        <Route exact path="/signup" component={SignUpPage} />
         <Route exact path="/about" component={About} />
         <Route
           exact
@@ -42,9 +43,10 @@ const App = () => {
         {/* Pagina de prueba de componentes, borrar. */}
         <Route exact path="/HComponents" component={HComponents} />
         <Route exact path="/den" component={DComponents} />
+        <Route exact path="/Djkde" component={SComponents} />
         {/* Templates */}
         <Route exact path="/template-two" component={TemplateTwo} />
-        <Route component={NotFound} />
+        <Route component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
   );

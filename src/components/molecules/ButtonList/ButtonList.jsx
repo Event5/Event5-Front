@@ -39,13 +39,13 @@ export function ButtonList({ buttons }) {
   return (
     <ul className="ButtonList">
       {buttons.map((item) => {
-        console.log(item);
         return item.map((btn) => {
           return btn.colorText ? (
             <ButtonAlt
               key={btn.key}
               text={btn.text}
               textcolor={btn.colorText}
+              linkTo={btn.linkTo}
             />
           ) : (
             <Button
@@ -53,6 +53,7 @@ export function ButtonList({ buttons }) {
               text={btn.text}
               type={btn.type}
               color={btn.color}
+              linkTo={btn.linkTo}
             />
           );
         });

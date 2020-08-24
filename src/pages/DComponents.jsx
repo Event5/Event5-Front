@@ -15,16 +15,53 @@ import {
 } from "../components/organisms";
 
 export function DComponents() {
+  // const mock = [
+  //   //this array are ButtonAlt Components
+  //   [
+  //     {
+  //       key: 1,
+  //       text: "home",
+  //       colorText: "third-darkest",
+  //       linkTo: "/",
+  //     },
+  //     {
+  //       key: 2,
+  //       text: "about",
+  //       colorText: "third-darkest",
+  //       linkTo="/about",
+  //     },
+  //     {
+  //       key: 3,
+  //       text: "Log In",
+  //       colorText: "third-darkest",
+  //       // linkTo:"/login"
+  //     },
+  //   ],
+  //   // This array are Button Components
+  //   [
+  //     {
+  //       key: 4,
+  //       text: "Sing Up",
+  //       type: "primaryt",
+  //       color: "second",
+  //       linkTo: "/signup",
+  //     },
+  //   ],
+  // ];
   return (
     <>
-      <div>
+      {/* <ButtonList buttons={mock} /> */}
+
+      {/* <Header />
+      <Login /> */}
+      {/* <div>
         <SpeakerCard
           speakerPhoto={img}
           speakerName="den"
           speakerRole="react"
           biography="platzi master cohort 3"
         />
-      </div>
+      </div> */}
       {/* <SetupEvent
           title="Setup Event"
           description="Lorem ipsum dolor sit amet, consectetur ad"

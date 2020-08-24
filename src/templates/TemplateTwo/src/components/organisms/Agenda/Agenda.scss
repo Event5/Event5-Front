@@ -1,6 +1,9 @@
 .agenda {
   width: 80%;
   margin: 80px auto;
+  @include phone-and-tablet {
+    width: 95%;
+  }
   h2 {
     color: $second;
     text-align: center;
@@ -10,6 +13,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    @include phone-and-tablet {
+      grid-template-columns: 1fr;
+    }
     h2 {
       color: $first-dark;
       text-align: left;

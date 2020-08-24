@@ -1,23 +1,33 @@
 .LoginBox {
   margin: 0 auto;
   max-width: 500px;
-  height: 570px;
+  padding: 60px 80px;
+  // height: 570px;
   display: flex;
   flex-flow: column;
   align-items: center;
-  background-color: $light;
   border-radius: 16px;
+  background-color: $light;
+  @include desktop {
+    width: 90%;
+    padding: 60px 40px;
+  }
   @include tablet {
     width: 90%;
+    padding: 40px 10px;
   }
   @include phone {
+    margin: 32px auto;
+    padding: 40px 5px;
     width: 90%;
   }
   @include phone-small {
+    margin: 32px auto;
     width: 90%;
+    padding: 40px 5px;
   }
   h2 {
-    margin-top: 110px;
+    // margin-top: 110px;
     width: 100%;
   }
   &__Form {

@@ -1,0 +1,20 @@
+.about-page__link {
+  width: 100%;
+  min-height: 180px;
+  background-color: $first-light;
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding: 24px 0px;
+    margin: 0 auto;
+    color: $light;
+    fill: $light;
+    @include both-phones {
+      flex-direction: column;
+      padding: 56px 0px 24px 0px;
+    }
+  }
+}
