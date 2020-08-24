@@ -1,8 +1,9 @@
-@import "./Variables.scss";
-@import "./Globals.scss";
+@import "./variables.scss";
+@import "./globals.scss";
 @import "./mixins.scss";
 
 //atoms
+@import "../../components/atoms/Icons/Icons.scss";
 @import "../../components/atoms/BigLogo/BigLogo.scss";
 @import "../../components/atoms/Input/Input.scss";
 @import "../../components/atoms/Button/Button.scss";
@@ -16,10 +17,7 @@
 @import "../../components//molecules/SaveNext/SaveNext.scss";
 @import "../../components//molecules/ButtonList/ButtonList.scss";
 @import "../../components//molecules/ImageTitle/ImageTitle.scss";
-@import "../../components/atoms/Icons/Icons.scss";
 @import "../../components/molecules/TextArea/TextArea.scss";
-
-//molecules
 @import "../../components/molecules/IconCard/IconCard.scss";
 @import "../../components/molecules/IconName/IconName.scss";
 @import "../../components/molecules/MenuItemSmall/MenuItemSmall.scss";
@@ -46,6 +44,7 @@
 @import "../../components/organisms/TeamCard/TeamCard.scss";
 @import "../../components/organisms/AboutHero/AboutHero.scss";
 @import "../../components/organisms/AboutDescription/AboutDescription.scss";
+@import "../../components/organisms/Links/Links.scss";
 
 //templates
 @import "../../components/templates/UserAccess/UserAccess.scss";

@@ -1,0 +1,14 @@
+.about-page__link {
+  width: 100%;
+  min-height: 180px;
+  background-color: $first-light;
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    color: $light;
+    fill: $light;
+  }
+}

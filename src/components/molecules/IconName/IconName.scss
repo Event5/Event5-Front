@@ -1,4 +1,4 @@
-.icon-name {
+.icon-name a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,7 +6,15 @@
   width: 200px;
   min-height: 200px;
   padding: 16px;
+  transition: all 0.5s ease-in-out;
+  color: $light;
+  &:hover {
+    color: $second-light;
+  }
   h6 {
     margin-top: 16px;
+  }
+  svg {
+    margin: 0;
   }
 }
