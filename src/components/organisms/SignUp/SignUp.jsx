@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 
 import { Button, Input } from "../../atoms";
 
@@ -8,7 +7,7 @@ const req = (info) => {
   const URL = "https://event5.azurewebsites.net/api/auth/sign-up";
   return fetch(URL, {
     method: "POST",
-    body: {}, //JSON.stringify(info),
+    body: JSON.stringify(info),
     headers: {
       "Content-Type": "application/json",
     },

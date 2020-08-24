@@ -11,21 +11,25 @@ export function SignUpPage() {
         key: 1,
         text: "home",
         colorText: "third-darkest",
+        linkTo: "/",
       },
       {
         key: 2,
         text: "about",
         colorText: "third-darkest",
+        linkTo: "/about",
       },
       {
         key: 3,
         text: "Log In",
         colorText: "third-darkest",
+        linkTo: "/login",
       },
       {
         key: 4,
         text: "Sign Up",
         colorText: "third-darkest",
+        linkTo: "/signup",
       },
     ],
     // This array are Button Components

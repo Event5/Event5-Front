@@ -11,16 +11,19 @@ export function LoginPage() {
         key: 1,
         text: "home",
         colorText: "third-darkest",
+        linkTo: "/",
       },
       {
         key: 2,
         text: "about",
         colorText: "third-darkest",
+        linkTo: "/about",
       },
       {
         key: 3,
         text: "Log In",
         colorText: "third-darkest",
+        linkTo: "/login",
       },
     ],
     // This array are Button Components
@@ -30,6 +33,7 @@ export function LoginPage() {
         text: "Sing Up",
         type: "primaryt",
         color: "second",
+        linkTo: "/signup",
       },
     ],
   ];

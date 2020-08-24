@@ -45,6 +45,7 @@ export function ButtonList({ buttons }) {
               key={btn.key}
               text={btn.text}
               textcolor={btn.colorText}
+              linkTo={btn.linkTo}
             />
           ) : (
             <Button
@@ -52,6 +53,7 @@ export function ButtonList({ buttons }) {
               text={btn.text}
               type={btn.type}
               color={btn.color}
+              linkTo={btn.linkTo}
             />
           );
         });
