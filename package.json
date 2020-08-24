@@ -7,7 +7,9 @@
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development"
   },
-   "engines" : { "node" : ">=0.12" },
+  "engines": {
+    "node": ">=0.12"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Event5/Event5-Front.git"
