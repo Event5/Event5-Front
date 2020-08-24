@@ -12,13 +12,6 @@
 
 //molecules
 @import "../../components/molecules/ImageMore/ImageMore.scss";
-<<<<<<< HEAD
-@import "../../components//molecules/InfoButtons/InfoButtons.scss";
-@import "../../components//molecules/Upload/Upload.scss";
-@import "../../components//molecules/SaveNext/SaveNext.scss";
-@import "../../components//molecules/ButtonList/ButtonList.scss";
-@import "../../components//molecules/ImageTitle/ImageTitle.scss";
-=======
 @import "../../components/molecules/InfoButtons/InfoButtons.scss";
 @import "../../components/molecules/Upload/Upload.scss";
 @import "../../components/molecules/SaveNext/SaveNext.scss";
@@ -26,7 +19,6 @@
 @import "../../components/molecules/ImageTitle/ImageTitle.scss";
 @import "../../components/atoms/Icons/Icons.scss";
 @import "../../components/molecules/NameTwitter/NameTwitter.scss";
->>>>>>> d3b5357... Fixed SComponents Route & styles
 @import "../../components/molecules/TextArea/TextArea.scss";
 @import "../../components/molecules/IconCard/IconCard.scss";
 @import "../../components/molecules/IconName/IconName.scss";
@@ -34,6 +26,7 @@
 @import "../../components/molecules/MenuItem/MenuItem.scss";
 @import "../../components/molecules/Github/Github.scss";
 @import "../../components/molecules/OrganizerCard/OrganizerCard.scss";
+@import "../../components/molecules/OrganizersList/OrganizersList.scss";
 
 //organisms
 @import "../../components/organisms/Header/Header.scss";
