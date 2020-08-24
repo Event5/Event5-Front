@@ -7,16 +7,16 @@ export function Header() {
       <img src="" alt="Event Logo" />
       <div className="menu__container">
         <Link to="#">
-          <h6>Description</h6>
+          <h6 className="h6-template">Description</h6>
         </Link>
         <Link to="#">
-          <h6>Agenda</h6>
+          <h6 className="h6-template">Agenda</h6>
         </Link>
         <Link to="#">
-          <h6>Speakers</h6>
+          <h6 className="h6-template">Speakers</h6>
         </Link>
         <Link to="#">
-          <h6>Sponsors</h6>
+          <h6 className="h6-template">Sponsors</h6>
         </Link>
       </div>
     </header>
