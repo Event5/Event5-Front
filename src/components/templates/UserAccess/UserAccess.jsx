@@ -6,10 +6,12 @@ export function UserAccess({ page, buttons, background, src, alt }) {
     <>
       <Header buttons={buttons} />
       <main className={`UserAccess ${background}`}>
-        <figure>
+        <figure className="UserAccess__Img">
           <img src={src} alt={alt} />
         </figure>
-        {page === "login" ? <Login /> : <Register />}
+        <div className="UserAccess__Log">
+          {page === "login" ? <Login /> : <Register />}
+        </div>
       </main>
     </>
   );

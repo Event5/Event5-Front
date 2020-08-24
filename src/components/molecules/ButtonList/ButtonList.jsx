@@ -39,7 +39,6 @@ export function ButtonList({ buttons }) {
   return (
     <ul className="ButtonList">
       {buttons.map((item) => {
-        console.log(item);
         return item.map((btn) => {
           return btn.colorText ? (
             <ButtonAlt
