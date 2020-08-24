@@ -1,0 +1,17 @@
+.ImageText{
+    width: 328px;
+    height: 260px;
+    & span{
+        background-color: $light;
+        border-radius: 16px;
+        overflow: hidden;
+        & img{
+            width: 328px;
+            height: 233px;
+            object-fit: cover;
+        }
+    }
+    & a{
+        color: $first-dark;
+    }
+}
