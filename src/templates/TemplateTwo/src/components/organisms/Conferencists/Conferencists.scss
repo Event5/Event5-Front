@@ -9,6 +9,9 @@
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @include phone-and-tablet {
+      grid-template-columns: 1fr;
+    }
     h2 {
       color: $first-dark;
       text-align: left;

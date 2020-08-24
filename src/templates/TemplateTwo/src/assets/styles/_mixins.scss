@@ -1,0 +1,37 @@
+/*----------------------------------------------------- Responsive Display */
+
+@mixin phone-and-tablet {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin both-phones {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin phone-small {
+  @media (max-width: 412px) {
+    @content;
+  }
+}
+@mixin phone {
+  @media (min-width: 413px) and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    @content;
+  }
+}
+@mixin desktop-large {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
