@@ -31,7 +31,7 @@ h2 {
   @include tablet {
     font-size: 28px;
   }
-  @include phone {
+  @include both-phones {
     font-size: 24px;
   }
 }
@@ -42,7 +42,7 @@ h3 {
   @include tablet {
     font-size: 28px;
   }
-  @include phone {
+  @include both-phones {
     font-size: 24px;
   }
 }
@@ -53,7 +53,7 @@ h4 {
   @include tablet {
     font-size: 22px;
   }
-  @include phone {
+  @include both-phones {
     font-size: 18px;
   }
 }
@@ -64,7 +64,7 @@ h5 {
   @include tablet {
     font-size: 22px;
   }
-  @include phone {
+  @include both-phones {
     font-size: 18px;
   }
 }
@@ -75,7 +75,7 @@ h6 {
   @include tablet {
     font-size: 22px;
   }
-  @include phone {
+  @include both-phones {
     font-size: 18px;
   }
 }

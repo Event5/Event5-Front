@@ -11,6 +11,10 @@
   &:hover {
     color: $second-light;
   }
+  @include phone-and-tablet {
+    width: 160px;
+    min-height: 160px;
+  }
   h6 {
     margin-top: 16px;
   }

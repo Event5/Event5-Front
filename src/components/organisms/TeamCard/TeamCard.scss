@@ -5,6 +5,10 @@
   border-radius: 8px;
   padding: 24px;
   background-color: $second;
+  @include phone-and-tablet {
+    margin: 24px;
+    padding: 16px;
+  }
   img {
     width: 100%;
   }
