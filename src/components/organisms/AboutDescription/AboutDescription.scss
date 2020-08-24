@@ -1,0 +1,22 @@
+.about-page__why {
+  width: 80%;
+  margin: 40px auto;
+  @include tablet {
+    width: 90%;
+  }
+  h2 {
+    color: $first;
+    text-align: center;
+  }
+  p {
+    width: 60%;
+    margin: 24px auto;
+    color: $first-dark;
+    @include tablet {
+      width: 80%;
+    }
+    @include both-phones {
+      width: 95%;
+    }
+  }
+}

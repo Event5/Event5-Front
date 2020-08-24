@@ -101,6 +101,10 @@ export function HComponents() {
           <Icon svg="plus" classes="svg-icon" title="Facebook" />
           <span>plus</span>
         </p>
+        <p>
+          <Icon svg="menu" classes="svg-icon" title="Menu" />
+          <span>Menu</span>
+        </p>
       </div>
       <h2>Icon Button</h2>
       <IconButton text="Publish Event" type="primary" color="first" />

@@ -4,6 +4,9 @@
   border-radius: 16px;
   padding: 40px;
   background-color: $first-light;
+  @include both-phones {
+    width: 90%;
+  }
   h2 {
     text-align: center;
     color: $first-dark;

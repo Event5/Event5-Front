@@ -9,8 +9,8 @@ export function Information() {
       <img src="" alt="Event Info" />
       <div className="information__container">
         <Countdown />
-        <h2>Live the Event Info</h2>
-        <p>
+        <h2 className="h2-template">Live the Event Info</h2>
+        <p className="p-template">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

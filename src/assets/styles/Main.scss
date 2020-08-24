@@ -1,8 +1,9 @@
-@import "./Variables.scss";
-@import "./Globals.scss";
 @import "./mixins.scss";
+@import "./variables.scss";
+@import "./globals.scss";
 
 //atoms
+@import "../../components/atoms/Icons/Icons.scss";
 @import "../../components/atoms/BigLogo/BigLogo.scss";
 @import "../../components/atoms/Input/Input.scss";
 @import "../../components/atoms/Button/Button.scss";
@@ -11,21 +12,23 @@
 
 //molecules
 @import "../../components/molecules/ImageMore/ImageMore.scss";
-@import "../../components//molecules/InfoButtons/InfoButtons.scss";
-@import "../../components//molecules/Upload/Upload.scss";
-@import "../../components//molecules/SaveNext/SaveNext.scss";
-@import "../../components//molecules/ButtonList/ButtonList.scss";
-@import "../../components//molecules/ImageTitle/ImageTitle.scss";
+@import "../../components/molecules/InfoButtons/InfoButtons.scss";
+@import "../../components/molecules/Upload/Upload.scss";
+@import "../../components/molecules/SaveNext/SaveNext.scss";
+@import "../../components/molecules/ButtonList/ButtonList.scss";
+@import "../../components/molecules/ImageTitle/ImageTitle.scss";
 @import "../../components/atoms/Icons/Icons.scss";
+@import "../../components/molecules/NameTwitter/NameTwitter.scss";
 @import "../../components/molecules/TextArea/TextArea.scss";
-
-//molecules
 @import "../../components/molecules/IconCard/IconCard.scss";
 @import "../../components/molecules/IconName/IconName.scss";
 @import "../../components/molecules/MenuItemSmall/MenuItemSmall.scss";
 @import "../../components/molecules/MenuItem/MenuItem.scss";
 @import "../../components/molecules/Github/Github.scss";
 @import "../../components/molecules/OrganizerCard/OrganizerCard.scss";
+@import "../../components/molecules/OrganizersList/OrganizersList.scss";
+@import "../../components/molecules/Numeralia/Numeralia.scss";
+@import "../../components/molecules/ImageText/ImageText.scss";
 
 //organisms
 @import "../../components/organisms/Header/Header.scss";
@@ -43,9 +46,17 @@
 @import "../../components/organisms/ImageCard/ImageCard.scss";
 @import "../../components/organisms/OrganizationCard/OrganizationCard.scss";
 @import "../../components/organisms/EventCard/EventCard.scss";
+@import "../../components/organisms/TeamCard/TeamCard.scss";
+@import "../../components/organisms/AboutHero/AboutHero.scss";
+@import "../../components/organisms/AboutDescription/AboutDescription.scss";
+@import "../../components/organisms/Links/Links.scss";
 
 //templates
 @import "../../components/templates/UserAccess/UserAccess.scss";
 @import "../../components/templates/Content/Content.scss";
+<<<<<<< HEAD
 @import "../../components/templates/NotFound/NotFound.scss";
 @import "../../components/templates/Home/Home.scss";
+=======
+@import "../../components/templates/TeamContainer/TeamContainer.scss";
+>>>>>>> 554da7b08c654466fcdef0dc8d48a7f5da226bd5

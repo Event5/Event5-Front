@@ -5,7 +5,7 @@ import { ConferenceCard } from "../../molecules/ConferenceCard";
 export function Agenda() {
   return (
     <section className="agenda">
-      <h2>Agenda</h2>
+      <h2 className="h2-template">Agenda</h2>
       <div className="agenda__container">
         <ConferenceCard />
         <ConferenceCard />

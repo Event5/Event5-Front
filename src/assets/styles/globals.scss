@@ -14,31 +14,70 @@ body {
 h1 {
   font-size: 44px;
   font-weight: 800;
+  @include tablet {
+    font-size: 34px;
+  }
+  @include phone {
+    font-size: 28px;
+  }
+  @include phone-small {
+    font-size: 28px;
+  }
 }
 
 h2 {
   font-size: 34px;
   font-weight: 800;
+  @include tablet {
+    font-size: 28px;
+  }
+  @include both-phones {
+    font-size: 24px;
+  }
 }
 
 h3 {
   font-size: 34px;
   font-weight: 600;
+  @include tablet {
+    font-size: 28px;
+  }
+  @include both-phones {
+    font-size: 24px;
+  }
 }
 
 h4 {
   font-size: 24px;
   font-weight: 800;
+  @include tablet {
+    font-size: 22px;
+  }
+  @include both-phones {
+    font-size: 18px;
+  }
 }
 
 h5 {
   font-size: 24px;
   font-weight: 600;
+  @include tablet {
+    font-size: 22px;
+  }
+  @include both-phones {
+    font-size: 18px;
+  }
 }
 
 h6 {
   font-size: 24px;
   font-weight: 400;
+  @include tablet {
+    font-size: 22px;
+  }
+  @include both-phones {
+    font-size: 18px;
+  }
 }
 
 a {

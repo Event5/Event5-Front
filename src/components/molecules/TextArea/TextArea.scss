@@ -3,7 +3,11 @@
         width: 347px;
         height: 156px;
         border: 2px solid $first;
+        display: block;
         color: $third;
+    }
+    & input:hover{
+        border: 2px solid $first-dark;
     }
     & label{
         font-weight: 600px;
