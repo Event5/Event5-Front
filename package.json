@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start:client": "webpack-dev-server --open --mode development",
-    "start": "npm run build && node server.js",
+    "start": "node server.js",
     "server:dev": "nodemon server.js"
   },
   "engines": {
