@@ -136,10 +136,13 @@ p {
 //   height: 60px;
 // }
 
-// .BackgroundOne {
-//   background-color: $first-lightest;
-// }
+.BackgroundFirst {
+  background-color: $first-lightest;
+}
 
-// .BackgroundTwo {
-//   background-color: $second-lightest;
-// }
+.BackgroundSecond {
+  background-color: $second-lightest;
+}
+.BackgroundTransparent {
+  background-color: $second-lightest;
+}

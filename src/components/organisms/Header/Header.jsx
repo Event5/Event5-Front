@@ -4,7 +4,13 @@ import logo from "../../../assets/images/E5Logo-blue-small.svg";
 
 import { ButtonList } from "../../molecules";
 
-export function Header({ buttons }) {
+export function Header({ buttons, background }) {
+  let backgroundColor;
+  if (background === "fisrt") {
+    backgroundColor = "BackgroundFirst";
+  } else if (background === "second") {
+    backgroundColor = "BackgroundSecond";
+  }
   const mock = [
     //this array are ButtonAlt Components
     [
@@ -37,7 +43,7 @@ export function Header({ buttons }) {
 
   const props = buttons ? buttons : mock;
   return (
-    <header className="Header">
+    <header className={`Header ${backgroundColor}`}>
       <figure className="Header__Logo">
         <img src={logo} alt="Event5' Logo" />
       </figure>

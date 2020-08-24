@@ -4,7 +4,7 @@ import {
   Home,
   LoginPage,
   SignUpPage,
-  NotFound,
+  NotFoundPage,
   HComponents,
   DComponents,
 } from "../pages";
@@ -44,7 +44,7 @@ const App = () => {
         <Route exact path="/den" component={DComponents} />
         {/* Templates */}
         <Route exact path="/template-two" component={TemplateTwo} />
-        <Route component={NotFound} />
+        <Route component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
   );
