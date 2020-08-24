@@ -7,6 +7,7 @@ import {
   NotFound,
   HComponents,
   DComponents,
+  SComponents,
 } from "../pages";
 
 import {
@@ -42,6 +43,7 @@ const App = () => {
         {/* Pagina de prueba de componentes, borrar. */}
         <Route exact path="/HComponents" component={HComponents} />
         <Route exact path="/den" component={DComponents} />
+        <Route exact path="/Djkde" component={SComponents} />
         {/* Templates */}
         <Route exact path="/template-two" component={TemplateTwo} />
         <Route component={NotFound} />
