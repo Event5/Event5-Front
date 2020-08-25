@@ -7,7 +7,9 @@ import { Button } from "../../atoms/Button";
 export function SimpleEvent({eventImage, eventName, associatesNumber, publicAmount}) {
   return (
     <div className="SimpleEvent">
-      <ImageTitle image={eventImage} imageAlt={`Picture of ${eventName}`} text={eventName}/>
+      <div className="EventImage">
+        <ImageTitle image={eventImage} imageAlt={`Picture of ${eventName}`} text={eventName}/>
+      </div>
       <div className="EventDescription">
         <Numeralia participantsType="Assocciates" numberOfParticipants={associatesNumber}/>
         <Numeralia participantsType="Public" numberOfParticipants={publicAmount}/>
