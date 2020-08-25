@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ConferenceCard } from "../../molecules/ConferenceCard";
+import { ConferenceCard } from "../../molecules";
 
 export function Agenda() {
   return (

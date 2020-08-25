@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ConferencistCard } from "../../molecules/ConferencistCard";
+import { ConferencistCard } from "../../molecules";
 
 export function Conferencists() {
   return (

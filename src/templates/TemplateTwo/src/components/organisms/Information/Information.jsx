@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Countdown } from "../../molecules/Countdown";
-import { Button } from "../../atoms/Button";
+import { Button } from "../../atoms";
+import { Countdown } from "../../molecules";
 
 export function Information() {
   return (

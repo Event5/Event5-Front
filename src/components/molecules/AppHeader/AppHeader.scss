@@ -1,0 +1,18 @@
+.app-header {
+  width: 76%;
+  margin: 40px 24% 40px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span {
+    margin-right: 40px;
+    min-width: 70%;
+    text-align: right;
+    Link {
+      color: $light;
+      &:hover {
+        color: $second-light;
+      }
+    }
+  }
+}

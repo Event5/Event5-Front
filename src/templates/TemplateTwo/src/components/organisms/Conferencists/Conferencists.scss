@@ -7,6 +7,8 @@
     margin-bottom: 24px;
   }
   &__container {
+    width: 70%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     @include phone-and-tablet {

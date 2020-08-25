@@ -10,3 +10,6 @@ export * from "./IconName";
 export * from "./IconCard";
 export * from "./Github";
 export * from "./OrganizerCard";
+export * from "./OrganizersList";
+export * from "./Numeralia";
+export * from "./AppHeader";

@@ -125,7 +125,7 @@ export function HComponents() {
         email="organizer@event.com"
       />
       <h2>SideMenu</h2>
-      <SidebarMenu />
+      {/* <SidebarMenu /> */}
       <h2>Associate Card</h2>
       <AssociateCard
         logo={AssociateLogo}
@@ -151,7 +151,7 @@ export function HComponents() {
         btnColor="light"
       />
       <h2>EventCard</h2>
-      <EventCard />
+      <EventCard title="Mi Evento" orgName="Conejo Estelar" date="16/12/2020" />
       <h2>OrganizationCard</h2>
       <OrganizationCard />
     </>

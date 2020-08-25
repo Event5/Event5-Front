@@ -1,14 +1,16 @@
 import React from "react";
 
-import { SidebarMenu } from "../components/organisms/SidebarMenu";
-import { Content } from "../components/templates/Content";
+import { AppHeader } from "../components/molecules";
+import { SidebarMenu } from "../components/organisms";
+import { Content, GridEvents } from "../components/templates";
 
 export function OrganizerEvents() {
   return (
     <main className="app-layout">
       <SidebarMenu />
       <Content>
-        <h1>Hola</h1>
+        <AppHeader btnText="Create Event" />
+        <GridEvents />
       </Content>
     </main>
   );
