@@ -14,8 +14,8 @@
       background-color: $first;
       color: $light;
       &:hover {
-        background-color: $first-lightest;
-        color: $first-dark;
+        background-color: $first-dark;
+        color: $first-lightest;
       }
     }
     &-Second {

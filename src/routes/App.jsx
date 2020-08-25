@@ -1,13 +1,15 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+
 import {
   HomePage,
+  About,
   LoginPage,
   SignUpPage,
   NotFoundPage,
   HComponents,
   DComponents,
-  SComponents
+  SComponents,
 } from "../pages";
 
 import {
@@ -15,7 +17,8 @@ import {
   OrganizerEvents,
   AdminOrganizations,
   AdminBasicInfo,
-  About,
+  CreateEventSpeaker,
+  CreateEventAgenda,
 } from "../pages";
 
 import { TemplateTwo } from "../templates/TemplateTwo";
@@ -24,14 +27,26 @@ const App = () => {
   return (
     <BrowserRouter>
       <Switch>
+        {/* Principal */}
         <Route exact path="/" component={HomePage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/signup" component={SignUpPage} />
         <Route exact path="/about" component={About} />
+        {/* App */}
         <Route
           exact
           path="/organizer-edit-event"
           component={OrganizerEditEvent}
+        />
+        <Route
+          exact
+          path="/create-event-speakers"
+          component={CreateEventSpeaker}
+        />
+        <Route
+          exact
+          path="/create-event-agenda"
+          component={CreateEventAgenda}
         />
         <Route exact path="/organizer-events" component={OrganizerEvents} />
         <Route

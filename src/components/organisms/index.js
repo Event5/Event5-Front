@@ -17,4 +17,5 @@ export * from "./TeamCard";
 export * from "./AboutHero";
 export * from "./AboutDescription";
 export * from "./Links";
-
+export * from "./HomeHero";
+export * from "./CallToAction";
