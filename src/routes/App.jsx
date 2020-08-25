@@ -56,7 +56,7 @@ const App = () => {
         />
         <Route exact path="/admin-basic" component={AdminBasicInfo} />
         {/* Pagina de prueba de componentes, borrar. */}
-        <Route exact path="/HComponents" component={HComponents} />
+        <Route exact path="/hcomponents" component={HComponents} />
         <Route exact path="/den" component={DComponents} />
         <Route exact path="/Djkde" component={SComponents} />
         {/* Templates */}

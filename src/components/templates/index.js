@@ -3,3 +3,4 @@ export * from "./Content";
 export * from "./NotFound";
 export * from "./Home";
 export * from "./TeamContainer";
+export * from "./GridEvents";

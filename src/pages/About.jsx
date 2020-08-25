@@ -1,18 +1,27 @@
 import React from "react";
 
-import { Header } from "../components/organisms/Header";
-import { AboutHero } from "../components/organisms/AboutHero";
-import { AboutDescription } from "../components/organisms/AboutDescription";
-import { Links } from "../components/organisms/Links";
-import { TeamContainer } from "../components/templates/TeamContainer";
-import { Footer } from "../components/organisms/Footer";
+import {
+  Header,
+  AboutHero,
+  AboutDescription,
+  Links,
+  Footer,
+} from "../components/organisms";
+
+import { TeamContainer } from "../components/templates";
 
 export function About() {
   return (
     <main className="about-page">
-      {/* <Header /> */}
+      <Header />
       <AboutHero />
-      <AboutDescription />
+      <AboutDescription
+        title="Why Event5 exists?"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in volup"
+      />
       <TeamContainer />
       <Links />
       <Footer />

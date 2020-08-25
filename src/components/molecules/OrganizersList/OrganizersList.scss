@@ -1,8 +1,9 @@
-.OrganizersList{
-    & ul{
-        margin-left: 20px;
-    }
-    & ul li{
-        list-style: none;
-    }
+.OrganizersList {
+  min-width: 60%;
+  & ul {
+    margin-left: 20px;
+  }
+  & ul li {
+    list-style: none;
+  }
 }
