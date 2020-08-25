@@ -10,6 +10,7 @@ import { SimpleEvent } from "../components/organisms/SimpleEvent";
 import { ModalSpeaker } from "../components/organisms/ModalSepaker";
 import { ModalSession } from "../components/organisms/ModalSession";
 import { ModalEmail } from "../components/organisms/ModalEmail";
+import { ModalAssociate } from "../components/organisms/ModalAssociate";
 
 import templateOne from "../assets/images/TemplateHector.png"
 import eventImgUrl from "../assets/images/eventimage.png"
@@ -26,6 +27,7 @@ export function SComponents() {
       <ModalSpeaker/>
       <ModalSession />
       <ModalEmail />
+      <ModalAssociate />
     </>
   );
 }
