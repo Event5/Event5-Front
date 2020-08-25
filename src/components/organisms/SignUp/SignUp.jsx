@@ -1,23 +1,10 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-
+import { registerUser } from "../../../actions";
 import { Button, Input } from "../../atoms";
 
-const req = (info) => {
-  const URL = "https://event5.azurewebsites.net/api/auth/sign-up";
-  return fetch(URL, {
-    method: "POST",
-    body: JSON.stringify(info),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  })
-    .then((data) => console.log(data.json()))
-    .catch((error) => console.error("Error:", error));
-  // .then((resp) => console.log("Success", resp));
-};
-
-export function SignUp() {
+function SignUp(props) {
   const [form, setValues] = useState({
     username: "",
     email: "",
@@ -34,8 +21,7 @@ export function SignUp() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // console.log(form);
-    req(form);
+    props.registerUser(form, "/login");
   };
 
   return (
@@ -87,3 +73,8 @@ export function SignUp() {
     </div>
   );
 }
+
+const mapDispatchToProps = {
+  registerUser,
+};
+export default connect(null, mapDispatchToProps)(SignUp);

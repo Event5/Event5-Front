@@ -1,5 +1,7 @@
 import React from "react";
-import { Login, SignUp, Header } from "../../organisms";
+import { Header } from "../../organisms";
+import Login from "../../organisms/Login/Login";
+import SignUp from "../../organisms/SignUp/SignUp";
 
 export function UserAccess({ headerBackground, page, buttons, src, alt }) {
   return (

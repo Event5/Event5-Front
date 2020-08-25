@@ -1,5 +1,5 @@
 export * from "./Login";
-export * from "./SignUp";
+export * from "./SignUp/";
 export * from "./Header";
 export * from "./EventFooter";
 export * from "./Footer";
@@ -17,4 +17,3 @@ export * from "./TeamCard";
 export * from "./AboutHero";
 export * from "./AboutDescription";
 export * from "./Links";
-
