@@ -9,6 +9,7 @@ import { ImageText } from "../components/molecules/ImageText";
 import { SimpleEvent } from "../components/organisms/SimpleEvent";
 import { ModalSpeaker } from "../components/organisms/ModalSepaker";
 import { ModalSession } from "../components/organisms/ModalSession";
+import { ModalEmail } from "../components/organisms/ModalEmail";
 
 import templateOne from "../assets/images/TemplateHector.png"
 import eventImgUrl from "../assets/images/eventimage.png"
@@ -24,6 +25,7 @@ export function SComponents() {
       <SimpleEvent eventImage={eventImgUrl} eventName="Event Test" associatesNumber="9" publicAmount="294"/>
       <ModalSpeaker/>
       <ModalSession />
+      <ModalEmail />
     </>
   );
 }
