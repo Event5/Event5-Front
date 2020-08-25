@@ -1,0 +1,13 @@
+.SimpleEvent{
+    width: 420px;
+    height: 243px;
+    & img{
+        object-fit: cover;
+    }
+}
+.EventDescription{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 10px;
+}
