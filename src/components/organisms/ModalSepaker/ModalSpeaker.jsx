@@ -11,7 +11,7 @@ export function ModalSpeaker() {
       <h2>Your Conferencist</h2>
       <form className="ModalSpeaker__Form" action="">
         <Input type="text" placeholder="Conferencist Name" />
-        <TextArea />
+        <TextArea idName="Conferencist" />
         <Input type="text" placeholder="Conferencist Role" />
         <Input type="url" placeholder="Twitter Url" />
         <div>
