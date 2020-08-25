@@ -20,13 +20,7 @@
       margin-right: 10px;
       width: 70%;
     }
-    @include tablet {
-      display: none;
-    }
-    @include phone {
-      display: none;
-    }
-    @include phone-small {
+    @include both-phones {
       display: none;
     }
   }
@@ -44,20 +38,10 @@
       width: 180px;
       height: 100%;
     }
-    @include tablet {
+    @include both-phones {
       margin-left: 16px;
       width: 160px;
       height: 100%;
-    }
-    @include phone {
-      margin-left: 16px;
-      width: 160px;
-      height: 100%;
-    }
-    @include phone-small {
-      margin-left: 16px;
-      width: 160px;
-      height: 80px;
     }
   }
 }

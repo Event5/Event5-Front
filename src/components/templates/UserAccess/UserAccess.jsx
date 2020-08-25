@@ -8,9 +8,6 @@ export function UserAccess({ headerBackground, page, buttons, src, alt }) {
     <>
       <Header buttons={buttons} background={headerBackground} />
       <main className="UserAccess">
-        <div
-          class={`UserAccess__Background Background${headerBackground}`}
-        ></div>
         <figure className="UserAccess__Img">
           <img src={src} alt={alt} />
         </figure>
@@ -18,6 +15,7 @@ export function UserAccess({ headerBackground, page, buttons, src, alt }) {
           {page === "login" ? <Login /> : <SignUp />}
         </div>
       </main>
+      <div class={`UserAccess__Background Background${headerBackground}`}></div>
     </>
   );
 }
