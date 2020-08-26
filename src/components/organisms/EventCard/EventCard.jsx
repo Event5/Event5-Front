@@ -24,9 +24,15 @@ export function EventCard({
       </div>
       <img src={image} alt="Event Image" />
       <div className="event-card__numeralia">
-        <Numeralia name="Conferences" number={conferences} />
-        <Numeralia name="Associates" number={associates} />
-        <Numeralia name="Public" number={people} />
+        <Numeralia
+          participantsType="Conferences"
+          numberOfParticipants={conferences}
+        />
+        <Numeralia
+          participantsType="Associates"
+          numberOfParticipants={associates}
+        />
+        <Numeralia participantsType="Public" numberOfParticipants={people} />
       </div>
       <div className="event-card__footer">
         <OrganizersList
