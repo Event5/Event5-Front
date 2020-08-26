@@ -10,6 +10,7 @@ import {
   HComponents,
   DComponents,
   SComponents,
+  TemplateFeed,
 } from "../pages";
 
 import {
@@ -59,6 +60,11 @@ const App = () => {
           exact
           path="/admin-organizations"
           component={AdminOrganizations}
+        />
+        <Route
+          exact
+          path="/templates"
+          component={TemplateFeed}
         />
         <Route exact path="/admin-basic" component={AdminBasicInfo} />
         {/* Pagina de prueba de componentes, borrar. */}
