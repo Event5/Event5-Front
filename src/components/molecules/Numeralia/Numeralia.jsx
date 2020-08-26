@@ -1,10 +1,10 @@
 import React from "react";
 
-export function Numeralia({ name, number }) {
+export function Numeralia({ participantsType, numberOfParticipants }) {
   return (
     <div className="Numeralia">
-      <p>{name}</p>
-      <h1>{number}</h1>
-    </div>
+      <p>{ participantsType }</p>
+      <h1>{ numberOfParticipants }</h1>
+    </div>  
   );
 }
