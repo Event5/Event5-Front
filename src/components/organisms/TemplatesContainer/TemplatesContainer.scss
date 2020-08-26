@@ -1,0 +1,13 @@
+.templates {
+  &-container {
+    margin-top: 40px;
+    h2 {
+      color: $light;
+      margin-bottom: 24px;
+    }
+  }
+  &-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -13,3 +13,4 @@ export * from "./OrganizerCard";
 export * from "./OrganizersList";
 export * from "./Numeralia";
 export * from "./AppHeader";
+export * from "./ImageText";
