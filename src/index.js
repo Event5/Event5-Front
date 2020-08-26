@@ -18,32 +18,6 @@ const initialState = {
     {
       organizationID: "1",
       organizationName1: "First",
-      associates: [
-        { 
-            name:"name",
-            kind: "AAA", // "AA", "A" (clasification),
-            url: "https://",
-            logo_url: "https://",
-        },
-        { 
-            name:"name2",
-            kind: "AA", // "AA", "A" (clasification),
-            url: "https://",
-            logo_url: "https://",
-        },
-        { 
-          name:"name3",
-          kind: "AAA", // "AA", "A" (clasification),
-          url: "https://",
-          logo_url: "https://",
-        },
-        { 
-          name:"name4",
-          kind: "A", // "AA", "A" (clasification),
-          url: "https://",
-          logo_url: "https://",
-        },
-      ],
       events: [
         {
           id: 1,
@@ -114,6 +88,34 @@ const initialState = {
       ],
     },
   ],
+  event:{
+    associates: [
+      { 
+          name:"name",
+          kind: "AAA", // "AA", "A" (clasification),
+          url: "https://",
+          logo_url: "https://",
+      },
+      { 
+          name:"name2",
+          kind: "AA", // "AA", "A" (clasification),
+          url: "https://",
+          logo_url: "https://",
+      },
+      { 
+        name:"name3",
+        kind: "AAA", // "AA", "A" (clasification),
+        url: "https://",
+        logo_url: "https://",
+      },
+      { 
+        name:"name4",
+        kind: "A", // "AA", "A" (clasification),
+        url: "https://",
+        logo_url: "https://",
+      },
+    ],
+  }
 };
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

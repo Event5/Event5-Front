@@ -44,7 +44,7 @@ export function CreateEventAssociates(props) {
 }
 const mapStateToProps = (state) => {
     return {
-      associates: state.data[0].associates,
+      associates: state.event.associates,
     };
   };
   
