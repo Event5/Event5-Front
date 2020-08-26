@@ -5,7 +5,7 @@ import { MenuItem } from "../../molecules/MenuItem";
 import { MenuItemSmall } from "../../molecules/MenuItemSmall";
 import { Github } from "../../molecules/Github";
 
-export function SidebarMenu() {
+export function SidebarMenu({ user }) {
   return (
     <aside className="dashboard-menu">
       <img src={logo} alt="Event5's Logo" />

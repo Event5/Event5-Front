@@ -4,3 +4,4 @@ export * from "./NotFound";
 export * from "./Home";
 export * from "./TeamContainer";
 export * from "./GridEvents";
+export * from "./GridOrganizations";

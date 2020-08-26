@@ -1,16 +1,17 @@
-.SimpleEvent{
-    width: 420px;
-    height: 243px;
-    & img{
-        object-fit: cover;
-    }
+.SimpleEvent {
+  margin: 24px auto;
+  width: 420px;
+  height: 243px;
+  & img {
+    object-fit: cover;
+  }
 }
-.EventImage{
-    height: 160px;
+.EventImage {
+  height: 160px;
 }
-.EventDescription{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin-top: 10px;
+.EventDescription {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 10px;
 }

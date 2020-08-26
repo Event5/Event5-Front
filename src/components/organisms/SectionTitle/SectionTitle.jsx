@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button } from "../../atoms/Button";
+import { Button } from "../../atoms";
 
 export function SectionTitle({
   title,
