@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import { AppHeader } from "../components/molecules";
 import { SidebarMenu } from "../components/organisms";
@@ -39,14 +40,22 @@ const events = [
   },
 ];
 
-export function OrganizerEvents() {
+function OrganizerEvents(props) {
+  console.log(props);
   return (
     <main className="app-layout">
       <SidebarMenu />
       <Content>
         <AppHeader btnText="Create Event" />
-        <GridEvents EventsArray={events} />
+        <GridEvents EventsArray={props.events} />
       </Content>
     </main>
   );
 }
+const mapStateToProps = (state) => {
+  return {
+    events: state.data[0].events,
+  };
+};
+
+export default connect(mapStateToProps, null)(OrganizerEvents);

@@ -10,6 +10,11 @@ export const registerRequest = (payload) => ({
   payload,
 });
 
+export const logoutRequest = (payload) => ({
+  type: "LOGOUT_REQUEST",
+  payload,
+});
+
 export const setError = (payload) => ({
   type: "SET_ERROR",
   payload,

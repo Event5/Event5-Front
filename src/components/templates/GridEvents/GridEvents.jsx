@@ -6,7 +6,6 @@ export function GridEvents({ EventsArray }) {
   return (
     <section className="grid-events">
       {EventsArray.map((item) => {
-        console.log(item);
         return (
           <EventCard
             key={item.id}
