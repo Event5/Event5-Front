@@ -1,7 +1,7 @@
-.ModalAssociate{
+.ModalEventInfo{
     width: 484px;
     height: 1040px;
-    & h2{
+    & h2, h5{
         color: $first;
     }
     &__Form{
@@ -9,17 +9,21 @@
         width: 80%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         margin: 0 auto;
         color: $third;
+        &__Container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            row-gap: 20px;
+        }
         &__Btn{
             text-align: center;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            align-items: center;
             gap: 40px;
-            & a:nth-child(2){
-                color: #EE4266;
-            }
         }
     }
 }
