@@ -12,3 +12,4 @@ export * from "./AdminBasicInfo";
 export * from "./About";
 export * from "./CreateEventSpeaker";
 export * from "./CreateEventAgenda";
+export * from "./CreateEventAssociates";

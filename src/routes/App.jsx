@@ -21,6 +21,7 @@ import {
 } from "../pages";
 
 import OrganizerEvents from "../pages/OrganizerEvents";
+import CreateEventAssociates from "../pages/CreateEventAssociates";
 import { TemplateTwo } from "../templates/TemplateTwo";
 
 const App = () => {
@@ -47,6 +48,11 @@ const App = () => {
           exact
           path="/create-event-agenda"
           component={CreateEventAgenda}
+        />
+        <Route
+          exact
+          path="/create-event-associates"
+          component={CreateEventAssociates}
         />
         <Route exact path="/organizer-events" component={OrganizerEvents} />
         <Route
