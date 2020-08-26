@@ -10,24 +10,24 @@ export function SidebarMenu({ user }) {
     <aside className="dashboard-menu">
       <img src={logo} alt="Event5's Logo" />
       <div>
-        <MenuItem className="" icon="building" text="Organizations" link="#" />
-        <MenuItem className="" icon="calendar" text="Events" link="#" />
-        <MenuItem className="" icon="calendarNew" text="My Event" link="#" />
+        <MenuItem className="" icon="building" text="Organizations" link="/" />
+        <MenuItem className="" icon="calendar" text="Events" link="/" />
+        <MenuItem className="" icon="calendarNew" text="My Event" link="/" />
         <MenuItemSmall
           className=""
           icon="organizers"
           text="Organizers"
-          link="#"
+          link="/"
         />
-        <MenuItemSmall className="" icon="arrow" text="Setup Event" link="#" />
-        <MenuItemSmall className="" icon="book" text="Agenda" link="#" />
+        <MenuItemSmall className="" icon="arrow" text="Setup Event" link="/" />
+        <MenuItemSmall className="" icon="book" text="Agenda" link="/" />
         <MenuItemSmall
           className=""
           icon="organization"
           text="Associates"
-          link="#"
+          link="/"
         />
-        <MenuItem className="" icon="envelope" text="Diffusion" link="#" />
+        <MenuItem className="" icon="envelope" text="Diffusion" link="/" />
       </div>
       <Github />
     </aside>

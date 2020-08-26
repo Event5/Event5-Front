@@ -1,17 +1,61 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import { AppHeader } from "../components/molecules";
 import { SidebarMenu } from "../components/organisms";
 import { Content, GridEvents } from "../components/templates";
 
-export function OrganizerEvents() {
+const events = [
+  {
+    id: 3,
+    name: "event 3",
+    date: "30/11/2020",
+    organization: "event team",
+    conferences: 20,
+    associates: 20,
+    public: 200,
+    banner:
+      "https://event5web.herokuapp.com/assets/f3693c63636ce6bb97988f3d5d814347.svg",
+    organizers: [
+      { name: "oraniz", urlAvatar: "https//" },
+      { name: "far", urlAvatar: "https//" },
+      { name: "nombre", urlAvatar: "https//" },
+    ],
+  },
+  {
+    id: 4,
+    name: "event 4",
+    date: "30/11/2020",
+    organization: "event team",
+    conferences: 20,
+    associates: 20,
+    public: 200,
+    banner:
+      "https://event5web.herokuapp.com/assets/ab4174aa3e4fb2a6f911b682277acda1.svg",
+    organizers: [
+      { name: "fdf", urlAvatar: "https//" },
+      { name: "nomfdsfsnbre", urlAvatar: "https//" },
+      { name: "nombre", urlAvatar: "https//" },
+    ],
+  },
+];
+
+function OrganizerEvents(props) {
+  console.log(props);
   return (
     <main className="app-layout">
       <SidebarMenu />
       <Content>
         <AppHeader btnText="Create Event" />
-        <GridEvents />
+        <GridEvents EventsArray={props.events} />
       </Content>
     </main>
   );
 }
+const mapStateToProps = (state) => {
+  return {
+    events: state.data[0].events,
+  };
+};
+
+export default connect(mapStateToProps, null)(OrganizerEvents);

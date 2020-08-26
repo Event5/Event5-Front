@@ -14,13 +14,13 @@ import {
 
 import {
   OrganizerEditEvent,
-  OrganizerEvents,
   AdminOrganizations,
   AdminBasicInfo,
   CreateEventSpeaker,
   CreateEventAgenda,
 } from "../pages";
 
+import OrganizerEvents from "../pages/OrganizerEvents";
 import { TemplateTwo } from "../templates/TemplateTwo";
 
 const App = () => {

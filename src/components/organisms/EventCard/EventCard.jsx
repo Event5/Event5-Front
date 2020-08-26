@@ -3,7 +3,18 @@ import React from "react";
 import { Button } from "../../atoms";
 import { Numeralia, OrganizersList } from "../../molecules";
 
-export function EventCard({ title, orgName, date, image }) {
+export function EventCard({
+  title,
+  orgName,
+  date,
+  image,
+  conferences,
+  associates,
+  people,
+  organizerFirst,
+  organizerSecond,
+  btnAction,
+}) {
   return (
     <section className="event-card">
       <h3>{title}</h3>
@@ -13,16 +24,21 @@ export function EventCard({ title, orgName, date, image }) {
       </div>
       <img src={image} alt="Event Image" />
       <div className="event-card__numeralia">
-        <Numeralia name="Conferences" number="16" />
-        <Numeralia name="Associates" number="8" />
-        <Numeralia name="Public" number="176" />
+        <Numeralia name="Conferences" number={conferences} />
+        <Numeralia name="Associates" number={associates} />
+        <Numeralia name="Public" number={people} />
       </div>
       <div className="event-card__footer">
         <OrganizersList
-          firstOrganizer="Nombre Apellido"
-          secondOrganizer="Nombre Apellido"
+          firstOrganizer={organizerFirst}
+          secondOrganizer={organizerSecond}
         />
-        <Button text="Edit Event" type="primary" color="first" />
+        <Button
+          text="Edit Event"
+          type="primary"
+          color="first"
+          onClick={btnAction}
+        />
       </div>
     </section>
   );
