@@ -15,7 +15,9 @@ export function UserAccess({ headerBackground, page, buttons, src, alt }) {
           {page === "login" ? <Login /> : <SignUp />}
         </div>
       </main>
-      <div class={`UserAccess__Background Background${headerBackground}`}></div>
+      <div
+        className={`UserAccess__Background Background${headerBackground}`}
+      ></div>
     </>
   );
 }
