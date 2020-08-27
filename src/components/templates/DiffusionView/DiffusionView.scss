@@ -1,0 +1,19 @@
+.diffusion {
+  &__info {
+    margin: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 16px;
+    background-color: $light;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    img {
+      margin: auto 0;
+      max-width: 100%;
+    }
+  }
+}

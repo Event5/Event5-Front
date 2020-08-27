@@ -17,7 +17,6 @@
 @import "../../components/molecules/SaveNext/SaveNext.scss";
 @import "../../components/molecules/ButtonList/ButtonList.scss";
 @import "../../components/molecules/ImageTitle/ImageTitle.scss";
-@import "../../components/atoms/Icons/Icons.scss";
 @import "../../components/molecules/NameTwitter/NameTwitter.scss";
 @import "../../components/molecules/TextArea/TextArea.scss";
 @import "../../components/molecules/IconCard/IconCard.scss";
@@ -30,6 +29,9 @@
 @import "../../components/molecules/Numeralia/Numeralia.scss";
 @import "../../components/molecules/ImageText/ImageText.scss";
 @import "../../components/molecules/AppHeader/AppHeader.scss";
+@import "../../components/molecules/TitleIntro/TitleIntro.scss";
+@import "../../components/molecules/Share/Share.scss";
+@import "../../components/molecules/SubtitleText/SubtitleText.scss";
 
 //organisms
 @import "../../components/organisms/Header/Header.scss";
@@ -69,3 +71,4 @@
 @import "../../components/templates/TeamContainer/TeamContainer.scss";
 @import "../../components/templates/GridEvents/GridEvents.scss";
 @import "../../components/templates/GridAssociates/GridAssociates.scss";
+@import "../../components/templates/DiffusionView/DiffusionView.scss";
