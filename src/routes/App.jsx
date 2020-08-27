@@ -15,14 +15,13 @@ import {
 
 import {
   OrganizerEditEvent,
-  AdminOrganizations,
   AdminBasicInfo,
   CreateEventSpeaker,
   CreateEventAgenda,
   CreateEventData,
   CreateEventDiffusion,
 } from "../pages";
-
+import AdminOrganizations from "../pages/AdminOrganizations";
 import OrganizerEvents from "../pages/OrganizerEvents";
 import CreateEventAssociates from "../pages/CreateEventAssociates";
 import { TemplateTwo } from "../templates/TemplateTwo";

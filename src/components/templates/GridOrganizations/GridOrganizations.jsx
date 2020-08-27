@@ -2,11 +2,19 @@ import React from "react";
 
 import { OrganizationCard } from "../../organisms";
 
-export function GridOrganizations() {
+export function GridOrganizations({ organizationArray }) {
   return (
     <section className="content-grid">
-      <OrganizationCard orgName="Conejo Estelar" />
-      <OrganizationCard orgName="Event5" />
+      {organizationArray.map((organization) => {
+        console.log(organization);
+        return (
+          <OrganizationCard
+            key={organization.organizationID}
+            orgName={organization.organizationName}
+            orgEventsArray={organization.events}
+          />
+        );
+      })}
     </section>
   );
 }

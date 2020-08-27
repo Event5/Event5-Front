@@ -17,7 +17,7 @@ const initialState = {
   data: [
     {
       organizationID: "1",
-      organizationName1: "Event5 developers",
+      organizationName: "Event5 developers",
       events: [
         {
           id: 1,
@@ -27,7 +27,7 @@ const initialState = {
           conferences: 20,
           associates: 20,
           public: 200,
-          banner: "https//www.images.com/image",
+          logo_url: "https//www.images.com/image",
           organizers: [
             { name: "nombre", urlAvatar: "https//" },
             { name: "nomnbre", urlAvatar: "https//" },
@@ -53,7 +53,7 @@ const initialState = {
     },
     {
       organizationID: "2",
-      organizationName2: "Platzi Master Cohort3",
+      organizationName: "Platzi Master Cohort3",
       events: [
         {
           id: 3,

@@ -18,6 +18,7 @@ export function SidebarMenu({ pagename }) {
             return (
               <MenuItem
                 className=""
+                key={item.key}
                 icon={item.icon}
                 text={item.text}
                 link={item.link}
@@ -27,6 +28,7 @@ export function SidebarMenu({ pagename }) {
             return (
               <MenuItemSmall
                 className=""
+                key={item.key}
                 icon={item.icon}
                 text={item.text}
                 link={item.link}

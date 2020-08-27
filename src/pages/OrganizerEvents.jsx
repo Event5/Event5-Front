@@ -8,7 +8,7 @@ import { Content, GridEvents } from "../components/templates";
 function OrganizerEvents(props) {
   return (
     <main className="app-layout">
-      <SidebarMenu pagename="ca" />
+      <SidebarMenu pagename="organizerDash" />
       <Content>
         <AppHeader btnText="Create Event" />
         <GridEvents EventsArray={props.events || []} />
