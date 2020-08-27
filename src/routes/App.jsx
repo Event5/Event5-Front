@@ -10,6 +10,7 @@ import {
   HComponents,
   DComponents,
   SComponents,
+  TemplateFeed,
 } from "../pages";
 
 import {
@@ -18,9 +19,12 @@ import {
   AdminBasicInfo,
   CreateEventSpeaker,
   CreateEventAgenda,
+  CreateEventData,
+  CreateEventDiffusion,
 } from "../pages";
 
 import OrganizerEvents from "../pages/OrganizerEvents";
+import CreateEventAssociates from "../pages/CreateEventAssociates";
 import { TemplateTwo } from "../templates/TemplateTwo";
 
 const App = () => {
@@ -54,6 +58,19 @@ const App = () => {
           path="/create-event-agenda"
           component={CreateEventAgenda}
         />
+        <Route
+          exact
+          path="/create-event-associates"
+          component={CreateEventAssociates}
+        />
+        <Route exact path="/create-event-data" component={CreateEventData} />
+        <Route
+          exact
+          path="/create-event-diffusion"
+          component={CreateEventDiffusion}
+        />
+        <Route exact path="/organizer-events" component={OrganizerEvents} />
+        <Route exact path="/templates" component={TemplateFeed} />
         <Route exact path="/admin-basic" component={AdminBasicInfo} />
         {/* Pagina de prueba de componentes, borrar. */}
         <Route exact path="/hcomponents" component={HComponents} />

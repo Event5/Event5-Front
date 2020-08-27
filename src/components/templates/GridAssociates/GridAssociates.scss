@@ -1,0 +1,9 @@
+.grid-associates{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 32px;
+    @include both-phones {
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+      }
+}

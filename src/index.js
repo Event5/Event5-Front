@@ -21,7 +21,7 @@ const initialState = {
       events: [
         {
           id: 1,
-          name: "event 1",
+          name: "El primer evento",
           date: "30/11/2020",
           organization: "event team",
           conferences: 20,
@@ -88,6 +88,34 @@ const initialState = {
       ],
     },
   ],
+  event:{
+    associates: [
+      { 
+          name:"name",
+          kind: "AAA", // "AA", "A" (clasification),
+          url: "https://",
+          logo_url: "https://",
+      },
+      { 
+          name:"name2",
+          kind: "AA", // "AA", "A" (clasification),
+          url: "https://",
+          logo_url: "https://",
+      },
+      { 
+        name:"name3",
+        kind: "AAA", // "AA", "A" (clasification),
+        url: "https://",
+        logo_url: "https://",
+      },
+      { 
+        name:"name4",
+        kind: "A", // "AA", "A" (clasification),
+        url: "https://",
+        logo_url: "https://",
+      },
+    ],
+  }
 };
 
 const initialState2 = {};
