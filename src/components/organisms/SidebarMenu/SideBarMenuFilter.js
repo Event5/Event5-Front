@@ -13,7 +13,7 @@ function SideBarMenuFilter(pagename) {
     {
       key: 2,
       text: "Events",
-      link: "/events",
+      link: "/adminevents",
       icon: "calendar",
       component: "Item",
     },

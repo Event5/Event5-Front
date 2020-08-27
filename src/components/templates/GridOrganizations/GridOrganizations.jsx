@@ -6,7 +6,6 @@ export function GridOrganizations({ organizationArray }) {
   return (
     <section className="content-grid">
       {organizationArray.map((organization) => {
-        console.log(organization);
         return (
           <OrganizationCard
             key={organization.organizationID}

@@ -21,6 +21,7 @@ import {
   CreateEventData,
   CreateEventDiffusion,
 } from "../pages";
+import AdminEvents from "../pages/AdminEvents";
 import AdminOrganizations from "../pages/AdminOrganizations";
 import OrganizerEvents from "../pages/OrganizerEvents";
 import CreateEventAssociates from "../pages/CreateEventAssociates";
@@ -39,8 +40,9 @@ const App = () => {
         {/* App */}
         {/* dashboard */}
         <Route exact path="/events" component={OrganizerEvents} />
+        <Route exact path="/adminevents" component={AdminEvents} />
         <Route exact path="/organizations" component={AdminOrganizations} />
-        {/* it needs Admin-Events dashboard, it's like organizer   */}
+
         {/* EV */}
         <Route
           exact

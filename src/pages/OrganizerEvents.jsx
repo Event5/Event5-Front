@@ -6,13 +6,7 @@ import { SidebarMenu } from "../components/organisms";
 import { Content, GridEvents } from "../components/templates";
 
 function OrganizerEvents(props) {
-  const { user } = props;
-  let eventsArray;
-  if (user === "organizer") {
-    eventsArray = props.events;
-  } else {
-    eventsArray = [];
-  }
+  let eventsArray = props.events || [];
 
   return (
     <main className="app-layout">
@@ -27,7 +21,6 @@ function OrganizerEvents(props) {
 const mapStateToProps = (state) => {
   return {
     events: state.data,
-    user: state.user.type_user,
   };
 };
 
