@@ -14,3 +14,5 @@ export * from "./CreateEventSpeaker";
 export * from "./CreateEventAgenda";
 export * from "./CreateEventAssociates";
 export * from "./TemplateFeed";
+export * from "./CreateEventData";
+export * from "./CreateEventDiffusion";
