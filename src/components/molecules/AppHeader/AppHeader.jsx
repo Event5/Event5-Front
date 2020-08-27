@@ -1,25 +1,48 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { useHistory } from "react-router-dom";
+import { logoutRequest } from "../../../actions";
+import deleteCookie from "../../../utils/deleteCookie";
 
 import { Button } from "../../atoms";
 
-export function AppHeader({ btnText }) {
+function AppHeader(props, { btnText }) {
+  const history = useHistory();
+
+  function handleLogout() {
+    props.logoutRequest({});
+    deleteCookie("token");
+    history.push("/");
+  }
+
   if (btnText != null) {
     return (
       <div className="app-header">
-        <Link to="/">
-          <span className="app-header__logout">Logout</span>
-        </Link>
+        <Button
+          text="Log Out"
+          type="primary"
+          color="no-color"
+          onClick={handleLogout}
+        />
         <Button text={btnText} type="secondary" color="second" />
       </div>
     );
   } else {
     return (
       <div className="app-header">
-        <Link to="/">
-          <span className="app-header__logout">Logout</span>
-        </Link>
+        <Button
+          text="Log Out"
+          type="primary"
+          color="no-color"
+          onClick={handleLogout}
+        />
       </div>
     );
   }
 }
+
+const mapDispatchToProps = {
+  logoutRequest,
+};
+
+export default connect(null, mapDispatchToProps)(AppHeader);

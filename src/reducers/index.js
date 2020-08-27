@@ -10,7 +10,7 @@ const reducer = (state, action) => {
         ...state,
         user: { email: action.payload },
       };
-    case "REGISTER_LOGOUT":
+    case "LOGOUT_REQUEST":
       return {};
     case "GO_EVENT":
       return {

@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { AppHeader } from "../components/molecules";
+import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SidebarMenu, SectionTitle } from "../components/organisms";
 import { Content, GridOrganizations } from "../components/templates";
 
