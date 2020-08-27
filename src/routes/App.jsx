@@ -15,14 +15,14 @@ import {
 
 import {
   OrganizerEditEvent,
-  AdminOrganizations,
   AdminBasicInfo,
   CreateEventSpeaker,
   CreateEventAgenda,
   CreateEventData,
   CreateEventDiffusion,
 } from "../pages";
-
+import AdminEvents from "../pages/AdminEvents";
+import AdminOrganizations from "../pages/AdminOrganizations";
 import OrganizerEvents from "../pages/OrganizerEvents";
 import CreateEventAssociates from "../pages/CreateEventAssociates";
 import { TemplateTwo } from "../templates/TemplateTwo";
@@ -36,7 +36,14 @@ const App = () => {
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/signup" component={SignUpPage} />
         <Route exact path="/about" component={About} />
+
         {/* App */}
+        {/* dashboard */}
+        <Route exact path="/events" component={OrganizerEvents} />
+        <Route exact path="/adminevents" component={AdminEvents} />
+        <Route exact path="/organizations" component={AdminOrganizations} />
+
+        {/* EV */}
         <Route
           exact
           path="/organizer-edit-event"
@@ -64,11 +71,6 @@ const App = () => {
           component={CreateEventDiffusion}
         />
         <Route exact path="/organizer-events" component={OrganizerEvents} />
-        <Route
-          exact
-          path="/admin-organizations"
-          component={AdminOrganizations}
-        />
         <Route exact path="/templates" component={TemplateFeed} />
         <Route exact path="/admin-basic" component={AdminBasicInfo} />
         {/* Pagina de prueba de componentes, borrar. */}

@@ -6,13 +6,21 @@ import { SidebarMenu } from "../components/organisms";
 import { Content, GridEvents } from "../components/templates";
 
 function OrganizerEvents(props) {
-  let eventsArray = props.events || [];
+  const organizations = props.organizations || [];
+
+  console.log(props);
+  let eventsArray = [];
+
+  organizations.map((organization) => {
+    const events = organization.events;
+    eventsArray = eventsArray.concat(events);
+  });
 
   return (
     <main className="app-layout">
-      <SidebarMenu pagename="organizerDash" />
+      <SidebarMenu pagename="adminDash" />
       <Content>
-        <AppHeader />
+        <AppHeader btnText="Create Event" />
         <GridEvents EventsArray={eventsArray} />
       </Content>
     </main>
@@ -20,7 +28,7 @@ function OrganizerEvents(props) {
 }
 const mapStateToProps = (state) => {
   return {
-    events: state.data,
+    organizations: state.data,
   };
 };
 

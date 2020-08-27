@@ -1,13 +1,14 @@
 import React from "react";
-
-import { AppHeader } from "../components/molecules";
+import { connect } from "react-redux";
+import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SidebarMenu, SectionTitle } from "../components/organisms";
 import { Content, GridOrganizations } from "../components/templates";
 
-export function AdminOrganizations() {
+function AdminOrganizations(props) {
+  const { organizations } = props;
   return (
     <main className="app-layout">
-      <SidebarMenu />
+      <SidebarMenu pagename="adminDash" />
       <Content>
         <AppHeader btnText="New Organization" />
         <SectionTitle
@@ -17,8 +18,16 @@ export function AdminOrganizations() {
           btnType="primary"
           btnColor="light"
         />
-        <GridOrganizations />
+        <GridOrganizations organizationArray={organizations || []} />
       </Content>
     </main>
   );
 }
+
+const mapStateToProps = (state) => {
+  return {
+    organizations: state.data,
+  };
+};
+
+export default connect(mapStateToProps, null)(AdminOrganizations);

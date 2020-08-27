@@ -3,13 +3,22 @@ const reducer = (state, action) => {
     case "LOGIN_REQUEST":
       return {
         ...state,
-        user: action.payload,
+        user: { ...state.user, type_user: action.payload },
       };
     case "REGISTER_REQUEST":
       return {
         ...state,
-        user: [...state, action.payload],
+        user: { email: action.payload },
       };
+    case "LOGOUT_REQUEST":
+      return {};
+    case "GO_EVENT":
+      return {
+        ...state,
+        currentEvent: { ...state.currentEvent, payload },
+      };
+    case "GET_EVENTS":
+      return state;
 
     default:
       return state;

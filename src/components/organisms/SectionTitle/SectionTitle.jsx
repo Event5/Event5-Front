@@ -15,7 +15,7 @@ export function SectionTitle({
         <h1>{title}</h1>
         <p>{description}</p>
       </div>
-      <Button text={btnText} type={btnType} color={btnColor} />
+      {/* <Button text={btnText} type={btnType} color={btnColor} /> */}
     </div>
   );
 }

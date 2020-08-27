@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 //text of button
 //type "primary" or "secondary"
-//color for primary "first", "second", "light"  (secondary color it doesn´t write)
+//color for primary "first", "second", "light", "no-color"  (secondary color it doesn´t write)
 export function Button({ text, type, color, linkTo, onClick }) {
   let background;
   let typeOfButton;
@@ -20,6 +20,9 @@ export function Button({ text, type, color, linkTo, onClick }) {
       break;
     case "light":
       background = "-Light";
+      break;
+    case "no-color":
+      background = "-Transparent";
       break;
     default:
       background = "";
