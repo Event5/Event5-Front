@@ -7,6 +7,7 @@ import deleteCookie from "../../../utils/deleteCookie";
 import { Button } from "../../atoms";
 
 function AppHeader(props, { btnText }) {
+  console.log(props);
   const history = useHistory();
 
   function handleLogout() {
@@ -15,7 +16,7 @@ function AppHeader(props, { btnText }) {
     history.push("/");
   }
 
-  if (btnText != null) {
+  if (props.btnText != null) {
     return (
       <div className="app-header">
         <Button
@@ -24,7 +25,7 @@ function AppHeader(props, { btnText }) {
           color="no-color"
           onClick={handleLogout}
         />
-        <Button text={btnText} type="secondary" color="second" />
+        <Button text={props.btnText} type="primary" color="second" />
       </div>
     );
   } else {

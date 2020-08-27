@@ -18,7 +18,7 @@ export function OrganizationCard({ orgName, orgEventsArray }) {
           />
         );
       })}
-      <Button text="View All Events" type="primary" color="second" />
+      <Button text="New Event" type="primary" color="second" />
     </section>
   );
 }
