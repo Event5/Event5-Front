@@ -4,13 +4,22 @@ import { Link } from "react-router-dom";
 import { Button } from "../../atoms";
 
 export function AppHeader({ btnText }) {
-  return (
-    <div className="app-header">
-      <Link to="/">
-        <span className="app-header__logout">Logout</span>
-      </Link>
-
-      <Button text={btnText} type="secondary" color="second" />
-    </div>
-  );
+  if (btnText != null) {
+    return (
+      <div className="app-header">
+        <Link to="/">
+          <span className="app-header__logout">Logout</span>
+        </Link>
+        <Button text={btnText} type="secondary" color="second" />
+      </div>
+    );
+  } else {
+    return (
+      <div className="app-header">
+        <Link to="/">
+          <span className="app-header__logout">Logout</span>
+        </Link>
+      </div>
+    );
+  }
 }
