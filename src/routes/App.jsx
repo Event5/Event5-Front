@@ -32,7 +32,13 @@ const App = () => {
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/signup" component={SignUpPage} />
         <Route exact path="/about" component={About} />
+        <Route component={NotFoundPage} />
         {/* App */}
+        {/* dashboard */}
+        <Route exact path="/events" component={OrganizerEvents} />
+        <Route exact path="//organizations" component={AdminOrganizations} />
+        {/* it needs Admin-Events dashboard, it's like organizer   */}
+        EV
         <Route
           exact
           path="/organizer-edit-event"
@@ -48,12 +54,6 @@ const App = () => {
           path="/create-event-agenda"
           component={CreateEventAgenda}
         />
-        <Route exact path="/organizer-events" component={OrganizerEvents} />
-        <Route
-          exact
-          path="/admin-organizations"
-          component={AdminOrganizations}
-        />
         <Route exact path="/admin-basic" component={AdminBasicInfo} />
         {/* Pagina de prueba de componentes, borrar. */}
         <Route exact path="/hcomponents" component={HComponents} />
@@ -61,7 +61,6 @@ const App = () => {
         <Route exact path="/Djkde" component={SComponents} />
         {/* Templates */}
         <Route exact path="/template-two" component={TemplateTwo} />
-        <Route component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
   );

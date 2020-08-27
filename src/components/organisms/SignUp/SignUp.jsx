@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { registerUser } from "../../../actions";
 import { Button, Input } from "../../atoms";
 
+import registerValidation from ".././../../utils/registerValidation";
+
 function SignUp(props) {
+  const history = useHistory();
+  if (props.user) {
+    history.push("./login");
+  }
+
   const [form, setValues] = useState({
     username: "",
     email: "",
@@ -21,7 +28,12 @@ function SignUp(props) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    props.registerUser(form, "/login");
+    const validation = registerValidation(form);
+    if (validation) {
+      alert(validation);
+    } else {
+      props.registerUser(form);
+    }
   };
 
   return (
@@ -74,7 +86,13 @@ function SignUp(props) {
   );
 }
 
+const mapStateToProps = (state) => {
+  return {
+    user: state.user,
+  };
+};
+
 const mapDispatchToProps = {
   registerUser,
 };
-export default connect(null, mapDispatchToProps)(SignUp);
+export default connect(mapStateToProps, mapDispatchToProps)(SignUp);
