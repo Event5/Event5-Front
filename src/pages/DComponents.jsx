@@ -1,26 +1,7 @@
 import React from "react";
 
-import img from "../assets/images/E5Logo-blue.svg";
-import { Button, Input } from "../components/atoms";
-import { ButtonList, InfoButtons } from "../components/molecules";
-import {
-  Header,
-  EventFooter,
-  Footer,
-  Login,
-  SignUp,
-  ConferenceCard,
-  SetupEvent,
-  SpeakerCard,
-  EventCard,
-  SidebarMenu,
-} from "../components/organisms";
+import { Waiting } from "../components/atoms";
 
-import { GridEvents } from "../components/templates";
 export function DComponents() {
-  return (
-    <>
-      <SidebarMenu pagename="ca" />
-    </>
-  );
+  return <Waiting />;
 }

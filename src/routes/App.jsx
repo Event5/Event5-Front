@@ -44,6 +44,7 @@ const App = () => {
         <Route exact path="/organizations" component={AdminOrganizations} />
 
         {/* EV */}
+        <Route exact path="/admin-basic" component={AdminBasicInfo} />
         <Route
           exact
           path="/organizer-edit-event"
@@ -70,15 +71,11 @@ const App = () => {
           path="/create-event-diffusion"
           component={CreateEventDiffusion}
         />
-        <Route exact path="/organizer-events" component={OrganizerEvents} />
         <Route exact path="/templates" component={TemplateFeed} />
-        <Route exact path="/admin-basic" component={AdminBasicInfo} />
-        {/* Pagina de prueba de componentes, borrar. */}
-        <Route exact path="/hcomponents" component={HComponents} />
-        <Route exact path="/den" component={DComponents} />
-        <Route exact path="/Djkde" component={SComponents} />
+
         {/* Templates */}
         <Route exact path="/template-two" component={TemplateTwo} />
+        <Route exact path="/den" component={DComponents} />
         <Route component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
@@ -86,3 +83,8 @@ const App = () => {
 };
 
 export default App;
+
+// {/* Pagina de prueba de componentes, borrar. */}
+// <Route exact path="/hcomponents" component={HComponents} />
+
+// <Route exact path="/Djkde" component={SComponents} />

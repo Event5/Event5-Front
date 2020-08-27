@@ -32,27 +32,34 @@ function SideBarMenuFilter(pagename) {
   const currentEvent = [
     {
       key: 1,
+      text: "Event",
+      link: "",
+      icon: "calendarNew",
+      component: "Item",
+    },
+    {
+      key: 2,
       text: "Setup Event",
       link: "",
       icon: "arrow",
       component: "ItemSmall",
     },
     {
-      key: 2,
+      key: 3,
       text: "Agenda",
       link: "",
       icon: "book",
       component: "ItemSmall",
     },
     {
-      key: 3,
+      key: 4,
       text: "Associates",
       link: "",
       icon: "organization",
       component: "ItemSmall",
     },
     {
-      key: 4,
+      key: 5,
       text: "Diffusion",
       link: "",
       icon: "envelope",
