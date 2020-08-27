@@ -46,10 +46,6 @@ export const loginUser = ({ email, password }) => {
       },
     })
       .then(({ data }) => {
-        document.cookie = `email=${data.user.email}`;
-        document.cookie = `name=${data.user.type_user}`;
-        document.cookie = `name=${data.user.name}`;
-        document.cookie = `id=${data.user.id}`;
         document.cookie = `token=${data.token}`;
         alert("Login Exitoso");
         dispatch(loginRequest(data.user.type_user));

@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import { AppHeader } from "../components/molecules";
+import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SidebarMenu } from "../components/organisms";
 import { Content, GridEvents } from "../components/templates";
 
