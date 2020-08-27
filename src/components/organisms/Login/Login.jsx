@@ -10,9 +10,9 @@ function Login(props) {
   if (props.user) {
     const user = props.user.type_user;
     if (user === "admin") {
-      history.push("./");
+      history.push("./organizations");
     } else if (user === "organizer") {
-      history.push("./login");
+      history.push("./events");
     } else {
       history.push("./login");
     }
@@ -57,7 +57,7 @@ function Login(props) {
       </form>
       <div className="LoginBox__ToRegister">
         <span>I don't have an account</span>
-        <Link to="/register">
+        <Link to="/signup">
           <span className="LoginBox__ToRegister-bold">Create One</span>
         </Link>
       </div>

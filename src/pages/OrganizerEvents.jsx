@@ -41,20 +41,19 @@ const events = [
 ];
 
 function OrganizerEvents(props) {
-  console.log(props);
   return (
     <main className="app-layout">
       <SidebarMenu />
       <Content>
         <AppHeader btnText="Create Event" />
-        <GridEvents EventsArray={props.events} />
+        <GridEvents EventsArray={props.events || []} />
       </Content>
     </main>
   );
 }
 const mapStateToProps = (state) => {
   return {
-    events: state.data[0].events,
+    events: state.events,
   };
 };
 
