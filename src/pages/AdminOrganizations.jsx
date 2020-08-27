@@ -7,7 +7,7 @@ import { Content, GridOrganizations } from "../components/templates";
 export function AdminOrganizations() {
   return (
     <main className="app-layout">
-      <SidebarMenu />
+      <SidebarMenu pagename="adminDash" />
       <Content>
         <AppHeader btnText="New Organization" />
         <SectionTitle

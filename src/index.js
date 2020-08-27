@@ -12,12 +12,12 @@ import "./assets/styles/Main.scss";
 const initialState = {
   user: {
     name: "den",
-    type_user: "den@gmail.com",
+    type_user: "admin",
   },
   data: [
     {
       organizationID: "1",
-      organizationName1: "First",
+      organizationName1: "Event5 developers",
       events: [
         {
           id: 1,
@@ -53,16 +53,16 @@ const initialState = {
     },
     {
       organizationID: "2",
-      organizationName2: "second",
+      organizationName2: "Platzi Master Cohort3",
       events: [
         {
           id: 3,
           name: "event 3",
           date: "30/11/2020",
           organization: "event team",
-          conferences: 20,
-          associates: 20,
-          public: 200,
+          conferences: 2,
+          associates: 1,
+          public: 2000,
           banner: "https//www.images.com/image",
           organizers: [
             { name: "nombre", urlAvatar: "https//" },
@@ -71,13 +71,13 @@ const initialState = {
           ],
         },
         {
-          id: 4,
+          id: 5,
           name: "event 4",
           date: "30/11/2020",
           organization: "event team",
-          conferences: 20,
-          associates: 20,
-          public: 200,
+          conferences: 2,
+          associates: 2,
+          public: 49,
           banner: "https//www.images.com/image",
           organizers: [
             { name: "nombre", urlAvatar: "https//" },
@@ -88,42 +88,80 @@ const initialState = {
       ],
     },
   ],
-  event:{
-    associates: [
-      { 
-          name:"name",
-          kind: "AAA", // "AA", "A" (clasification),
-          url: "https://",
-          logo_url: "https://",
+  currentEvent: {
+    basic: {
+      id: 5,
+      name: "sustentation",
+      url: "",
+      day: "",
+      template: 1,
+      organization: "Event5 developers",
+      logo: "",
+      background: "",
+      title: "Developing under pression",
+      description: "Story about our final project",
+      eventImg: "",
+      published: true,
+      conferences: 20,
+      associates: 20,
+      public: 200,
+    },
+    organizers: [
+      { name: "Jose Luis", eventId: "90" },
+      { name: "Sergio ", eventId: "91" },
+    ],
+    conferences: [
+      {
+        id: 50,
+        title: "React code",
+        description: "coding react fast and furious",
+        speaker: "Hector",
+        duration: "90 min",
       },
-      { 
-          name:"name2",
-          kind: "AA", // "AA", "A" (clasification),
-          url: "https://",
-          logo_url: "https://",
-      },
-      { 
-        name:"name3",
-        kind: "AAA", // "AA", "A" (clasification),
-        url: "https://",
-        logo_url: "https://",
-      },
-      { 
-        name:"name4",
-        kind: "A", // "AA", "A" (clasification),
-        url: "https://",
-        logo_url: "https://",
+      {
+        id: 50,
+        title: "Database SQL",
+        description: "microservices",
+        speaker: "Christian",
+        duration: "60 min",
       },
     ],
-  }
+    speakers: [
+      {
+        id: 200,
+        name: "Hector",
+        biography: "Worldwide Developer",
+        role: "Interface's expert",
+        twitter: "hector",
+        photoUrl: "",
+        scheduleId: "¿?",
+      },
+      {
+        id: 200,
+        name: "Cristian",
+        biography: "Worldwide Server's Developer",
+        role: "Database expert",
+        twitter: "Christian",
+        photoUrl: "",
+        scheduleId: "¿?",
+      },
+    ],
+    associates: [
+      {
+        id: 3,
+        name: "platzi",
+        logo: "",
+        relevant: true,
+      },
+    ],
+  },
 };
 
-const initialState2 = {};
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store = createStore(
   reducer,
-  initialState2,
+  initialState,
   composeEnhancer(applyMiddleware(thunk))
 );
 

@@ -10,6 +10,15 @@ const reducer = (state, action) => {
         ...state,
         user: { email: action.payload },
       };
+    case "REGISTER_LOGOUT":
+      return {};
+    case "GO_EVENT":
+      return {
+        ...state,
+        currentEvent: { ...state.currentEvent, payload },
+      };
+    case "GET_EVENTS":
+      return state;
 
     default:
       return state;
