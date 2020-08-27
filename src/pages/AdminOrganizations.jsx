@@ -18,7 +18,7 @@ function AdminOrganizations(props) {
           btnType="primary"
           btnColor="light"
         />
-        <GridOrganizations organizationArray={organizations} />
+        <GridOrganizations organizationArray={organizations || []} />
       </Content>
     </main>
   );

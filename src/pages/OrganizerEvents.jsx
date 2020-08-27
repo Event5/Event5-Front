@@ -6,19 +6,28 @@ import { SidebarMenu } from "../components/organisms";
 import { Content, GridEvents } from "../components/templates";
 
 function OrganizerEvents(props) {
+  const { user } = props;
+  let eventsArray;
+  if (user === "organizer") {
+    eventsArray = props.events;
+  } else {
+    eventsArray = [];
+  }
+
   return (
     <main className="app-layout">
       <SidebarMenu pagename="organizerDash" />
       <Content>
         <AppHeader btnText="Create Event" />
-        <GridEvents EventsArray={props.events || []} />
+        <GridEvents EventsArray={eventsArray} />
       </Content>
     </main>
   );
 }
 const mapStateToProps = (state) => {
   return {
-    events: state.events,
+    events: state.data,
+    user: state.user.type_user,
   };
 };
 
