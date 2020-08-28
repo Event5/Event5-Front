@@ -1,0 +1,10 @@
+.Countdown{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    & h6, p{
+
+        font-weight: bold;
+        font-size: 65px;
+    }
+}
