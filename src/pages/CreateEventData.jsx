@@ -1,12 +1,12 @@
 import React from "react";
 
 import { SidebarMenu } from "../components/organisms";
-import { Content } from "../components/templates/Content";
+import { Content } from "../components/templates";
 
 export function CreateEventData() {
   return (
     <main className="app-layout">
-      <SidebarMenu />
+      <SidebarMenu pagename="eventPages" />
       <Content></Content>
     </main>
   );

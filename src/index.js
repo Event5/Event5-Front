@@ -9,6 +9,10 @@ import App from "./routes/App";
 const appContainer = document.getElementById("EventApp");
 import "./assets/styles/Main.scss";
 
+document.addEventListener("click", function (event) {
+  console.log(event.target);
+});
+
 const initialState = {
   user: {
     name: "den",

@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import {
@@ -8,7 +9,8 @@ import {
 } from "../components/organisms";
 import { Content } from "../components/templates/Content";
 
-export function AdminBasicInfo() {
+function AdminBasicInfo(props) {
+  console.log(props);
   return (
     <main className="app-layout">
       <SidebarMenu pagename="eventPages" />
@@ -23,3 +25,10 @@ export function AdminBasicInfo() {
     </main>
   );
 }
+const mapStateToProps = (state) => {
+  return {
+    event: state.currentEvent,
+  };
+};
+
+export default connect(mapStateToProps, null)(AdminBasicInfo);

@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 
-import { Waiting } from "../components/atoms";
+// import { Waiting } from "../components/atoms";
 
-export function DComponents() {
-  return <Waiting />;
-}
+// export function DComponents() {
+//   return <Waiting />;
+// }

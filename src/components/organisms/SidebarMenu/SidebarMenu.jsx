@@ -1,9 +1,8 @@
 import React from "react";
 
 import logo from "../../../assets/images/E5Logo-blue-small.svg";
-import { MenuItem } from "../../molecules/MenuItem";
-import { MenuItemSmall } from "../../molecules/MenuItemSmall";
-import { Github } from "../../molecules/Github";
+import { IconButton } from "../../atoms";
+import { MenuItem, MenuItemSmall, Github } from "../../molecules";
 import SideBarMenuFilter from "./SideBarMenuFilter";
 
 export function SidebarMenu({ pagename }) {
@@ -37,6 +36,7 @@ export function SidebarMenu({ pagename }) {
           }
         })}
       </div>
+      <IconButton text="sd" type="primary" color="first" />
       <Github />
     </aside>
   );

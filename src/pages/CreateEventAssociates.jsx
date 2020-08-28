@@ -1,32 +1,30 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import { AppHeader, SaveNext } from "../components/molecules";
-import {
-  SidebarMenu,
-  SectionTitle,
-} from "../components/organisms";
-import { Content } from "../components/templates/Content";
-import {GridAssociates} from "../components/templates/GridAssociates"
+import AppHeader from "../components/molecules/AppHeader/AppHeader";
+import { SaveNext } from "../components/molecules";
+import { SidebarMenu, SectionTitle } from "../components/organisms";
+import { Content, GridAssociates } from "../components/templates";
+
 const associates = [
-    { 
-        name:"name",
-        kind: "AAA", // "AA", "A" (clasification),
-        url: "https://",
-        logo_url: "https://",
-    },
-    { 
-        name:"name2",
-        kind: "AA", // "AA", "A" (clasification),
-        url: "https://",
-        logo_url: "https://",
-    },
+  {
+    name: "name",
+    kind: "AAA", // "AA", "A" (clasification),
+    url: "https://",
+    logo_url: "https://",
+  },
+  {
+    name: "name2",
+    kind: "AA", // "AA", "A" (clasification),
+    url: "https://",
+    logo_url: "https://",
+  },
 ];
 export function CreateEventAssociates(props) {
-    console.log(props);
+  console.log(props);
   return (
     <main className="app-layout">
-      <SidebarMenu />
+      <SidebarMenu pagename="eventPages" />
       <Content>
         <AppHeader btnText="New Event" />
         <SectionTitle
@@ -43,9 +41,9 @@ export function CreateEventAssociates(props) {
   );
 }
 const mapStateToProps = (state) => {
-    return {
-      associates: state.event.associates,
-    };
+  return {
+    associates: state.currentEvent.associates,
   };
-  
+};
+
 export default connect(mapStateToProps, null)(CreateEventAssociates);

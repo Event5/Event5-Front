@@ -1,12 +1,12 @@
 import React from "react";
 
-import { AppHeader } from "../components/molecules";
+import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import {
   SidebarMenu,
   SetupEvent,
   TemplatesContainer,
 } from "../components/organisms";
-import { Content } from "../components/templates/Content";
+import { Content } from "../components/templates";
 
 export function OrganizerEditEvent() {
   return (
