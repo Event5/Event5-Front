@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 //text of button
 //type "primary" or "secondary"
 //color for primary "first", "second", "light", "no-color"  (secondary color it doesn´t write)
-export function Button({ text, type, color, linkTo, onClick }) {
+export function Button({ text, type, color, linkTo, onClick, id }) {
   let background;
   let typeOfButton;
   if (type === "secondary") {
@@ -40,6 +40,7 @@ export function Button({ text, type, color, linkTo, onClick }) {
       <button
         className={`Button ${typeOfButton}${background}`}
         onClick={onClick}
+        id={id}
       >
         {text}
       </button>

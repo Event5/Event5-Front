@@ -22,6 +22,11 @@ const reducer = (state, action) => {
           basic: action.payload,
         },
       };
+    case "NEWEVENT_REQUEST":
+      return {
+        ...state,
+        currentEvent: { basic: { organization: action.payload } },
+      };
     default:
       return state;
   }

@@ -10,6 +10,7 @@ export function GridOrganizations({ organizationArray }) {
           <OrganizationCard
             key={organization.organizationID}
             orgName={organization.organizationName}
+            orgId={organization.organizationID}
             orgEventsArray={organization.events}
           />
         );

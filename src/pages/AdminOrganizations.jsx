@@ -1,10 +1,27 @@
 import React from "react";
 import { connect } from "react-redux";
+import { useHistory } from "react-router-dom";
+import { newEvent } from "../actions";
 import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SidebarMenu, SectionTitle } from "../components/organisms";
 import { Content, GridOrganizations } from "../components/templates";
 
 function AdminOrganizations(props) {
+  const history = useHistory();
+
+  document.addEventListener("click", (event) => {
+    const buttonname = event.target.id;
+    const numberId = buttonname.slice(1, 100) * 1;
+    const category = buttonname.slice(0, 1);
+    console.log(numberId);
+    if (category == "e") {
+      //to see event
+    } else if (category == "o") {
+      props.newEvent(numberId);
+      history.push("/event");
+    }
+  });
+
   const { organizations } = props;
   return (
     <main className="app-layout">
@@ -30,4 +47,8 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, null)(AdminOrganizations);
+const mapDispatchToProps = {
+  newEvent,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(AdminOrganizations);

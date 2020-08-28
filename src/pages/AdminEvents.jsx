@@ -20,7 +20,7 @@ function OrganizerEvents(props) {
     <main className="app-layout">
       <SidebarMenu pagename="adminDash" />
       <Content>
-        <AppHeader btnText="Create Event" />
+        <AppHeader btnText="New Event" />
         <GridEvents EventsArray={eventsArray} />
       </Content>
     </main>
