@@ -23,7 +23,7 @@ const associates = [
 export function CreateEventAssociates(props) {
   console.log(props);
   return (
-    <main className="app-layout">
+    <main className="AppLayout">
       <SidebarMenu pagename="eventPages" />
       <Content>
         <AppHeader btnText="New Event" />

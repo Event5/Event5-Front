@@ -10,7 +10,7 @@ import { Content } from "../components/templates";
 
 export function OrganizerEditEvent() {
   return (
-    <main className="app-layout">
+    <main className="AppLayout">
       <SidebarMenu />
       <Content>
         {/* <AppHeader btnText="New Organization" /> */}

@@ -4,5 +4,9 @@
   padding: 40px 56px;
   padding-right: 10%;
   min-height: 100vh;
-  background-color: $first-light;
+  background-color: $first;
+  @include desktop {
+    padding: 24px 32px;
+    padding-right: 5%;
+  }
 }

@@ -30,3 +30,4 @@ export * from "./ModalOrganization";
 export * from "./ModalSession";
 export * from "./ModalEventOrganizers";
 export * from "./SetupEvent";
+export * from "./Modal";

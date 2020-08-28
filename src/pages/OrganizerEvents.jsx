@@ -9,7 +9,7 @@ function OrganizerEvents(props) {
   let eventsArray = props.events || [];
 
   return (
-    <main className="app-layout">
+    <main className="AppLayout">
       <SidebarMenu pagename="organizerDash" />
       <Content>
         <AppHeader />

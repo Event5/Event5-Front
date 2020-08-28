@@ -5,7 +5,7 @@ import { TemplateTwo } from "../templates/TemplateTwo";
 
 export function CreateEventData() {
   return (
-    <main className="app-layout-template">
+    <main className="AppLayout-template">
       <SidebarMenuSmall pagename="eventPages" />
       <TemplateTwo />
       <ModalEventInfo />

@@ -53,7 +53,7 @@ function AdminBasicInfo(props) {
   };
 
   return (
-    <main className="app-layout">
+    <main className="AppLayout">
       <SidebarMenu pagename="eventPages" />
       <Content>
         <AppHeader btnText="New Organization" />
