@@ -21,3 +21,6 @@ export * from "./HomeHero";
 export * from "./CallToAction";
 export * from "./TemplatesContainer";
 export * from "./ModalEventInfo";
+export * from "./ModalOrganization";
+export * from "./ModalSession";
+export * from "./ModalEventOrganizers";

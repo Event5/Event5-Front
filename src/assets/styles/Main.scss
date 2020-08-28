@@ -34,7 +34,6 @@
 @import "../../components/molecules/SubtitleText/SubtitleText.scss";
 @import "../../components/molecules/NoData/NoData.scss";
 
-
 //organisms
 @import "../../components/organisms/Header/Header.scss";
 @import "../../components/organisms/Login/Login.scss";
@@ -62,8 +61,10 @@
 @import "../../components/organisms/ModalSession/ModalSession.scss";
 @import "../../components/organisms/ModalEmail/ModalEmail.scss";
 @import "../../components/organisms/ModalAssociate/ModalAssociate.scss";
+@import "../../components/organisms/ModalOrganization/ModalOrganization.scss";
 @import "../../components/organisms/ModalEventInfo/ModalEventInfo.scss";
 @import "../../components/organisms/TemplatesContainer/TemplatesContainer.scss";
+@import "../../components/organisms/ModalEventOrganizers/ModalEventOrganizers.scss";
 
 //templates
 @import "../../components/templates/UserAccess/UserAccess.scss";
