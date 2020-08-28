@@ -8,8 +8,15 @@
   background-color: $light;
   h5 {
     margin: 8px 0 0 0;
+    color: $first;
   }
   p {
     margin-bottom: 16px;
+  }
+  button{
+    border: none;
+    color: $first;
+    cursor: pointer;
+    font-weight: 600;
   }
 }

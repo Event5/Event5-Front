@@ -1,8 +1,12 @@
 .SpeakerCard {
+  margin: 16px 0;
+  padding: 16px;
   display: grid;
   grid-template-columns: 25% 75%;
   grid-template-rows: 100%;
   grid-column-gap: 8px;
+  border-radius: 16px;
+  background-color: $light;
   @include tablet {
     grid-template-columns: 100%;
     grid-template-rows: 30% 70%;

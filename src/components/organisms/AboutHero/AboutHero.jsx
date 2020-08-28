@@ -1,6 +1,6 @@
 import React from "react";
 
-import develop from "../../../assets/images/develop.png";
+import develop from "../../../assets/images/develop.svg";
 
 export function AboutHero() {
   return (

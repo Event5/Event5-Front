@@ -1,17 +1,22 @@
-.ImageText{
-    width: 328px;
-    height: 260px;
-    & span{
-        background-color: $light;
-        border-radius: 16px;
-        overflow: hidden;
-        & img{
-            width: 328px;
-            height: 233px;
-            object-fit: cover;
-        }
+.ImageText {
+  width: 328px;
+  height: 260px;
+  & span {
+    background-color: transparent;
+    overflow: hidden;
+    & img {
+      border-radius: 16px;
+      width: 328px;
+      height: 233px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
-    & a{
-        color: $first-dark;
-    }
+  }
+  & a {
+    color: $first-dark;
+  }
 }

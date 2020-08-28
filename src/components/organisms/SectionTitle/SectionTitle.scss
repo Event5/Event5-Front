@@ -4,9 +4,11 @@
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    margin: 32px auto;
+    margin: 32px 5%;
   }
   &__info {
+    padding-right: 40px;
+    min-width: 70%;
     h1 {
       color: $light;
     }

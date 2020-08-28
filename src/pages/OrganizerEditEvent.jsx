@@ -1,18 +1,24 @@
 import React from "react";
 
-import { SidebarMenu } from "../components/organisms/SidebarMenu";
-import { Content } from "../components/templates/Content";
-import { SetupEvent } from "../components/organisms/SetupEvent";
+import AppHeader from "../components/molecules/AppHeader/AppHeader";
+import {
+  SidebarMenu,
+  SetupEvent,
+  TemplatesContainer,
+} from "../components/organisms";
+import { Content } from "../components/templates";
 
 export function OrganizerEditEvent() {
   return (
     <main className="app-layout">
       <SidebarMenu />
       <Content>
+        {/* <AppHeader btnText="New Organization" /> */}
         <SetupEvent
           title="Setup Event"
           description="Descripción del componente."
         />
+        <TemplatesContainer />
       </Content>
     </main>
   );

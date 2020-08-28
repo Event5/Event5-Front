@@ -1,0 +1,21 @@
+.templates {
+  &-container {
+    margin-top: 40px;
+    h2 {
+      color: $light;
+    }
+    p{
+      color: $first-dark;
+      margin-bottom: 24px;
+    }
+  }
+  &-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    @include phone-and-tablet {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+  }
+}

@@ -1,5 +1,7 @@
 .event-card {
+  margin: 0 auto;
   padding: 24px;
+  width: 40%;
   border-radius: 16px;
   background-color: $light;
   h3 {
@@ -13,7 +15,19 @@
       color: $first;
     }
   }
+  &__data {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   &__numeralia {
+    margin: 24px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__footer {
     display: flex;
     flex-direction: row;
   }

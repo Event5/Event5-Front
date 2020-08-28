@@ -1,7 +1,6 @@
 import React from "react";
 
-import { SponsorFirst } from "../../atoms/SponsorFirst";
-import { SponsorSecond } from "../../atoms/SponsorSecond";
+import { SponsorFirst, SponsorSecond } from "../../atoms";
 
 export function Sponsors() {
   return (

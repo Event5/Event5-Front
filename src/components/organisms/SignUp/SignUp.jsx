@@ -1,23 +1,17 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
+import { connect } from "react-redux";
+import { Link, useHistory } from "react-router-dom";
+import { registerUser } from "../../../actions";
 import { Button, Input } from "../../atoms";
 
-const req = (info) => {
-  const URL = "https://event5.azurewebsites.net/api/auth/sign-up";
-  return fetch(URL, {
-    method: "POST",
-    body: JSON.stringify(info),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  })
-    .then((data) => console.log(data.json()))
-    .catch((error) => console.error("Error:", error));
-  // .then((resp) => console.log("Success", resp));
-};
+import registerValidation from ".././../../utils/registerValidation";
 
-export function SignUp() {
+function SignUp(props) {
+  const history = useHistory();
+  if (props.user) {
+    history.push("./login");
+  }
+
   const [form, setValues] = useState({
     username: "",
     email: "",
@@ -34,8 +28,12 @@ export function SignUp() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // console.log(form);
-    req(form);
+    const validation = registerValidation(form);
+    if (validation) {
+      alert(validation);
+    } else {
+      props.registerUser(form);
+    }
   };
 
   return (
@@ -87,3 +85,14 @@ export function SignUp() {
     </div>
   );
 }
+
+const mapStateToProps = (state) => {
+  return {
+    user: state.user,
+  };
+};
+
+const mapDispatchToProps = {
+  registerUser,
+};
+export default connect(mapStateToProps, mapDispatchToProps)(SignUp);

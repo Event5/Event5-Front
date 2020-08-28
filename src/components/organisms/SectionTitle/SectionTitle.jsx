@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button } from "../../atoms/Button";
+import { Button } from "../../atoms";
 
 export function SectionTitle({
   title,
@@ -15,7 +15,7 @@ export function SectionTitle({
         <h1>{title}</h1>
         <p>{description}</p>
       </div>
-      <Button text={btnText} type={btnType} color={btnColor} />
+      {/* <Button text={btnText} type={btnType} color={btnColor} /> */}
     </div>
   );
 }

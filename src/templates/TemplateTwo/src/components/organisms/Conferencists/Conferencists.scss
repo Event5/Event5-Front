@@ -1,5 +1,6 @@
 .conferencists {
-  width: 80%;
+  min-width: 80%;
+  width: 100%;
   margin: 80px auto;
   h2 {
     color: $second;
@@ -7,6 +8,8 @@
     margin-bottom: 24px;
   }
   &__container {
+    width: 70%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     @include phone-and-tablet {

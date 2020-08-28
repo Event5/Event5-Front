@@ -2,7 +2,7 @@ import React from "react";
 
 import { Icon } from "../../atoms/Icons/Icon";
 
-export function OrganizerCard({ photo, name, email }) {
+export function OrganizerCard({ name, email }) {
   return (
     <div className="organizer-card__container">
       <div className="organizer-card__info">

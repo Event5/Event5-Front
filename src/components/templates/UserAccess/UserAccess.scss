@@ -5,22 +5,10 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas: "banner log";
-  @include tablet {
+  @include both-phones {
     grid-template-columns: 1fr;
     grid-row-gap: 32px;
     grid-template-rows: 50% 50%;
-    grid-template-areas: "log" "banner";
-  }
-  @include phone {
-    grid-template-columns: 1fr;
-    grid-template-rows: 50% 50%;
-    grid-row-gap: 32px;
-    grid-template-areas: "log" "banner";
-  }
-  @include phone-small {
-    grid-template-columns: 1fr;
-    grid-template-rows: 50% 50%;
-    grid-row-gap: 32px;
     grid-template-areas: "log" "banner";
   }
   &__Img {
@@ -39,5 +27,13 @@
     height: 100%;
     align-self: center;
     grid-area: log;
+  }
+  &__Background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
   }
 }

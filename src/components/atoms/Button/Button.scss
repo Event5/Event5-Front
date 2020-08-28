@@ -14,8 +14,8 @@
       background-color: $first;
       color: $light;
       &:hover {
-        background-color: $first-lightest;
-        color: $first-dark;
+        background-color: $first-dark;
+        color: $first-lightest;
       }
     }
     &-Second {
@@ -31,6 +31,14 @@
       color: $first;
       &:hover {
         background-color: $first-dark;
+        color: $light;
+      }
+    }
+    &-Transparent {
+      background-color: transparent;
+      color: $dark;
+      &:hover {
+        background-color: $second-light;
         color: $light;
       }
     }
