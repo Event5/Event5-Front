@@ -9,9 +9,9 @@ export function SidebarMenu({ pagename }) {
   // SideBar select the buttons to show in sidebar -options: "adminDash", "organizerDash", "eventPages"
   const buttons = SideBarMenuFilter(pagename);
   return (
-    <aside className="dashboard-menu">
+    <aside className="DashboardMenu">
       <img src={logo} alt="Event5's Logo" />
-      <div>
+      <nav>
         {buttons.map((item) => {
           if (item.component === "Item") {
             return (
@@ -35,7 +35,7 @@ export function SidebarMenu({ pagename }) {
             );
           }
         })}
-      </div>
+      </nav>
       <IconButton text="sd" type="primary" color="first" />
       <Github />
     </aside>

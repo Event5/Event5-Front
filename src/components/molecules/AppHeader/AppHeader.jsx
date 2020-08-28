@@ -18,7 +18,7 @@ function AppHeader(props, { btnText }) {
 
   if (props.btnText != null) {
     return (
-      <div className="app-header">
+      <div className="AppHeader">
         <Button
           text="Log Out"
           type="primary"
@@ -30,7 +30,7 @@ function AppHeader(props, { btnText }) {
     );
   } else {
     return (
-      <div className="app-header">
+      <div className="AppHeader">
         <Button
           text="Log Out"
           type="primary"

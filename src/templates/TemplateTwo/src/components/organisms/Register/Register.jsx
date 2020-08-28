@@ -2,7 +2,7 @@ import React from "react";
 
 export function Register() {
   return (
-    <div className="register">
+    <div className="Register">
       <h2>Register</h2>
       <form>
         <input type="email" name="email" placeholder="Email" />

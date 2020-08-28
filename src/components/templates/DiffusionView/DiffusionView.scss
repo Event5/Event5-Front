@@ -1,5 +1,5 @@
-.diffusion {
-  &__info {
+.Diffusion {
+  &__Info {
     margin: 16px;
     padding: 24px;
     display: flex;
@@ -8,7 +8,7 @@
     border-radius: 16px;
     background-color: $light;
   }
-  &__container {
+  &__Container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     img {

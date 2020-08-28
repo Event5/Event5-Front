@@ -15,7 +15,7 @@ import { EventFooter } from "../../components/organisms";
 
 export function TemplateTwo() {
   return (
-    <main className="template-two-body">
+    <main className="TemplateTwo__Body">
       <Header />
       <Hero />
       <Information />

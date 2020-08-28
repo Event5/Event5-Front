@@ -5,8 +5,8 @@ import Diffusion from "../../../assets/images/diffusion-view.svg";
 
 export function DiffusionView() {
   return (
-    <section className="diffusion__container">
-      <div className="diffusion__info">
+    <section className="Diffusion__Container">
+      <div className="Diffusion__Info">
         <TitleIntro
           title="Diffusion: Event Name"
           description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."

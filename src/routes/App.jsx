@@ -49,6 +49,7 @@ const App = () => {
           component={CreateEventAssociates}
         />
         <Route exact path="/event-diffusion" component={CreateEventDiffusion} />
+        <Route exact path="/template-two" component={TemplateTwo} />
         <Route component={NotFoundPage} />
       </Switch>
     </BrowserRouter>

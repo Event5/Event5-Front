@@ -2,7 +2,7 @@ import React from "react";
 
 export function AssociateCard({ logo, name, url }) {
   return (
-    <div className="associate-card">
+    <div className="AssociateCard">
       <img src={logo} alt="Associate Logo" />
       <h5>{name}</h5>
       <p>{url}</p>

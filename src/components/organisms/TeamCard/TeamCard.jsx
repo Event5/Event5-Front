@@ -4,7 +4,7 @@ import { Icon } from "../../atoms/Icons/Icon";
 
 export function TeamCard({ image, name, role, github, twitter }) {
   return (
-    <div className="team-card">
+    <div className="TeamCard">
       <img src={image} alt="Engeneer" />
       <h4>{name}</h4>
       <p>{role}</p>

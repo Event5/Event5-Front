@@ -6,8 +6,8 @@
       color the parent node. 
   */
 }
-.svg-icon_twitter{
-  fill:$first;
+.svg-icon_twitter {
+  fill: $first;
   height: 1.4em;
 }
 
@@ -21,7 +21,7 @@
 
 .svg-icon-close {
   height: 1.5em;
-  fill: #ee4266;
+  fill: $error;
   margin: auto auto;
 }
 

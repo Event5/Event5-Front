@@ -4,8 +4,8 @@ import { IconName } from "../../molecules/IconName";
 
 export function Links() {
   return (
-    <section className="about-page__link">
-      <div className="about-page__link__container">
+    <section className="About__Links">
+      <div className="About__Links__Container">
         <h2>Links</h2>
         <IconName
           icon="github"

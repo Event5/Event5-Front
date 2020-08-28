@@ -10,8 +10,8 @@ export function SectionTitle({
   btnColor,
 }) {
   return (
-    <div className="section-title__container">
-      <div className="section-title__info">
+    <div className="SectionTitle__Container">
+      <div className="SectionTitle__Info">
         <h1>{title}</h1>
         <p>{description}</p>
       </div>

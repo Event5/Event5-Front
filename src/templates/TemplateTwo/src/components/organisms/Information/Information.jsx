@@ -5,12 +5,12 @@ import { Countdown } from "../../molecules";
 
 export function Information() {
   return (
-    <main className="information">
+    <main className="Information">
       <img src="" alt="Event Info" />
-      <div className="information__container">
+      <div className="Information__Container">
         <Countdown />
-        <h2 className="h2-template">Live the Event Info</h2>
-        <p className="p-template">
+        <h2 className="Template__H2">Live the Event Info</h2>
+        <p className="Template__P">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

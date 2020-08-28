@@ -5,9 +5,9 @@ import { Icon } from "../../atoms/Icons/Icon";
 
 export function SidebarMenuSmall() {
   return (
-    <div className="sidebar-menu-small__container">
+    <div className="SidebarMenuSmall">
       <img src={eventIcon} alt="" />
-      <div className="sidebar-menu-small__menu">
+      <nav className="SidebarMenuSmall__Menu">
         <Icon svg="building" classes="svg-icon__menu" title="building" />
         <Icon svg="calendar" classes="svg-icon__menu" title="calendar" />
         <Icon svg="calendarNew" classes="svg-icon__menu" title="calendarNew" />
@@ -20,7 +20,7 @@ export function SidebarMenuSmall() {
           title="organization"
         />
         <Icon svg="envelope" classes="svg-icon__menu" title="envelope" />
-      </div>
+      </nav>
     </div>
   );
 }

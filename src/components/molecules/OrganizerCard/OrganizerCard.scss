@@ -1,5 +1,5 @@
-.organizer-card {
-  &__container {
+.OrganizerCard {
+  &__Container {
     margin: 16px auto;
     padding: 16px;
     display: grid;
@@ -8,7 +8,7 @@
     border-radius: 8px;
     background-color: $third-lightest;
   }
-  &__info {
+  &__Info {
     strong {
       color: $first;
     }
