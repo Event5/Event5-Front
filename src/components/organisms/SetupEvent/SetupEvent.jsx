@@ -27,7 +27,7 @@ export function SetupEvent({ title, description, inputAction, intialState }) {
           <Input
             onChange={inputAction}
             name="day"
-            type="text"
+            type="date"
             placeholder="Event StartDate"
             value={intialState.day}
           />

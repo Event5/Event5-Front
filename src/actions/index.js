@@ -20,6 +20,11 @@ export const saveEvent = (payload) => ({
   payload,
 });
 
+export const newEvent = (payload) => ({
+  type: "NEWEVENT_REQUEST",
+  payload,
+});
+
 export const setError = (payload) => ({
   type: "SET_ERROR",
   payload,
