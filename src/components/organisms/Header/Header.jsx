@@ -37,7 +37,7 @@ export function Header({ buttons, background }) {
     [
       {
         key: 4,
-        text: "Sing Up",
+        text: "Sign Up",
         type: "primary",
         color: "second",
         linkTo: "/signup",

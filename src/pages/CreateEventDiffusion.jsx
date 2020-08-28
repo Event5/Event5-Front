@@ -6,7 +6,7 @@ import { Content, DiffusionView } from "../components/templates";
 export function CreateEventDiffusion() {
   return (
     <main className="app-layout">
-      <SidebarMenu />
+      <SidebarMenu pagename="eventPages" />
       <Content>
         <DiffusionView />
       </Content>

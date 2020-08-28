@@ -1,10 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import { AppHeader, SaveNext } from "../components/molecules";
+import AppHeader from "../components/molecules/AppHeader/AppHeader";
+import { SaveNext } from "../components/molecules";
 import { SidebarMenu, SectionTitle } from "../components/organisms";
-import { Content } from "../components/templates/Content";
-import { GridAssociates } from "../components/templates/GridAssociates";
+import { Content, GridAssociates } from "../components/templates";
+
 const associates = [
   {
     name: "name",
@@ -23,9 +24,9 @@ export function CreateEventAssociates(props) {
   console.log(props);
   return (
     <main className="app-layout">
-      <SidebarMenu />
+      <SidebarMenu pagename="eventPages" />
       <Content>
-        {/* <AppHeader btnText="New Event" /> */}
+        <AppHeader btnText="New Event" />
         <SectionTitle
           title="Associates: Event Name"
           description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
@@ -41,7 +42,7 @@ export function CreateEventAssociates(props) {
 }
 const mapStateToProps = (state) => {
   return {
-    associates: state.event.associates,
+    associates: state.currentEvent.associates,
   };
 };
 

@@ -1,6 +1,8 @@
 import React from "react";
+import { connect } from "react-redux";
 
-import { AppHeader, NoData } from "../components/molecules";
+import AppHeader from "../components/molecules/AppHeader/AppHeader";
+import { NoData } from "../components/molecules";
 import {
   SidebarMenu,
   SetupEvent,
@@ -8,12 +10,13 @@ import {
 } from "../components/organisms";
 import { Content } from "../components/templates/Content";
 
-export function AdminBasicInfo() {
+function AdminBasicInfo(props) {
+  console.log(props);
   return (
     <main className="app-layout">
-      <SidebarMenu />
+      <SidebarMenu pagename="eventPages" />
       <Content>
-        {/* <AppHeader btnText="New Organization" /> */}
+        <AppHeader btnText="New Organization" />
         <SetupEvent
           title="Setup Event"
           description="Descripción del componente."
@@ -24,3 +27,10 @@ export function AdminBasicInfo() {
     </main>
   );
 }
+const mapStateToProps = (state) => {
+  return {
+    event: state.currentEvent,
+  };
+};
+
+export default connect(mapStateToProps, null)(AdminBasicInfo);

@@ -1,17 +1,18 @@
 import React from "react";
 
-import { AppHeader, SaveNext } from "../components/molecules";
+import AppHeader from "../components/molecules/AppHeader/AppHeader";
+import { SaveNext } from "../components/molecules";
 import {
   SidebarMenu,
   SectionTitle,
   ConferenceCard,
 } from "../components/organisms";
-import { Content } from "../components/templates/Content";
+import { Content } from "../components/templates";
 
 export function CreateEventAgenda() {
   return (
     <main className="app-layout">
-      <SidebarMenu />
+      <SidebarMenu pagename="eventPages" />
       <Content>
         {/* <AppHeader btnText="New Organization" /> */}
         <SectionTitle
