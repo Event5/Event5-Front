@@ -1,4 +1,5 @@
 const reducer = (state, action) => {
+  console.log(action);
   switch (action.type) {
     case "LOGIN_REQUEST":
       return {
@@ -12,14 +13,15 @@ const reducer = (state, action) => {
       };
     case "LOGOUT_REQUEST":
       return {};
-    case "GO_EVENT":
+
+    case "SAVEEVENT_REQUEST":
       return {
         ...state,
-        currentEvent: { ...state.currentEvent, payload },
+        currentEvent: {
+          ...state.currentEvent,
+          basic: action.payload,
+        },
       };
-    case "GET_EVENTS":
-      return state;
-
     default:
       return state;
   }

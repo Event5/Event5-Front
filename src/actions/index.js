@@ -15,6 +15,11 @@ export const logoutRequest = (payload) => ({
   payload,
 });
 
+export const saveEvent = (payload) => ({
+  type: "SAVEEVENT_REQUEST",
+  payload,
+});
+
 export const setError = (payload) => ({
   type: "SET_ERROR",
   payload,

@@ -40,7 +40,7 @@ const App = () => {
         <Route exact path="/events" component={OrganizerEvents} />
         <Route exact path="/adminevents" component={AdminEvents} />
         <Route exact path="/event" component={AdminBasicInfo} />
-        <Route exact path="/event-info" component={TemplateFeed} />
+        <Route exact path="/event-info" component={CreateEventData} />
         <Route exact path="/event-speakers" component={CreateEventSpeaker} />
         <Route exact path="/event-conferences" component={CreateEventAgenda} />
         <Route

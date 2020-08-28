@@ -9,10 +9,6 @@ import App from "./routes/App";
 const appContainer = document.getElementById("EventApp");
 import "./assets/styles/Main.scss";
 
-document.addEventListener("click", function (event) {
-  console.log(event.target);
-});
-
 const initialState = {
   user: {
     name: "den",
@@ -96,10 +92,12 @@ const initialState = {
     basic: {
       id: 5,
       name: "sustentation",
-      url: "",
-      day: "",
+      url: "/event5-developerssustentation",
+      day: "30/12/2020  13:30",
       template: 1,
-      organization: "Event5 developers",
+      organization: "Event5-developers",
+    },
+    info: {
       logo: "",
       background: "",
       title: "Developing under pression",
