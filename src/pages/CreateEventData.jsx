@@ -7,9 +7,7 @@ export function CreateEventData() {
   return (
     <main className="app-layout">
       <SidebarMenu pagename="eventPages" />
-      <Content>
-        <ModalEventInfo />
-      </Content>
+      <Content></Content>
     </main>
   );
 }
