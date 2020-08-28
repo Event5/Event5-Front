@@ -17,3 +17,4 @@ export * from "./ImageText";
 export * from "./TitleIntro";
 export * from "./Share";
 export * from "./SubtitleText";
+export * from "./NoData";

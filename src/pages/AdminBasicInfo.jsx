@@ -1,6 +1,6 @@
 import React from "react";
 
-import { AppHeader } from "../components/molecules";
+import { AppHeader, NoData } from "../components/molecules";
 import {
   SidebarMenu,
   SetupEvent,
@@ -13,12 +13,13 @@ export function AdminBasicInfo() {
     <main className="app-layout">
       <SidebarMenu />
       <Content>
-        <AppHeader btnText="New Organization" />
+        {/* <AppHeader btnText="New Organization" /> */}
         <SetupEvent
           title="Setup Event"
           description="Descripción del componente."
         />
         <TemplatesContainer />
+        <NoData text="event" />
       </Content>
     </main>
   );

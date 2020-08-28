@@ -7,12 +7,12 @@ import { Content } from "../components/templates";
 
 export function TemplateFeed() {
   return (
-      <main className="app-layout">
-        <SidebarMenu />
-        <Content>
-            <AppHeader btnText="Create Event" />
-            <TemplatesContainer/>
-            <SaveNext />
+    <main className="app-layout">
+      <SidebarMenu />
+      <Content>
+        {/* <AppHeader btnText="Create Event" /> */}
+        <TemplatesContainer />
+        <SaveNext />
       </Content>
     </main>
   );

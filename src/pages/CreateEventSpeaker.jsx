@@ -13,7 +13,7 @@ export function CreateEventSpeaker() {
     <main className="app-layout">
       <SidebarMenu />
       <Content>
-        <AppHeader btnText="New Organization" />
+        {/* <AppHeader btnText="New Organization" /> */}
         <SectionTitle
           title="Your Organizations"
           description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."

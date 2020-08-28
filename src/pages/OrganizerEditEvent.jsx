@@ -13,7 +13,7 @@ export function OrganizerEditEvent() {
     <main className="app-layout">
       <SidebarMenu />
       <Content>
-        <AppHeader btnText="New Organization" />
+        {/* <AppHeader btnText="New Organization" /> */}
         <SetupEvent
           title="Setup Event"
           description="Descripción del componente."

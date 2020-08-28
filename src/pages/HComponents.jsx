@@ -18,6 +18,7 @@ import { SidebarMenuSmall } from "../components/organisms/SidebarMenuSmall";
 import { ImageCard } from "../components/organisms/ImageCard";
 import { EventCard } from "../components/organisms/EventCard";
 import { OrganizationCard } from "../components/organisms/OrganizationCard";
+import { NoData } from "../components/molecules/NoData";
 
 export function HComponents() {
   return (

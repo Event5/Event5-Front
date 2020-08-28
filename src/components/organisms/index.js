@@ -20,3 +20,4 @@ export * from "./Links";
 export * from "./HomeHero";
 export * from "./CallToAction";
 export * from "./TemplatesContainer";
+export * from "./ModalEventInfo";

@@ -13,7 +13,7 @@ export function CreateEventAgenda() {
     <main className="app-layout">
       <SidebarMenu />
       <Content>
-        <AppHeader btnText="New Organization" />
+        {/* <AppHeader btnText="New Organization" /> */}
         <SectionTitle
           title="Agenda: Event Name"
           description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
