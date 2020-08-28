@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Input({ type, placeholder, color, name, onChange }) {
+export function Input({ type, placeholder, color, name, onChange, value }) {
   let borderColor;
   if (color === "second") {
     borderColor = "Input-ColorSecond";
@@ -14,6 +14,7 @@ export function Input({ type, placeholder, color, name, onChange }) {
       placeholder={placeholder}
       name={name}
       onChange={onChange}
+      value={value}
     />
   );
 }

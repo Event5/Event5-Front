@@ -7,7 +7,6 @@ import deleteCookie from "../../../utils/deleteCookie";
 import { Button } from "../../atoms";
 
 function AppHeader(props, { btnText }) {
-  console.log(props);
   const history = useHistory();
 
   function handleLogout() {

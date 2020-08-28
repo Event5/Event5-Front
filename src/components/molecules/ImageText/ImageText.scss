@@ -19,4 +19,7 @@
   & a {
     color: $first-dark;
   }
+  &-selected {
+    border: 5px solid $second;
+  }
 }
