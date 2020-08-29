@@ -36,7 +36,7 @@ export function SidebarMenu({ pagename, type_user }) {
           }
         })}
       </nav>
-      <IconButton text="sd" type="primary" color="first" />
+      <IconButton text="Publish" type="primary" color="first" />
       <Github />
     </aside>
   );

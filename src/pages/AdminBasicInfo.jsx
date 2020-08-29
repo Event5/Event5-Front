@@ -16,7 +16,6 @@ import { Content } from "../components/templates/Content";
 function AdminBasicInfo(props) {
   const eventData = props.event.basic;
   const history = useHistory();
-  const type_user = props.user.type_user;
 
   const [form, setValues] = useState({
     name: eventData.name,
@@ -66,7 +65,7 @@ function AdminBasicInfo(props) {
 
   return (
     <main className="AppLayout">
-      <SidebarMenu pagename="eventPages" />
+      <SidebarMenu pagename="eventPages" type_user={props.user.type_user} />
       <Content>
         <AppHeader btnText="All Organizers" onClick={handleOpenModal} />
         <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
