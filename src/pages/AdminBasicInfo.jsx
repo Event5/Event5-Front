@@ -36,7 +36,6 @@ function AdminBasicInfo(props) {
   };
 
   const handleInput = (event) => {
-    console.log(form);
     setValues({
       ...form,
       [event.target.name]: event.target.value,

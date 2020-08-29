@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-
+import { useHistory } from "react-router-dom";
+import { connect } from "react-redux";
+import { saveConference } from "../actions";
 import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SaveNext } from "../components/molecules";
 import {
@@ -11,26 +13,57 @@ import {
 } from "../components/organisms";
 import { Content } from "../components/templates";
 
-export function CreateEventAgenda() {
+function CreateEventAgenda(props) {
+  const history = useHistory();
   const [form, setValues] = useState({
     modalIsOpen: false,
   });
 
   const handleOpenModal = (e) => {
-    setValues({ modalIsOpen: true });
+    setValues({
+      ...form,
+      modalIsOpen: true,
+    });
   };
 
   const handleCloseModal = (e) => {
-    setValues({ modalIsOpen: false });
+    setValues({
+      ...form,
+      modalIsOpen: false,
+    });
   };
 
+  const handleInput = (event) => {
+    setValues({
+      ...form,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const handleSubmit = () => {
+    event.preventDefault();
+    props.saveConference(form);
+  };
+
+  const handleNextBtn = () => {
+    history.push("/event-associates");
+  };
+
+  //to get conferences from props
+  const conferences = props.conferences;
+  const speakers = props.speakers;
+  let confKey = 0;
   return (
     <main className="AppLayout">
       <SidebarMenu pagename="eventPages" />
       <Content>
         <AppHeader btnText="Add Session" onClick={handleOpenModal} />
         <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
-          <ModalSession />
+          <ModalSession
+            speakers={speakers}
+            handleInput={handleInput}
+            handleSubmit={handleSubmit}
+          />
         </Modal>
         <SectionTitle
           title="Agenda: Event Name"
@@ -39,36 +72,34 @@ export function CreateEventAgenda() {
           btnType="primary"
           btnColor="light"
         />
-        <ConferenceCard
-          sessionTitle="Conference number one"
-          date="18/08/2022"
-          duration="3:00"
-          description="Description of the number one conference."
-          BottomBtn="Conferencist Name"
-        />
-        <ConferenceCard
-          sessionTitle="Conference number one"
-          date="18/08/2022"
-          duration="3:00"
-          description="Description of the number one conference."
-          BottomBtn="Conferencist Name"
-        />
-        <ConferenceCard
-          sessionTitle="Conference number one"
-          date="18/08/2022"
-          duration="3:00"
-          description="Description of the number one conference."
-          BottomBtn="Conferencist Name"
-        />
-        <ConferenceCard
-          sessionTitle="Conference number one"
-          date="18/08/2022"
-          duration="3:00"
-          description="Description of the number one conference."
-          BottomBtn="Conferencist Name"
-        />
-        <SaveNext />
+        {conferences.map((conference) => {
+          confKey++;
+          return (
+            <ConferenceCard
+              key={confKey}
+              sessionTitle={conference.title}
+              date={conference.day}
+              duration={conference.duration}
+              description={conference.description}
+              BottomBtn={conference.speaker}
+            />
+          );
+        })}
+        {/* <SaveNext /> */}
       </Content>
     </main>
   );
 }
+
+const mapStateToProps = (state) => {
+  return {
+    conferences: state.currentEvent.conferences,
+    speakers: state.currentEvent.speakers,
+  };
+};
+
+const mapDispatchToProps = {
+  saveConference,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(CreateEventAgenda);

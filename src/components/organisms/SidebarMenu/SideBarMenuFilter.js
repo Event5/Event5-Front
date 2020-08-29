@@ -12,7 +12,7 @@ function SideBarMenuFilter(pagename, user) {
     },
     {
       key: 2,
-      text: "Events",
+      text: "All Events",
       link: "/adminevents",
       icon: "calendar",
       component: "Item",
@@ -22,8 +22,8 @@ function SideBarMenuFilter(pagename, user) {
   const EventsView = [
     {
       key: 1,
-      text: "Events",
-      link: "/events",
+      text: "All Events",
+      link: "/adminevents",
       icon: "calendar",
       component: "Item",
     },

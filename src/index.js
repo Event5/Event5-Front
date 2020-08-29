@@ -119,6 +119,7 @@ const initialState = {
         description: "coding react fast and furious",
         speaker: "Hector",
         duration: "90 min",
+        day: "20-20-2020",
       },
       {
         id: 50,

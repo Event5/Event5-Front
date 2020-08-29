@@ -35,7 +35,22 @@ const reducer = (state, action) => {
     case "NEWEVENT_REQUEST":
       return {
         ...state,
-        currentEvent: { basic: { organization: action.payload } },
+        currentEvent: {
+          basic: { organization: action.payload },
+          info: {},
+          organizers: [],
+          conferences: [],
+          speakers: [],
+          associates: [],
+        },
+      };
+    case "SAVECONFERENCE_REQUEST":
+      return {
+        ...state,
+        currentEvent: {
+          ...state.currentEvent,
+          conferences: [...state.currentEvent.conferences, action.payload],
+        },
       };
     default:
       return state;
