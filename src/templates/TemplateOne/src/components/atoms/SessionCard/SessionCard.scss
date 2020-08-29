@@ -1,0 +1,16 @@
+.SessionCard{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    &-First{
+        background-color: $first-light;
+    }
+    &-Second{
+        background-color: $first-lighter;
+    }
+    @include phone-and-table{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+        text-align: center;
+    }
+}
