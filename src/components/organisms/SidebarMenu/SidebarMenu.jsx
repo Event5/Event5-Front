@@ -5,9 +5,9 @@ import { IconButton } from "../../atoms";
 import { MenuItem, MenuItemSmall, Github } from "../../molecules";
 import SideBarMenuFilter from "./SideBarMenuFilter";
 
-export function SidebarMenu({ pagename }) {
+export function SidebarMenu({ pagename, type_user }) {
   // SideBar select the buttons to show in sidebar -options: "adminDash", "organizerDash", "eventPages"
-  const buttons = SideBarMenuFilter(pagename);
+  const buttons = SideBarMenuFilter(pagename, type_user);
   return (
     <aside className="DashboardMenu">
       <img src={logo} alt="Event5's Logo" />
@@ -36,7 +36,7 @@ export function SidebarMenu({ pagename }) {
           }
         })}
       </nav>
-      <IconButton text="sd" type="primary" color="first" />
+      <IconButton text="Publish" type="primary" color="first" />
       <Github />
     </aside>
   );

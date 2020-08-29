@@ -2,16 +2,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 300px;
-  margin: 24px;
-  h6 {
-    margin: 0;
-    font-size: 18px;
+  cursor: pointer;
+  &-Icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+    width: 300px;
+    span {
+      margin: 0;
+      font-size: 18px;
+    }
   }
   p {
+    text-align: center;
     font-weight: 600;
-    margin-top: 8px;
+    // margin-top: 8px;
     color: $second;
   }
 }

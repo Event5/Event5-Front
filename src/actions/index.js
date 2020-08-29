@@ -24,6 +24,14 @@ export const newEvent = (payload) => ({
   type: "NEWEVENT_REQUEST",
   payload,
 });
+export const saveOrganizer = (payload) => ({
+  type: "SAVEORGANIZER_REQUEST",
+  payload,
+});
+export const saveConference = (payload) => ({
+  type: "SAVECONFERENCE_REQUEST",
+  payload,
+});
 
 export const setError = (payload) => ({
   type: "SET_ERROR",

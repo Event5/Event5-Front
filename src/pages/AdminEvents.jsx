@@ -8,7 +8,6 @@ import { Content, GridEvents } from "../components/templates";
 function OrganizerEvents(props) {
   const organizations = props.organizations || [];
 
-  console.log(props);
   let eventsArray = [];
 
   organizations.map((organization) => {

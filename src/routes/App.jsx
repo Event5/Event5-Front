@@ -5,16 +5,17 @@ import { HomePage, About, LoginPage, SignUpPage, NotFoundPage } from "../pages";
 
 import {
   OrganizerEditEvent,
-  CreateEventSpeaker,
-  CreateEventAgenda,
   CreateEventData,
+  CreateEventSpeaker,
   CreateEventDiffusion,
 } from "../pages";
-import AdminEvents from "../pages/AdminEvents";
+
 import AdminOrganizations from "../pages/AdminOrganizations";
 import OrganizerEvents from "../pages/OrganizerEvents";
-import CreateEventAssociates from "../pages/CreateEventAssociates";
+import AdminEvents from "../pages/AdminEvents";
 import AdminBasicInfo from "../pages/AdminBasicInfo";
+import CreateEventAgenda from "../pages/CreateEventAgenda";
+import CreateEventAssociates from "../pages/CreateEventAssociates";
 import { TemplateTwo } from "../templates/TemplateTwo";
 
 const App = () => {
