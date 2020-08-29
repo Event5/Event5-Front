@@ -11,12 +11,22 @@ export function ModalSpeaker() {
       <h2>Your Conferencist</h2>
       <form className="ModalSpeaker__Form" action="">
         <Input type="text" placeholder="Conferencist Name" />
+        <select>
+          <option value="" disabled selected>
+            Link Conference
+          </option>
+          <option value="Hector Reyes">Hector Reyes</option>
+          <option value="Den Velez">Den Velez</option>
+          <option value="Jose Luis Chavez">Jose Luis Chavez</option>
+          <option value="Cristian Cortes">Cristian Cortes</option>
+          <option value="Sergio Estrella">Sergio Estrella</option>
+        </select>
         <TextArea idName="Conferencist" />
         <Input type="text" placeholder="Conferencist Role" />
         <Input type="url" placeholder="Twitter Url" />
         <div>
-            <p>Conferencist Photo</p>
-            <Upload buttonText="Upload Image" photoSize="150px x 150px"/>
+          <p>Conferencist Photo</p>
+          <Upload buttonText="Upload Image" photoSize="150px x 150px" />
         </div>
         <div className="ModalSpeaker__Form__Btn">
           <Button text="Save Changes" type="primary" color="first" />

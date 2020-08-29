@@ -1,17 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import {
-  HomePage,
-  About,
-  LoginPage,
-  SignUpPage,
-  NotFoundPage,
-  HComponents,
-  DComponents,
-  SComponents,
-  TemplateFeed,
-} from "../pages";
+import { HomePage, About, LoginPage, SignUpPage, NotFoundPage } from "../pages";
 
 import {
   OrganizerEditEvent,

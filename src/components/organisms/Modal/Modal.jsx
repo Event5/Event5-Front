@@ -10,7 +10,7 @@ export function Modal({ isOpen, onClose, children }) {
 
   return ReactDOM.createPortal(
     <div className="Modal">
-      <div ClassName="Modal__Container">
+      <div className="Modal__Container">
         <button onClick={onClose} className="Modal__CloseButton">
           <Icon svg="close" classes="svg-icon-close" title="Close" />
         </button>

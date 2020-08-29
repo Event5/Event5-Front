@@ -14,7 +14,7 @@ export * from "./Login";
 export * from "./ModalAssociate";
 export * from "./ModalEmail";
 export * from "./ModalEventInfo";
-// export * from "./ModalSpeaker";
+export * from "./ModalSpeaker";
 export * from "./ModalSession";
 export * from "./OrganizationCard";
 export * from "./SectionTitle";
