@@ -17,8 +17,8 @@ function OrganizerEvents(props) {
 
   return (
     <main className="AppLayout">
-      <SidebarMenu pagename="adminDash" />
-      <SidebarMenuSmall pagename="adminDash" />
+      <SidebarMenu pagename="adminDash" type_user={props.user.type_user} />
+      <SidebarMenuSmall pagename="adminDash" type_user={props.user.type_user} />
       <Content>
         <AppHeader btnText="New Event" />
         <GridEvents EventsArray={eventsArray} />
@@ -29,6 +29,7 @@ function OrganizerEvents(props) {
 const mapStateToProps = (state) => {
   return {
     organizations: state.data,
+    user: state.user,
   };
 };
 
