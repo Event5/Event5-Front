@@ -14,13 +14,10 @@ import AdminOrganizations from "../pages/AdminOrganizations";
 import OrganizerEvents from "../pages/OrganizerEvents";
 import AdminEvents from "../pages/AdminEvents";
 import AdminBasicInfo from "../pages/AdminBasicInfo";
-<<<<<<< HEAD
 import CreateEventAgenda from "../pages/CreateEventAgenda";
 import CreateEventAssociates from "../pages/CreateEventAssociates";
 import { TemplateTwo } from "../templates/TemplateTwo";
-=======
 import {TemplateOne} from "../templates/TemplateOne";
->>>>>>> 99e708a... Header organism from TemplateOne added
 
 const App = () => {
   return (

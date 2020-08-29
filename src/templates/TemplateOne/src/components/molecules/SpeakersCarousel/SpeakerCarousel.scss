@@ -1,0 +1,17 @@
+.SpeakersCarousel{
+    width: 100%;
+    border: 1px solid red;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2,410px);
+    justify-content: center;
+    grid-gap: 30px;
+    box-sizing: border-box;
+    @include desktop-large{
+        grid-template-columns: repeat(3,410px);
+    }
+    @include phone-and-tablet{
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}

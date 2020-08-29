@@ -1,19 +1,28 @@
 .SpeakerCard{
+    display: flex;
+    position: relative;
     width: 312px;
     height: 410px;
     border-radius: 20px;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: $first;
+    transition: 0.5s;
     color: $dark;
+    margin: 0;
+    justify-self: center;
     & span{
         width: 180px;
         height: 180px;
         background-color: $light;
         border-radius: 10px;
         overflow: hidden;
+        & img{
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+        }
     }
     &-Details{
         display: flex;
