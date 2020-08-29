@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
-import { saveEvent } from "../actions";
+import { saveEvent, saveOrganizer } from "../actions";
 import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SaveNext } from "../components/molecules";
 import {
@@ -23,23 +23,26 @@ function AdminBasicInfo(props) {
     day: eventData.day,
     template: eventData.template,
     organization: eventData.organization,
+    organizer: "",
     modalIsOpen: false,
   });
 
   const handleOpenModal = (e) => {
-    setValues({ modalIsOpen: true });
+    setValues({ ...form, modalIsOpen: true });
   };
 
   const handleCloseModal = (e) => {
-    setValues({ modalIsOpen: false });
+    setValues({ ...form, modalIsOpen: false });
   };
 
   const handleInput = (event) => {
+    console.log(form);
     setValues({
       ...form,
       [event.target.name]: event.target.value,
     });
   };
+
   const pickTemplate = (event) => {
     setValues({
       ...form,
@@ -49,9 +52,15 @@ function AdminBasicInfo(props) {
 
   const handleSubmit = () => {
     props.saveEvent(form);
-
     history.push("/event-info");
   };
+
+  const handleSaveOrganizer = (event) => {
+    event.preventDefault();
+    props.saveOrganizer(form.organizer);
+    handleCloseModal();
+  };
+
   const revertData = () => {
     setValues({
       ...form,
@@ -69,12 +78,15 @@ function AdminBasicInfo(props) {
       <Content>
         <AppHeader btnText="All Organizers" onClick={handleOpenModal} />
         <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
-          <ModalOrganizers />
+          <ModalOrganizers
+            intialState={props.event.organizers}
+            inputAction={handleInput}
+            handleSaveOrganizer={handleSaveOrganizer}
+          />
         </Modal>
         <SetupEvent
           title="Setup Event"
           description="Descripción del componente."
-          formFunction={handleSubmit}
           inputAction={handleInput}
           intialState={form}
         />
@@ -100,6 +112,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {
   saveEvent,
+  saveOrganizer,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(AdminBasicInfo);

@@ -21,6 +21,17 @@ const reducer = (state, action) => {
           basic: action.payload,
         },
       };
+    case "SAVEORGANIZER_REQUEST":
+      return {
+        ...state,
+        currentEvent: {
+          ...state.currentEvent,
+          organizers: [
+            ...state.currentEvent.organizers,
+            { email: action.payload },
+          ],
+        },
+      };
     case "NEWEVENT_REQUEST":
       return {
         ...state,
