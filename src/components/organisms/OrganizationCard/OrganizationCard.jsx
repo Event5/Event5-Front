@@ -5,7 +5,7 @@ import { SimpleEvent } from "../SimpleEvent";
 
 export function OrganizationCard({ orgName, orgId, orgEventsArray }) {
   return (
-    <section className="organization-card">
+    <section className="OrganizationCard">
       <h2>{orgName}</h2>
       {orgEventsArray.map((event) => {
         return (

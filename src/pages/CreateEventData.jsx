@@ -1,13 +1,16 @@
 import React from "react";
 
-import { SidebarMenu, ModalEventInfo } from "../components/organisms";
-import { Content } from "../components/templates";
+import { SidebarMenuSmall, ModalEventInfo } from "../components/organisms";
+import { TemplateTwo } from "../templates/TemplateTwo";
 
 export function CreateEventData() {
   return (
-    <main className="app-layout">
-      <SidebarMenu pagename="eventPages" />
-      <Content></Content>
+    <main className="AppLayoutTemplate">
+      <SidebarMenuSmall pagename="eventPages" />
+
+      <TemplateTwo />
+
+      <ModalEventInfo />
     </main>
   );
 }

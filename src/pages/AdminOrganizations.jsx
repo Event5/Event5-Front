@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { newEvent } from "../actions";
 import AppHeader from "../components/molecules/AppHeader/AppHeader";
-import { SidebarMenu, SectionTitle } from "../components/organisms";
+import {
+  SidebarMenu,
+  SectionTitle,
+  Modal,
+  ModalOrganization,
+} from "../components/organisms";
 import { Content, GridOrganizations } from "../components/templates";
 
 function AdminOrganizations(props) {
   const history = useHistory();
+  const [form, setValues] = useState({
+    modalIsOpen: false,
+  });
+
+  const handleOpenModal = (e) => {
+    setValues({ modalIsOpen: true });
+  };
+
+  const handleCloseModal = (e) => {
+    setValues({ modalIsOpen: false });
+  };
 
   document.addEventListener("click", (event) => {
     const buttonname = event.target.id;
@@ -24,10 +40,13 @@ function AdminOrganizations(props) {
 
   const { organizations } = props;
   return (
-    <main className="app-layout">
+    <main className="AppLayout">
       <SidebarMenu pagename="adminDash" />
       <Content>
-        <AppHeader btnText="New Organization" />
+        <AppHeader btnText="New Organization" onClick={handleOpenModal} />
+        <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
+          <ModalOrganization />
+        </Modal>
         <SectionTitle
           title="Your Organizations"
           description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."

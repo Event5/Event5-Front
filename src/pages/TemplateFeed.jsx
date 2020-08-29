@@ -7,7 +7,7 @@ import { Content } from "../components/templates";
 
 export function TemplateFeed() {
   return (
-    <main className="app-layout">
+    <main className="AppLayout">
       <SidebarMenu pagename="eventPages" />
       <Content>
         <AppHeader btnText="Create Event" />

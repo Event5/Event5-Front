@@ -17,7 +17,7 @@ function OrganizerEvents(props) {
   });
 
   return (
-    <main className="app-layout">
+    <main className="AppLayout">
       <SidebarMenu pagename="adminDash" />
       <Content>
         <AppHeader btnText="New Event" />

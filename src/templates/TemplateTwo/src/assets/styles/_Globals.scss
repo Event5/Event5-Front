@@ -14,7 +14,7 @@ $light: #fffffe;
 
 // --------------------------------- Typography
 
-.h1-template {
+.Template__H1 {
   font-weight: 800;
   font-size: 65px;
   @include tablet {
@@ -25,10 +25,10 @@ $light: #fffffe;
   }
 }
 
-.h2-template {
+.Template__H2 {
   font-weight: 800;
   font-size: 34px;
-    @include tablet {
+  @include tablet {
     font-size: 28px;
   }
   @include both-phones {
@@ -36,10 +36,10 @@ $light: #fffffe;
   }
 }
 
-.h3-template {
+.Template__H3 {
   font-weight: 800;
   font-size: 24px;
-    @include tablet {
+  @include tablet {
     font-size: 20px;
   }
   @include both-phones {
@@ -47,10 +47,10 @@ $light: #fffffe;
   }
 }
 
-.h4-template {
+.Template__H4 {
   font-weight: 600;
   font-size: 24px;
-    @include tablet {
+  @include tablet {
     font-size: 20px;
   }
   @include both-phones {
@@ -58,21 +58,21 @@ $light: #fffffe;
   }
 }
 
-.h5-template {
+.Template__H5 {
   font-weight: 600;
   font-size: 18px;
 }
 
-.h6-template {
+.Template__H6 {
   font-weight: 500;
   font-size: 18px;
 }
 
-.p-template {
+.Template__P {
   font-weight: 400;
   font-size: 18px;
 }
 
-.template-two-body {
+.TemplateTwo__Body {
   background-color: $first;
 }

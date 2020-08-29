@@ -1,14 +1,14 @@
-.organizer-card {
-  &__container {
+.OrganizerCard {
+  &__Container {
+    margin: 16px auto;
+    padding: 16px;
     display: grid;
     grid-template-columns: 85% 15%;
     width: 340px;
-    margin: 0 auto;
-    padding: 16px;
     border-radius: 8px;
     background-color: $third-lightest;
   }
-  &__info {
+  &__Info {
     strong {
       color: $first;
     }

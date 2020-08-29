@@ -4,7 +4,7 @@ import { OrganizationCard } from "../../organisms";
 
 export function GridOrganizations({ organizationArray }) {
   return (
-    <section className="content-grid">
+    <section className="ContentGrid">
       {organizationArray.map((organization) => {
         return (
           <OrganizationCard

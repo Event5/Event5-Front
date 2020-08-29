@@ -1,15 +1,15 @@
-.templates {
-  &-container {
+.Templates {
+  &__Container {
     margin-top: 40px;
     h2 {
       color: $light;
     }
-    p{
+    p {
       color: $first-dark;
       margin-bottom: 24px;
     }
   }
-  &-options {
+  &__Options {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 25px;

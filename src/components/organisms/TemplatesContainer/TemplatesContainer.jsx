@@ -5,7 +5,7 @@ import { ImageText, ImageMore } from "../../molecules";
 
 export function TemplatesContainer({ ImageonClick, selected }) {
   return (
-    <section className="templates-container">
+    <section className="Templates__Container">
       <h2>Select Template</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo

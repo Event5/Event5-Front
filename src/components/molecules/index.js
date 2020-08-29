@@ -14,3 +14,7 @@ export * from "./OrganizersList";
 export * from "./Numeralia";
 export * from "./AppHeader";
 export * from "./ImageText";
+export * from "./TitleIntro";
+export * from "./Share";
+export * from "./SubtitleText";
+export * from "./NoData";

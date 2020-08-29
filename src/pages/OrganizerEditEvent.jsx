@@ -10,10 +10,10 @@ import { Content } from "../components/templates";
 
 export function OrganizerEditEvent() {
   return (
-    <main className="app-layout">
+    <main className="AppLayout">
       <SidebarMenu />
       <Content>
-        <AppHeader btnText="New Organization" />
+        {/* <AppHeader btnText="New Organization" /> */}
         <SetupEvent
           title="Setup Event"
           description="Descripción del componente."

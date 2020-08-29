@@ -12,6 +12,8 @@
 .EventDescription {
   display: flex;
   flex-direction: row;
-  gap: 20px;
   margin-top: 10px;
+  div {
+    margin: 0 16px;
+  }
 }

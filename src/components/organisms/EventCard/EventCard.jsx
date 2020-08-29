@@ -16,14 +16,14 @@ export function EventCard({
   btnAction,
 }) {
   return (
-    <section className="event-card">
+    <section className="EventCard">
       <h3>{title}</h3>
-      <div className="event-card__data">
+      <div className="EventCard__Data">
         <h6>{orgName}</h6>
         <p>{date}</p>
       </div>
       <img src={image} alt="Event Image" />
-      <div className="event-card__numeralia">
+      <div className="EventCard__Numeralia">
         <Numeralia
           participantsType="Conferences"
           numberOfParticipants={conferences}
@@ -34,7 +34,7 @@ export function EventCard({
         />
         <Numeralia participantsType="Public" numberOfParticipants={people} />
       </div>
-      <div className="event-card__footer">
+      <div className="EventCard__Footer">
         <OrganizersList
           firstOrganizer={organizerFirst}
           secondOrganizer={organizerSecond}

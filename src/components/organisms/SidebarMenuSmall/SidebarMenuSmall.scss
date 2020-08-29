@@ -1,17 +1,19 @@
-.sidebar-menu-small {
-  &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 10%;
-    height: 100vh;
-    padding: 24px;
-    img {
-      margin: 24px 0;
-    }
+.SidebarMenuSmall {
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  height: 100vh;
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  img {
+    width: 70px;
+    margin: 24px 0;
   }
-  &__menu {
+
+  &__Menu {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

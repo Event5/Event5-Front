@@ -1,8 +1,8 @@
-.menu-item-small {
+.MenuItemSmall {
   margin-left: 16px;
   margin-bottom: 8px;
-  fill: $first-light;
-  color: $first-light;
+  fill: $first;
+  color: $first;
   transition: all 0.5s;
   list-style: none;
   cursor: pointer;
@@ -15,7 +15,7 @@
     font-size: 14px;
   }
   &:hover {
-    fill: $first-dark;
-    color: $first-dark;
+    fill: $second-dark;
+    color: $second-dark;
   }
 }

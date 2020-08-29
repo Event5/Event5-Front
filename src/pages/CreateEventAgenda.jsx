@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SaveNext } from "../components/molecules";
@@ -6,15 +6,32 @@ import {
   SidebarMenu,
   SectionTitle,
   ConferenceCard,
+  Modal,
+  ModalSession,
 } from "../components/organisms";
 import { Content } from "../components/templates";
 
 export function CreateEventAgenda() {
+  const [form, setValues] = useState({
+    modalIsOpen: false,
+  });
+
+  const handleOpenModal = (e) => {
+    setValues({ modalIsOpen: true });
+  };
+
+  const handleCloseModal = (e) => {
+    setValues({ modalIsOpen: false });
+  };
+
   return (
-    <main className="app-layout">
+    <main className="AppLayout">
       <SidebarMenu pagename="eventPages" />
       <Content>
-        <AppHeader btnText="New Organization" />
+        <AppHeader btnText="Add Session" onClick={handleOpenModal} />
+        <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
+          <ModalSession />
+        </Modal>
         <SectionTitle
           title="Agenda: Event Name"
           description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."

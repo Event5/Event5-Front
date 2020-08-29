@@ -1,26 +1,26 @@
-.ModalSpeaker{
-    width: 484px;
-    height: 1040px;
-    & h2{
-        color: $first;
-        text-align: center;
+.ModalSpeaker {
+  width: 484px;
+  height: 1040px;
+  & h2 {
+    color: $first;
+    text-align: center;
+  }
+  &__Form {
+    min-height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    color: $third;
+    &__Btn {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      & a:nth-child(3) {
+        color: #ee4266;
+      }
     }
-    &__Form{
-        height: 100%;
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin: 0 auto;
-        color: $third;
-        &__Btn{
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            & a:nth-child(3){
-                color: #EE4266;
-            }
-        }
-    }
+  }
 }

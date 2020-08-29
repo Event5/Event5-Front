@@ -1,4 +1,4 @@
-.event-card {
+.EventCard {
   margin: 0 auto;
   padding: 24px;
   width: 40%;
@@ -15,19 +15,19 @@
       color: $first;
     }
   }
-  &__data {
+  &__Data {
     margin-bottom: 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  &__numeralia {
+  &__Numeralia {
     margin: 24px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  &__footer {
+  &__Footer {
     display: flex;
     flex-direction: row;
   }

@@ -8,6 +8,8 @@ import {
   SidebarMenu,
   SetupEvent,
   TemplatesContainer,
+  Modal,
+  ModalOrganizers,
 } from "../components/organisms";
 import { Content } from "../components/templates/Content";
 
@@ -22,7 +24,16 @@ function AdminBasicInfo(props) {
     day: eventData.day,
     template: eventData.template,
     organization: eventData.organization,
+    modalIsOpen: false,
   });
+
+  const handleOpenModal = (e) => {
+    setValues({ modalIsOpen: true });
+  };
+
+  const handleCloseModal = (e) => {
+    setValues({ modalIsOpen: false });
+  };
 
   const handleInput = (event) => {
     setValues({
@@ -54,10 +65,18 @@ function AdminBasicInfo(props) {
   };
 
   return (
+<<<<<<< HEAD
     <main className="app-layout">
       <SidebarMenu pagename="eventPages" type_user={type_user} />
+=======
+    <main className="AppLayout">
+      <SidebarMenu pagename="eventPages" />
+>>>>>>> de98be5ff5a87579264dc22d506684e30ffa1405
       <Content>
-        <AppHeader btnText="New Organization" />
+        <AppHeader btnText="All Organizers" onClick={handleOpenModal} />
+        <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
+          <ModalOrganizers />
+        </Modal>
         <SetupEvent
           title="Setup Event"
           description="Descripción del componente."

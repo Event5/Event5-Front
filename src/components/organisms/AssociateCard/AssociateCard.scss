@@ -1,4 +1,4 @@
-.associate-card {
+.AssociateCard {
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -13,7 +13,7 @@
   p {
     margin-bottom: 16px;
   }
-  button{
+  button {
     border: none;
     color: $first;
     cursor: pointer;

@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 
 import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SaveNext } from "../components/molecules";
-import { SidebarMenu, SectionTitle } from "../components/organisms";
+import {
+  SidebarMenu,
+  SectionTitle,
+  Modal,
+  ModalAssociate,
+} from "../components/organisms";
 import { Content, GridAssociates } from "../components/templates";
 
 const associates = [
@@ -22,11 +27,27 @@ const associates = [
 ];
 export function CreateEventAssociates(props) {
   console.log(props);
+
+  const [form, setValues] = useState({
+    modalIsOpen: false,
+  });
+
+  const handleOpenModal = (e) => {
+    setValues({ modalIsOpen: true });
+  };
+
+  const handleCloseModal = (e) => {
+    setValues({ modalIsOpen: false });
+  };
+
   return (
-    <main className="app-layout">
+    <main className="AppLayout">
       <SidebarMenu pagename="eventPages" />
       <Content>
-        <AppHeader btnText="New Event" />
+        <AppHeader btnText="New Associate" onClick={handleOpenModal} />
+        <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
+          <ModalAssociate />
+        </Modal>
         <SectionTitle
           title="Associates: Event Name"
           description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."

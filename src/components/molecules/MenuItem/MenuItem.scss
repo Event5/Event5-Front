@@ -1,7 +1,7 @@
-.menu-item {
+.MenuItem {
   margin-bottom: 16px;
-  fill: $first-light;
-  color: $first-light;
+  fill: $first;
+  color: $first;
   transition: all 0.5s;
   cursor: pointer;
   font-size: 34px;
@@ -13,7 +13,7 @@
     font-size: 24px;
   }
   &:hover {
-    fill: $first-dark;
-    color: $first-dark;
+    fill: $second-dark;
+    color: $second-dark;
   }
 }

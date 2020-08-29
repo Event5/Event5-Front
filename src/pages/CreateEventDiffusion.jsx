@@ -1,13 +1,15 @@
 import React from "react";
 
 import { SidebarMenu } from "../components/organisms";
-import { Content } from "../components/templates";
+import { Content, DiffusionView } from "../components/templates";
 
 export function CreateEventDiffusion() {
   return (
-    <main className="app-layout">
+    <main className="AppLayout">
       <SidebarMenu pagename="eventPages" />
-      <Content></Content>
+      <Content>
+        <DiffusionView />
+      </Content>
     </main>
   );
 }

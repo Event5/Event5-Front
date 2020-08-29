@@ -39,11 +39,14 @@ h2 {
 h3 {
   font-size: 34px;
   font-weight: 600;
-  @include tablet {
+  @include desktop {
     font-size: 28px;
   }
-  @include both-phones {
+  @include tablet {
     font-size: 24px;
+  }
+  @include both-phones {
+    font-size: 20px;
   }
 }
 
@@ -91,9 +94,14 @@ p {
   font-weight: 400;
 }
 
-.app-layout {
+.AppLayout {
   display: grid;
   grid-template-columns: 20% 80%;
+}
+
+.AppLayoutTemplate {
+  display: grid;
+  grid-template-columns: 5% 63% 32%;
 }
 
 // .Button {

@@ -1,8 +1,12 @@
-.content {
+.Content {
   display: inline-block;
   width: 100%;
   padding: 40px 56px;
-  padding-right: 20%;
+  padding-right: 10%;
   min-height: 100vh;
   background-color: $first;
+  @include desktop {
+    padding: 24px 32px;
+    padding-right: 5%;
+  }
 }

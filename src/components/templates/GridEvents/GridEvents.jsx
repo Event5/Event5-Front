@@ -4,7 +4,7 @@ import { EventCard } from "../../organisms";
 
 export function GridEvents({ EventsArray }) {
   return (
-    <section className="grid-events">
+    <section className="ContentGrid">
       {EventsArray.map((event) => {
         return (
           <EventCard

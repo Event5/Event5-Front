@@ -4,9 +4,9 @@ import { Button } from "../../atoms";
 
 export function CallToAction() {
   return (
-    <div className="Home__CallToAction">
+    <div className="CallToAction">
       <h1>Create your events</h1>
-      <div className="Home__CallToAction-Btn">
+      <div className="CallToAction__Btn">
         <Button text="Create your first event" type="secondary" />
       </div>
     </div>
