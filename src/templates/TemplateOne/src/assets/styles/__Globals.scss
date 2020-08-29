@@ -10,6 +10,7 @@
   $first-dark: #FF0076;
   $second: #3A17FF;
   $third: #FB8B24;
+  $third-dark: #843f00;
   $third-light: #FFDF9E;
   $third-lighter: #FCFCB6;
   $dark: #1E1926;
@@ -22,6 +23,7 @@
   .h1-template {
     font-weight: 800;
     font-size: 65px;
+    color: $second;
     @include tablet {
       font-size: 44px;
     }

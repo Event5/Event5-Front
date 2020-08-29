@@ -1,0 +1,24 @@
+.SpeakerCard{
+    width: 312px;
+    height: 410px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $first;
+    color: $dark;
+    & span{
+        width: 180px;
+        height: 180px;
+        background-color: $light;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    &-Details{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+}

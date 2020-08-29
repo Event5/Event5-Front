@@ -10,10 +10,10 @@ export function Header() {
           <h6 className="h6-template">Description</h6>
         </Link>
         <Link to="#">
-          <h6 className="h6-template">Agenda</h6>
+          <h6 className="h6-template">Speakers</h6>
         </Link>
         <Link to="#">
-          <h6 className="h6-template">Speakers</h6>
+          <h6 className="h6-template">Agenda</h6>
         </Link>
         <Link to="#">
           <h6 className="h6-template">Sponsors</h6>
