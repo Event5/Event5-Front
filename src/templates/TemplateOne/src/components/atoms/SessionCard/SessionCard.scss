@@ -3,12 +3,12 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     &-First{
-        background-color: $first-light;
+        background-color: $third-light;
     }
     &-Second{
-        background-color: $first-lighter;
+        background-color: $third-lighter;
     }
-    @include phone-and-table{
+    @include phone-and-tablet{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 3fr;
         text-align: center;

@@ -4,6 +4,7 @@ import "./src/assets/styles/Main.scss";
 
 import { Countdown } from "./src/components/atoms/Countdown";
 import { Header } from "./src/components/organisms/Header";
+import { Hero } from "./src/components/atoms/Hero";
 import { SpeakersCarousel } from "./src/components/molecules/SpeakersCarousel";
 
 const testDate = new Date("August 30, 2020 23:59:59");
@@ -12,8 +13,9 @@ export function TemplateOne() {
   return (
     <main className="template-one-body">
       <Header/>
-      <Countdown eventDate={testDate.toUTCString()}/>
+      <Hero eventName="Evento de Prueba" eventDate={new Date()}/>
       <SpeakersCarousel/>
+      <Countdown eventDate={testDate.toUTCString()}/>
     </main>
   );
 }
