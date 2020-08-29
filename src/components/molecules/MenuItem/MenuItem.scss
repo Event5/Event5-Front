@@ -4,6 +4,14 @@
   color: $first-light;
   transition: all 0.5s;
   cursor: pointer;
+  font-size: 34px;
+  font-weight: 600;
+  @include tablet {
+    font-size: 28px;
+  }
+  @include both-phones {
+    font-size: 24px;
+  }
   &:hover {
     fill: $first-dark;
     color: $first-dark;

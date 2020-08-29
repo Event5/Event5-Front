@@ -4,7 +4,16 @@
   fill: $first-light;
   color: $first-light;
   transition: all 0.5s;
+  list-style: none;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  @include tablet {
+    font-size: 18px;
+  }
+  @include both-phones {
+    font-size: 14px;
+  }
   &:hover {
     fill: $first-dark;
     color: $first-dark;

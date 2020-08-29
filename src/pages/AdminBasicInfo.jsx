@@ -14,6 +14,7 @@ import { Content } from "../components/templates/Content";
 function AdminBasicInfo(props) {
   const eventData = props.event.basic;
   const history = useHistory();
+  const type_user = props.user.type_user;
 
   const [form, setValues] = useState({
     name: eventData.name,
@@ -54,7 +55,7 @@ function AdminBasicInfo(props) {
 
   return (
     <main className="app-layout">
-      <SidebarMenu pagename="eventPages" />
+      <SidebarMenu pagename="eventPages" type_user={type_user} />
       <Content>
         <AppHeader btnText="New Organization" />
         <SetupEvent
@@ -80,6 +81,7 @@ function AdminBasicInfo(props) {
 const mapStateToProps = (state) => {
   return {
     event: state.currentEvent,
+    user: state.user,
   };
 };
 

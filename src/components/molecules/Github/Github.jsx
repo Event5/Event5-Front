@@ -1,14 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { MenuItemSmall } from "../MenuItemSmall";
+import { ExternalLink } from "react-external-link";
+import { Icon } from "../../atoms";
 
 export function Github() {
   return (
-    <Link to="https://github.com/Event5">
-      <div className="github__container">
-        <MenuItemSmall icon="github" text="See project in Github" />
-        <p>Platzi Master</p>
+    <ExternalLink
+      className="github__container"
+      href="https://github.com/Event5"
+    >
+      <div className="github__container-Icon">
+        <Icon svg="github" classes="svg-icon" title="github" />
+        <span>See project in Github</span>
       </div>
-    </Link>
+      <p>Event5 team</p>
+    </ExternalLink>
   );
 }
