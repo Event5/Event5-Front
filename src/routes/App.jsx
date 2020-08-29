@@ -14,9 +14,13 @@ import AdminOrganizations from "../pages/AdminOrganizations";
 import OrganizerEvents from "../pages/OrganizerEvents";
 import AdminEvents from "../pages/AdminEvents";
 import AdminBasicInfo from "../pages/AdminBasicInfo";
+<<<<<<< HEAD
 import CreateEventAgenda from "../pages/CreateEventAgenda";
 import CreateEventAssociates from "../pages/CreateEventAssociates";
 import { TemplateTwo } from "../templates/TemplateTwo";
+=======
+import {TemplateOne} from "../templates/TemplateOne";
+>>>>>>> 99e708a... Header organism from TemplateOne added
 
 const App = () => {
   return (
@@ -34,6 +38,10 @@ const App = () => {
         <Route exact path="/event-info" component={CreateEventData} />
         <Route exact path="/event-speakers" component={CreateEventSpeaker} />
         <Route exact path="/event-conferences" component={CreateEventAgenda} />
+        
+        {/* Test Tempalate*/}
+        <Route exact path="/template" component={TemplateOne} />
+
         <Route
           exact
           path="/event-associates"
@@ -42,6 +50,8 @@ const App = () => {
         <Route exact path="/event-diffusion" component={CreateEventDiffusion} />
         <Route exact path="/template-two" component={TemplateTwo} />
         <Route component={NotFoundPage} />
+
+
       </Switch>
     </BrowserRouter>
   );
