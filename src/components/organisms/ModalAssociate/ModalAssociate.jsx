@@ -28,7 +28,7 @@ export function ModalAssociate({ handleSubmit, handleInput }) {
             type="file"
             placeholder="Logo"
           />
-          <label htmlFor="logo">Agregar Logotipo</label>
+          <label>Agregar Logotipo</label>
         </div>
         <Upload buttonText="Upload Logo" photoSize="800px x 400px" />
         <div className="ModalAssociate__Form__Btn">

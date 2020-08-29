@@ -6,14 +6,16 @@ import SideBarMenuFilter from "../SidebarMenu/SideBarMenuFilter";
 
 export function SidebarMenuSmall({ pagename, type_user }) {
   const buttons = SideBarMenuFilter(pagename, type_user);
+  let keyButtons = 0;
   return (
     <div className="SidebarMenuSmall">
       <img src={eventIcon} alt="" />
       <div className="SidebarMenuSmall__Menu">
         {buttons.map((item) => {
+          keyButtons = keyButtons + 1;
           if (item.component === "Item") {
             return (
-              <Link to={item.link}>
+              <Link key={keyButtons} to={item.link}>
                 <Icon
                   svg={item.icon}
                   classes="svg-icon__menu"
@@ -23,7 +25,7 @@ export function SidebarMenuSmall({ pagename, type_user }) {
             );
           } else {
             return (
-              <Link to={item.link}>
+              <Link key={keyButtons} to={item.link}>
                 <Icon
                   svg={item.icon}
                   classes="svg-icon__menu"
