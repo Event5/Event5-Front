@@ -60,19 +60,19 @@ function SignUp(props) {
         />
         <div className="SignUpBox__Form__Options">
           <input
+            text="Admin"
             onChange={handleInput}
             name="type_user"
             value="admin"
             type="radio"
           />
-          <label htmlFor="">Admin</label>
           <input
+            text="Organizer"
             onChange={handleInput}
             name="type_user"
             value="organizer"
             type="radio"
           />
-          <label htmlFor="">Organizer</label>
         </div>
         <Button text="SignUp" type="primary" color="second" />
       </form>

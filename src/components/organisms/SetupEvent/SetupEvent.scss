@@ -10,7 +10,7 @@
     padding: 40px 80px;
     min-height: 70vh;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 50vh 60vh;
   }
   @include both-phones {
     padding: 16px 24px;

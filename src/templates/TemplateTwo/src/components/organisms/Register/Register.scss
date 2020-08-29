@@ -11,7 +11,15 @@
     text-align: center;
     color: $first-dark;
   }
-  form {
+  &__Form {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    input {
+      margin: 8px auto;
+    }
   }
 }

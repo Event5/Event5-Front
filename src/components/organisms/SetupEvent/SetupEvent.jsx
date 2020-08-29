@@ -11,6 +11,7 @@ export function SetupEvent({ title, description, inputAction, intialState }) {
         <p>{description}</p>
         <form id="eventTest" className="SetupEvent__Data-Form" action="">
           <Input
+            text="Event Name"
             onChange={inputAction}
             name="name"
             type="text"
@@ -18,6 +19,7 @@ export function SetupEvent({ title, description, inputAction, intialState }) {
             value={intialState.name}
           />
           <Input
+            text="URL"
             onChange={inputAction}
             name="url"
             type="text"
@@ -25,6 +27,7 @@ export function SetupEvent({ title, description, inputAction, intialState }) {
             value={intialState.url}
           />
           <Input
+            text="Date"
             onChange={inputAction}
             name="day"
             type="date"
