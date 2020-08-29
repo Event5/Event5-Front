@@ -11,11 +11,7 @@ export function SidebarMenu({ pagename, type_user }) {
   return (
     <aside className="DashboardMenu">
       <img src={logo} alt="Event5's Logo" />
-<<<<<<< HEAD
-      <ul>
-=======
       <nav>
->>>>>>> de98be5ff5a87579264dc22d506684e30ffa1405
         {buttons.map((item) => {
           if (item.component === "Item") {
             return (
@@ -39,11 +35,7 @@ export function SidebarMenu({ pagename, type_user }) {
             );
           }
         })}
-<<<<<<< HEAD
-      </ul>
-=======
       </nav>
->>>>>>> de98be5ff5a87579264dc22d506684e30ffa1405
       <IconButton text="sd" type="primary" color="first" />
       <Github />
     </aside>
