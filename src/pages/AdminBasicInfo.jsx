@@ -65,13 +65,8 @@ function AdminBasicInfo(props) {
   };
 
   return (
-<<<<<<< HEAD
-    <main className="app-layout">
-      <SidebarMenu pagename="eventPages" type_user={type_user} />
-=======
     <main className="AppLayout">
       <SidebarMenu pagename="eventPages" />
->>>>>>> de98be5ff5a87579264dc22d506684e30ffa1405
       <Content>
         <AppHeader btnText="All Organizers" onClick={handleOpenModal} />
         <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
