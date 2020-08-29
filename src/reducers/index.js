@@ -52,6 +52,15 @@ const reducer = (state, action) => {
           conferences: [...state.currentEvent.conferences, action.payload],
         },
       };
+    case "SAVEASSOCIATE_REQUEST":
+      return {
+        ...state,
+        currentEvent: {
+          ...state.currentEvent,
+          associates: [...state.currentEvent.associates, action.payload],
+        },
+      };
+
     default:
       return state;
   }
