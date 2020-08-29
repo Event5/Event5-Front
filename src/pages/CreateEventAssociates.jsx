@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-
+import { saveAssociate } from "../actions";
 import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SaveNext } from "../components/molecules";
 import {
@@ -12,33 +12,36 @@ import {
 } from "../components/organisms";
 import { Content, GridAssociates } from "../components/templates";
 
-const associates = [
-  {
-    name: "name",
-    kind: "AAA", // "AA", "A" (clasification),
-    url: "https://",
-    logo_url: "https://",
-  },
-  {
-    name: "name2",
-    kind: "AA", // "AA", "A" (clasification),
-    url: "https://",
-    logo_url: "https://",
-  },
-];
 export function CreateEventAssociates(props) {
-  console.log(props);
-
   const [form, setValues] = useState({
     modalIsOpen: false,
   });
 
   const handleOpenModal = (e) => {
-    setValues({ modalIsOpen: true });
+    setValues({
+      ...form,
+      modalIsOpen: true,
+    });
   };
 
   const handleCloseModal = (e) => {
-    setValues({ modalIsOpen: false });
+    setValues({
+      ...form,
+      modalIsOpen: false,
+    });
+  };
+
+  const handleInput = (event) => {
+    setValues({
+      ...form,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const handleSubmit = () => {
+    event.preventDefault();
+    props.saveAssociate(form);
+    handleCloseModal();
   };
 
   return (
@@ -48,7 +51,10 @@ export function CreateEventAssociates(props) {
       <Content>
         <AppHeader btnText="New Associate" onClick={handleOpenModal} />
         <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
-          <ModalAssociate />
+          <ModalAssociate
+            handleSubmit={handleSubmit}
+            handleInput={handleInput}
+          />
         </Modal>
         <SectionTitle
           title="Associates: Event Name"
@@ -68,5 +74,11 @@ const mapStateToProps = (state) => {
     associates: state.currentEvent.associates,
   };
 };
+const mapDispatchToProps = {
+  saveAssociate,
+};
 
-export default connect(mapStateToProps, null)(CreateEventAssociates);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(CreateEventAssociates);

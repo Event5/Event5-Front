@@ -32,6 +32,10 @@ export const saveConference = (payload) => ({
   type: "SAVECONFERENCE_REQUEST",
   payload,
 });
+export const saveAssociate = (payload) => ({
+  type: "SAVEASSOCIATE_REQUEST",
+  payload,
+});
 
 export const setError = (payload) => ({
   type: "SET_ERROR",
