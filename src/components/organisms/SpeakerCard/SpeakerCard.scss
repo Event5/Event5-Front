@@ -4,24 +4,19 @@
   width: 70%;
   display: grid;
   grid-template-columns: 25% 75%;
-  grid-template-rows: 100%;
   grid-column-gap: 8px;
   border-radius: 16px;
   background-color: $light;
   @include tablet {
     margin: 8px auto;
-    width: 90%;
-    grid-template-columns: 100%;
+    width: 100%;
+    grid-template-columns: 25% 75%;
     grid-column-gap: 8px;
   }
-  @include phone {
+  @include both-phones {
+    width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 30% 70%;
-    grid-column-gap: 8px;
-  }
-  @include phone-small {
-    grid-template-columns: 100%;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 120px 1fr;
     grid-column-gap: 8px;
   }
   &__Photo {
@@ -50,18 +45,15 @@
   }
   &__Info {
     padding: 0 8px;
-    display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include both-phones {
+      align-items: center;
+    }
     &-Name {
       display: flex;
-      align-items: center;
-      @include tablet {
-        justify-content: center;
-      }
-      @include phone {
-        justify-content: center;
-      }
-      @include phone-small {
+      @include phone-and-tablet {
         justify-content: center;
       }
       figure {

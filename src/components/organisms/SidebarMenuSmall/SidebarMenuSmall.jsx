@@ -9,7 +9,7 @@ export function SidebarMenuSmall({ pagename, type_user }) {
   return (
     <div className="SidebarMenuSmall">
       <img src={eventIcon} alt="" />
-      <div className="sidebar-menu-small__menu">
+      <div className="SidebarMenuSmall__Menu">
         {buttons.map((item) => {
           if (item.component === "Item") {
             return (

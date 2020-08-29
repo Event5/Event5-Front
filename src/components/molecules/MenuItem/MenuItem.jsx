@@ -5,7 +5,7 @@ import { Icon } from "../../atoms/Icons/Icon";
 
 export function MenuItem({ icon, text, link }) {
   return (
-    <li className="menu-item">
+    <li className="MenuItem">
       <Link to={link}>
         <Icon svg={icon} classes="svg-icon" title={icon} />
         <span>{text}</span>
