@@ -85,6 +85,10 @@ h6 {
 
 a {
   text-decoration: none;
+  color: $first;
+  &:hover {
+    color: $first-dark;
+  }
   // font-size: 18px;
   // font-weight: 600;
 }
@@ -103,11 +107,6 @@ p {
   @include both-phones {
     grid-template-columns: 15% 85%;
   }
-}
-
-.AppLayoutTemplate {
-  display: grid;
-  grid-template-columns: 5% 63% 32%;
 }
 
 // .Button {

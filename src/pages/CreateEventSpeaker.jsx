@@ -33,7 +33,7 @@ export function CreateEventSpeaker() {
         <AppHeader btnText="New Speaker" onClick={handleOpenModal} />
         <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
           <ModalSpeaker />
-        </Modal>{" "}
+        </Modal>
         <SectionTitle
           title="Speakers"
           description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."

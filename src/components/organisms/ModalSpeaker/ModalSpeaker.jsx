@@ -8,7 +8,7 @@ import { Upload } from "../../molecules/Upload";
 export function ModalSpeaker() {
   return (
     <div className="ModalSpeaker">
-      <h2>Your Conferencist</h2>
+      <h2>Speaker</h2>
       <form className="ModalSpeaker__Form" action="">
         <Input type="text" placeholder="Conferencist Name" />
         <select>

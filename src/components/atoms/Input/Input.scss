@@ -7,6 +7,9 @@
   border: none;
   color: $third-dark;
   background-color: transparent;
+  &Label {
+    margin-bottom: -16px;
+  }
   &-ColorFirst {
     border-bottom: 1px solid $first;
   }

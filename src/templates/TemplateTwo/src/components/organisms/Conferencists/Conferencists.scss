@@ -13,6 +13,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     @include phone-and-tablet {
+      width: 100%;
       grid-template-columns: 1fr;
     }
     h2 {

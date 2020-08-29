@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import logo from "../../../assets/images/E5Logo-blue-small.svg";
 
@@ -49,7 +50,9 @@ export function Header({ buttons, background }) {
   return (
     <header className={`Header ${backgroundColor}`}>
       <figure className="Header__Logo">
-        <img src={logo} alt="Event5' Logo" />
+        <Link to="/">
+          <img src={logo} alt="Event5' Logo" />
+        </Link>
       </figure>
       <nav className="Header__Nav">
         <ButtonList buttons={props} />

@@ -6,14 +6,18 @@
   cursor: pointer;
   font-size: 34px;
   font-weight: 600;
+  li {
+    fill: $first;
+    color: $first;
+    &:hover {
+      fill: $second-dark;
+      color: $second-dark;
+    }
+  }
   @include tablet {
     font-size: 28px;
   }
   @include both-phones {
     font-size: 24px;
-  }
-  &:hover {
-    fill: $second-dark;
-    color: $second-dark;
   }
 }
