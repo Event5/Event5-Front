@@ -9,4 +9,7 @@
   height: 100vh;
   padding: 16px;
   background-color: $light;
+  @include phone-and-tablet {
+    display: none;
+  }
 }

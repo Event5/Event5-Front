@@ -4,6 +4,7 @@ import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SaveNext } from "../components/molecules";
 import {
   SidebarMenu,
+  SidebarMenuSmall,
   SectionTitle,
   ConferenceCard,
   Modal,
@@ -27,6 +28,7 @@ export function CreateEventAgenda() {
   return (
     <main className="AppLayout">
       <SidebarMenu pagename="eventPages" />
+      <SidebarMenuSmall pagename="eventPages" />
       <Content>
         <AppHeader btnText="Add Session" onClick={handleOpenModal} />
         <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>

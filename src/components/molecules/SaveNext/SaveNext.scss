@@ -12,9 +12,10 @@
     font-size: 18px;
     cursor: pointer;
     &-First {
-      color: $first-dark;
+      color: $light;
       &:hover {
-        background-color: $first-light;
+        background-color: transparent;
+        color: $first-light;
       }
     }
     &-Light {

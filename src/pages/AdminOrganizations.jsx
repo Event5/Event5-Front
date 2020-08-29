@@ -5,6 +5,7 @@ import { newEvent } from "../actions";
 import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import {
   SidebarMenu,
+  SidebarMenuSmall,
   SectionTitle,
   Modal,
   ModalOrganization,
@@ -42,6 +43,7 @@ function AdminOrganizations(props) {
   return (
     <main className="AppLayout">
       <SidebarMenu pagename="adminDash" />
+      <SidebarMenuSmall pagename="adminDash" />
       <Content>
         <AppHeader btnText="New Organization" onClick={handleOpenModal} />
         <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>

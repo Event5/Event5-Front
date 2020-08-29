@@ -1,7 +1,7 @@
 .About__Links {
   width: 100%;
   min-height: 180px;
-  background-color: $first-light;
+  background-color: $first-lightest;
   &__Container {
     display: flex;
     flex-wrap: wrap;
@@ -10,8 +10,7 @@
     width: 80%;
     padding: 24px 0px;
     margin: 0 auto;
-    color: $light;
-    fill: $light;
+    color: $first-dark;
     @include both-phones {
       flex-direction: column;
       padding: 56px 0px 24px 0px;

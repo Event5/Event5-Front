@@ -7,6 +7,9 @@
     width: 340px;
     border-radius: 8px;
     background-color: $third-lightest;
+    @include both-phones {
+      width: 90%;
+    }
   }
   &__Info {
     strong {

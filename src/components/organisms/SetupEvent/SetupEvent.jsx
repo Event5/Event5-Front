@@ -33,9 +33,7 @@ export function SetupEvent({ title, description, inputAction, intialState }) {
           />
         </form>
       </div>
-      <figure className="SetupEvent__Image">
-        <img src={SetupImage} alt="Editing Event Image" />
-      </figure>
+      <img src={SetupImage} alt="Editing Event Image" />
     </div>
   );
 }

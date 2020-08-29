@@ -41,20 +41,24 @@ export function ButtonList({ buttons }) {
       {buttons.map((item) => {
         return item.map((btn) => {
           return btn.colorText ? (
-            <ButtonAlt
-              key={btn.key}
-              text={btn.text}
-              textcolor={btn.colorText}
-              linkTo={btn.linkTo}
-            />
+            <li>
+              <ButtonAlt
+                key={btn.key}
+                text={btn.text}
+                textcolor={btn.colorText}
+                linkTo={btn.linkTo}
+              />
+            </li>
           ) : (
-            <Button
-              key={btn.key}
-              text={btn.text}
-              type={btn.type}
-              color={btn.color}
-              linkTo={btn.linkTo}
-            />
+            <li>
+              <Button
+                key={btn.key}
+                text={btn.text}
+                type={btn.type}
+                color={btn.color}
+                linkTo={btn.linkTo}
+              />
+            </li>
           );
         });
       })}

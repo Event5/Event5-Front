@@ -6,6 +6,7 @@ import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SaveNext } from "../components/molecules";
 import {
   SidebarMenu,
+  SidebarMenuSmall,
   SetupEvent,
   TemplatesContainer,
   Modal,
@@ -66,6 +67,7 @@ function AdminBasicInfo(props) {
   return (
     <main className="AppLayout">
       <SidebarMenu pagename="eventPages" />
+      <SidebarMenuSmall pagename="eventPages" />
       <Content>
         <AppHeader btnText="All Organizers" onClick={handleOpenModal} />
         <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>

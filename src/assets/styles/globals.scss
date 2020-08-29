@@ -40,7 +40,7 @@ h3 {
   font-size: 34px;
   font-weight: 600;
   @include desktop {
-    font-size: 28px;
+    font-size: 22px;
   }
   @include tablet {
     font-size: 24px;
@@ -97,6 +97,12 @@ p {
 .AppLayout {
   display: grid;
   grid-template-columns: 20% 80%;
+  @include tablet {
+    grid-template-columns: 10% 90%;
+  }
+  @include both-phones {
+    grid-template-columns: 15% 85%;
+  }
 }
 
 .AppLayoutTemplate {

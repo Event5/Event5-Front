@@ -5,15 +5,22 @@
     align-items: center;
     width: 90%;
     margin: 32px 5%;
+    @include both-phones {
+      width: 90%;
+      margin: 16px auto;
+    }
   }
   &__Info {
     padding-right: 40px;
     min-width: 70%;
-    h1 {
-      color: $light;
+    @include both-phones {
+      padding: 0;
+      min-width: 100%;
+      margin: 16px 0;
     }
+    h1,
     p {
-      color: $first-dark;
+      color: $light;
     }
   }
 }

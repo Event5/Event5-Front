@@ -12,6 +12,10 @@
     position: relative;
     background-color: $light;
     padding: 8px;
+    @include both-phones {
+      width: 85%;
+      min-height: 100vh;
+    }
   }
   &__CloseButton {
     position: absolute;

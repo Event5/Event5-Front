@@ -9,14 +9,21 @@
     min-height: 200px;
     padding: 16px;
     transition: all 0.5s ease-in-out;
-    color: $light;
+    color: $first-dark;
+    @include both-phones {
+      width: 80%;
+      min-height: 80px;
+    }
     &:hover {
-      color: $second-light;
+      color: $first;
     }
   }
-  @include phone-and-tablet {
+  @include tablet {
     width: 160px;
     min-height: 160px;
+  }
+  @include both-phones {
+    width: 80px;
   }
   h6 {
     margin-top: 16px;

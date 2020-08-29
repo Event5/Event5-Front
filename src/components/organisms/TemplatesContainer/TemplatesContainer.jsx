@@ -11,7 +11,7 @@ export function TemplatesContainer({ ImageonClick, selected }) {
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
         ligula eget dolor.
       </p>
-      <div className="templates-options">
+      <div className="Templates__Options">
         <ImageText
           onClick={ImageonClick}
           templateName="Template One"

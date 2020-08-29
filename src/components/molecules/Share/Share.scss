@@ -1,5 +1,13 @@
 .Share__Container {
   margin: 32px 0;
+  @include both-phones {
+    margin: 8px 0;
+  }
+  div {
+    @include both-phones {
+      margin: 8px 32px;
+    }
+  }
   h4 {
     color: $first;
   }

@@ -4,6 +4,7 @@ import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SaveNext } from "../components/molecules";
 import {
   SidebarMenu,
+  SidebarMenuSmall,
   SectionTitle,
   SpeakerCard,
   Modal,
@@ -27,6 +28,7 @@ export function CreateEventSpeaker() {
   return (
     <main className="AppLayout">
       <SidebarMenu pagename="eventPages" />
+      <SidebarMenuSmall pagename="eventPages" />
       <Content>
         <AppHeader btnText="New Speaker" onClick={handleOpenModal} />
         <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
@@ -63,7 +65,7 @@ export function CreateEventSpeaker() {
           speakerRole="Scientist"
           biography="Biography of Stephen Hawking"
         />
-        <SaveNext />
+        <SaveNext colorText="light" />
       </Content>
     </main>
   );

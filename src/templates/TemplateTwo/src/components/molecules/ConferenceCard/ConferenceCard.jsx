@@ -2,7 +2,7 @@ import React from "react";
 
 export function ConferenceCard() {
   return (
-    <div className="ConferenceCard">
+    <div className="ConferenceCardTemplate">
       <h2 className="Template__H2">Conference Title</h2>
       <p className="Template__P">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

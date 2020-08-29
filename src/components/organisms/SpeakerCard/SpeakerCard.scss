@@ -1,6 +1,7 @@
 .SpeakerCard {
   margin: 16px 0;
   padding: 16px;
+  width: 70%;
   display: grid;
   grid-template-columns: 25% 75%;
   grid-template-rows: 100%;
@@ -8,8 +9,9 @@
   border-radius: 16px;
   background-color: $light;
   @include tablet {
+    margin: 8px auto;
+    width: 90%;
     grid-template-columns: 100%;
-    grid-template-rows: 30% 70%;
     grid-column-gap: 8px;
   }
   @include phone {

@@ -15,14 +15,6 @@ export function ModalOrganizers() {
         name="Nombre del Organizador"
         email="organizador@event.com"
       />
-      <OrganizerCard
-        name="Nombre del Organizador"
-        email="organizador@event.com"
-      />
-      <OrganizerCard
-        name="Nombre del Organizador"
-        email="organizador@event.com"
-      />
       <h2>Add Organizer</h2>
       <form className="ModalOrganizers__Form" action="">
         <select>
@@ -35,7 +27,7 @@ export function ModalOrganizers() {
           <option value="Cristian Cortes">Cristian Cortes</option>
           <option value="Sergio Estrella">Sergio Estrella</option>
         </select>
-        <div className="ModalSession__Form__Btn">
+        <div className="ModalOrganizers__Form__Btn">
           <Button text="Save Changes" type="primary" color="first" />
           <a>Discard Changes</a>
           <a>Delete Session</a>

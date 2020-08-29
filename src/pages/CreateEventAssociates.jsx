@@ -5,6 +5,7 @@ import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SaveNext } from "../components/molecules";
 import {
   SidebarMenu,
+  SidebarMenuSmall,
   SectionTitle,
   Modal,
   ModalAssociate,
@@ -43,6 +44,7 @@ export function CreateEventAssociates(props) {
   return (
     <main className="AppLayout">
       <SidebarMenu pagename="eventPages" />
+      <SidebarMenuSmall pagename="eventPages" />
       <Content>
         <AppHeader btnText="New Associate" onClick={handleOpenModal} />
         <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
@@ -56,7 +58,7 @@ export function CreateEventAssociates(props) {
           btnColor="light"
         />
         <GridAssociates AssociatesArray={props.associates} />
-        <SaveNext />
+        <SaveNext colorText="light" />
       </Content>
     </main>
   );

@@ -14,6 +14,9 @@
 .svg-icon-big {
   height: 3em;
   fill: currentcolor;
+  @include both-phones {
+    height: 2em;
+  }
   /* currentColor acts as a variable by taking
       color the parent node. 
   */
@@ -33,6 +36,9 @@
   &:hover {
     fill: $first-dark;
   }
+  @include both-phones {
+    height: 24px;
+  }
 }
 
 .svg-icon__menu--small {
@@ -42,5 +48,8 @@
   cursor: pointer;
   &:hover {
     fill: $first-dark;
+  }
+  @include both-phones {
+    height: 18px;
   }
 }

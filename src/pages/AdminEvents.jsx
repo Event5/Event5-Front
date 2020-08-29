@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import AppHeader from "../components/molecules/AppHeader/AppHeader";
-import { SidebarMenu } from "../components/organisms";
+import { SidebarMenu, SidebarMenuSmall } from "../components/organisms";
 import { Content, GridEvents } from "../components/templates";
 
 function OrganizerEvents(props) {
@@ -19,6 +19,7 @@ function OrganizerEvents(props) {
   return (
     <main className="AppLayout">
       <SidebarMenu pagename="adminDash" />
+      <SidebarMenuSmall pagename="adminDash" />
       <Content>
         <AppHeader btnText="New Event" />
         <GridEvents EventsArray={eventsArray} />
