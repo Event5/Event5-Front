@@ -8,7 +8,7 @@ export function SaveNext({ colorText, onClickLeft, onClickRight }) {
   let textColor;
   if (colorText === "light") {
     textColor = "Light";
-  } else if (colorText === "Firsr") {
+  } else if (colorText === "first") {
     textColor = "First";
   } else {
     textColor = "Black";

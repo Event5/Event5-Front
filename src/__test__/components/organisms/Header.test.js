@@ -1,20 +1,28 @@
 import React from "react";
-import { mount } from "enzyme";
-import { Link, Route, BrowserRouter } from "react-router-dom";
+import { shallow } from "enzyme";
 import { Header } from "../../../components/organisms";
 
 describe("<Header />", () => {
-  const header = mount(
-    <BrowserRouter>
-      <Route>
-        <Link to="#">
-          <Header />
-        </Link>
-      </Route>
-    </BrowserRouter>
-  );
+  // Background colors
+  const header = shallow(<Header buttons="" background="first" />);
+  const headerSecond = shallow(<Header buttons="" background="second" />);
 
-  test("Render component Header", () => {
-    expect(header.length).toEqual(1);
+  // Has Logo
+  test("Render of logo", () => {
+    expect(header.find("img").exists()).toBe(true);
+  });
+
+  // Render Menu
+  test("Render Menu", () => {
+    expect(header.find("ButtonList").exists()).toBe(true);
+  });
+
+  // Background colors
+  test("First color for background", () => {
+    expect(header.find("header").hasClass("Backgroundfirst")).toBe(true);
+  });
+
+  test("Second color for background", () => {
+    expect(headerSecond.find("header").hasClass("Backgroundsecond")).toBe(true);
   });
 });
