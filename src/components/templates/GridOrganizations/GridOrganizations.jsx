@@ -11,8 +11,8 @@ export function GridOrganizations({ organizationArray }) {
         return (
           <OrganizationCard
             key={keyOrg}
-            orgName={organization.organizationName}
-            orgId={organization.organizationID}
+            orgName={organization.name}
+            orgId={organization.id}
             orgEventsArray={organization.events || []}
           />
         );
