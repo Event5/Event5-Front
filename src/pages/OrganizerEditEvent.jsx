@@ -16,7 +16,7 @@ export function OrganizerEditEvent() {
         {/* <AppHeader btnText="New Organization" /> */}
         <SetupEvent
           title="Setup Event"
-          description="Descripción del componente."
+          description="Configure the main details of the event here. You can also select the template of the page that the public will see."
         />
         <TemplatesContainer />
       </Content>

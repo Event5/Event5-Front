@@ -66,7 +66,7 @@ function CreateEventSpeaker(props) {
         </Modal>
         <SectionTitle
           title="Speakers"
-          description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+          description="Add and see here the speakers of your event, make sure they are the best."
           btnText="New Event"
           btnType="primary"
           btnColor="light"

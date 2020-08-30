@@ -79,7 +79,7 @@ function AdminOrganizations(props) {
         </Modal>
         <SectionTitle
           title="Your Organizations"
-          description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+          description="Here you can see all the organizations that you have created, as well as the events of each one."
           btnText="New Event"
           btnType="primary"
           btnColor="light"

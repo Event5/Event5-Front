@@ -21,12 +21,12 @@ export function DiffusionView() {
       <div className="Diffusion__Info">
         <TitleIntro
           title="Diffusion: Event Name"
-          description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+          description="You already have your event. Time to share it with everyone!"
         />
         <Share />
         <SubtitleText
           title="Write an Email"
-          description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+          description="Do you have anything else to say to the participants? You can send an email to everyone."
           onClick={handleOpenModal}
         />
         <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>

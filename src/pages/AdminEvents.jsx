@@ -32,7 +32,7 @@ function OrganizerEvents(props) {
         <AppHeader />
         <SectionTitle
           title="Your Events"
-          description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+          description="These are the events that you have created. Both those that you have published, as well as those that are pending."
         />
         <GridEvents EventsArray={eventsArray || []} />
         <NoData text="Eventos" isOpen={noresults} />
