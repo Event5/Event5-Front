@@ -1,6 +1,6 @@
 import React from "react";
 
-import { UserAccess } from "../components/templates";
+import UserAccess from "../components/templates/UserAccess/UserAccess";
 
 import img from "../assets/images/ImgLogin.svg";
 

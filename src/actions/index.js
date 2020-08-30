@@ -1,7 +1,18 @@
 import axios from "axios";
+import getCookie from "../utils/getCookie";
+
+export const openWaiting = (payload) => ({
+  type: "OPEN_WAITING",
+  payload,
+});
 
 export const loginRequest = (payload) => ({
   type: "LOGIN_REQUEST",
+  payload,
+});
+
+export const dashboardAccess = (payload) => ({
+  type: "USER_ACCESS",
   payload,
 });
 
@@ -49,14 +60,21 @@ export const setError = (payload) => ({
 
 export const registerUser = (payload) => {
   return (dispatch) => {
-    axios
-      .post("https://event5.azurewebsites.net/api/auth/sign-up", payload)
+    axios({
+      method: "POST",
+      url: "https://event5.azurewebsites.net/api/auth/sign-up",
+      data: payload,
+    })
       .then(({ data }) => {
         alert("registro Exitoso, ya puedes realizar el Log in");
         dispatch(registerRequest(data.data.email));
       })
       .catch((error) => {
-        alert("Ocurrio un error, vuelve a intertarlo");
+        if (error.response.status == 401) {
+          alert("Usuario ya registrado");
+        } else {
+          alert("Error, vuela a intentarlo");
+        }
         dispatch(setError(error));
       });
   };
@@ -74,8 +92,26 @@ export const loginUser = ({ email, password }) => {
     })
       .then(({ data }) => {
         document.cookie = `token=${data.token}`;
-        alert("Login Exitoso");
-        dispatch(loginRequest(data.user.type_user));
+        dispatch(loginRequest(data.user));
+        dispatch(getUserEvents(data.user));
+      })
+      .catch((err) => {
+        alert("Ocurrio un error, vuelve a intertarlo");
+        dispatch(setError(err));
+      });
+  };
+};
+
+export const getUserEvents = ({ id }) => {
+  const token = getCookie("token");
+  return (dispatch) => {
+    axios({
+      url: `https://event5.azurewebsites.net/api/data/admin/?user_id=${id}`,
+      method: "GET",
+      headers: { Authorization: `Bearer ${token}` },
+    })
+      .then(({ data }) => {
+        dispatch(dashboardAccess(data.data));
       })
       .catch((err) => {
         alert("Ocurrio un error, vuelve a intertarlo");

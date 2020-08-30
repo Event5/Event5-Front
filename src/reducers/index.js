@@ -1,17 +1,37 @@
 const reducer = (state, action) => {
   switch (action.type) {
+    case "OPEN_WAITING":
+      return {
+        ...state,
+        status: { ...state.status, modal: true },
+      };
     case "LOGIN_REQUEST":
       return {
         ...state,
-        user: { ...state.user, type_user: action.payload },
+        user: action.payload,
+      };
+    case "USER_ACCESS":
+      return {
+        ...state,
+        status: { session: "on", modal: false },
+        currentEvent: action.payload,
       };
     case "REGISTER_REQUEST":
       return {
         ...state,
+        status: { ...state.status, modal: false },
         user: { email: action.payload },
       };
     case "LOGOUT_REQUEST":
-      return {};
+      return {
+        status: {
+          modal: false,
+          session: "off",
+        },
+        user: {},
+        data: [],
+        currentEvent: {},
+      };
 
     case "SAVEEVENT_REQUEST":
       return {
@@ -67,6 +87,11 @@ const reducer = (state, action) => {
           ...state.currentEvent,
           speakers: [...state.currentEvent.speakers, action.payload],
         },
+      };
+    case "SET_ERROR":
+      return {
+        ...state,
+        status: { ...state.status, modal: false },
       };
 
     default:

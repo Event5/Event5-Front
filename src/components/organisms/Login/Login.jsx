@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
-import { loginUser } from "../../../actions";
-import { Button, Input } from "../../atoms";
+import { loginUser, openWaiting } from "../../../actions";
+import { Button, Input, Waiting } from "../../atoms";
+import { Modal } from "../../organisms";
 
 function Login(props) {
   const history = useHistory();
-
-  if (props.user) {
-    const user = props.user.type_user;
-    if (user === "admin") {
-      history.push("./organizations");
-    } else if (user === "organizer") {
-      history.push("./events");
+  const session = props.status.session;
+  const typeUser = props.user.type_user;
+  if (session == "on") {
+    if (typeUser == "admin") {
+      history.push("/organizations");
     } else {
-      history.push("./login");
+      history.push("/events");
     }
   }
 
@@ -32,6 +31,7 @@ function Login(props) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    props.openWaiting();
     props.loginUser(form);
   };
 
@@ -61,6 +61,9 @@ function Login(props) {
           <span className="LoginBox__ToRegister-bold">Create One</span>
         </Link>
       </div>
+      <Modal isOpen={props.status.modal}>
+        <Waiting />
+      </Modal>
     </div>
   );
 }
@@ -68,11 +71,13 @@ function Login(props) {
 const mapStateToProps = (state) => {
   return {
     user: state.user,
+    status: state.status,
   };
 };
 
 const mapDispatchToProps = {
   loginUser,
+  openWaiting,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Login);
