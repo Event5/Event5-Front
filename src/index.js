@@ -13,10 +13,24 @@ const initialState = {
   status: {
     modal: false,
     session: "off",
+    page: "dashboard",
   },
   user: {},
   data: [],
-  currentEvent: {},
+  currentEvent: {
+    basic: {
+      id: "",
+      event_name: "",
+      url: "",
+      event_start_date: "",
+      template: "",
+      organization: "",
+    },
+    organizers: [],
+    conferences: [],
+    speakers: [],
+    associates: [],
+  },
 };
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

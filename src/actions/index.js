@@ -31,6 +31,21 @@ export const saveOrganization = (payload) => ({
   payload,
 });
 
+export const openEvent = (payload) => ({
+  type: "OPEN_EVENT",
+  payload,
+});
+
+export const setPage = (payload) => ({
+  type: "SET_PAGE",
+  payload,
+});
+
+export const backDashboard = (payload) => ({
+  type: "BACK_DASHBOARD",
+  payload,
+});
+
 export const saveEvent = (payload) => ({
   type: "SAVEEVENT_REQUEST",
   payload,
@@ -146,6 +161,27 @@ export const addOrganization = (payload) => {
   };
 };
 
+export const seeEvent = (payload) => {
+  const token = getCookie("token");
+  return (dispatch) => {
+    axios({
+      url: `https://event5.azurewebsites.net/api/data/id_event/?user_id=${payload}`,
+      method: "GET",
+      headers: { Authorization: `Bearer ${token}` },
+    })
+      .then(({ data }) => {
+        dispatch(openEvent(data.data));
+      })
+      .then(() => {
+        return "ok";
+      })
+      .catch((err) => {
+        alert("Ocurrio un error, vuelve a intertarlo");
+        dispatch(setError(err));
+      });
+  };
+};
+
 export const addEventBasic = (payload) => {
   const token = getCookie("token");
   return (dispatch) => {
@@ -165,5 +201,20 @@ export const addEventBasic = (payload) => {
 };
 
 // export const addOrganizer = (payload) => {
-
-// }
+//   const token = getCookie("token");
+//   return (dispatch) => {
+//     axios({
+//       url: "https://event5.azurewebsites.net/api/event/new-event",
+//       method: "POST",
+//       headers: { Authorization: `Bearer ${token}` },
+//       data: payload,
+//     })
+//       .then(({ data }) => {
+//         alert("Evento Guardado");
+//         dispatch(saveEvent(data.data));
+//       })
+//       .catch((err) => {
+//         alert("Ocurrio un error, vuelve a intertarlo");
+//       });
+//   };
+// };

@@ -27,10 +27,55 @@ const reducer = (state, action) => {
         status: {
           modal: false,
           session: "off",
+          page: "dashboard",
         },
         user: {},
         data: [],
-        currentEvent: {},
+        currentEvent: {
+          basic: {
+            id: "",
+            event_name: "",
+            url: "",
+            event_start_date: "",
+            template: "",
+            organization: "",
+          },
+          organizers: [],
+          conferences: [],
+          speakers: [],
+          associates: [],
+        },
+      };
+    case "OPEN_EVENT":
+      return {
+        ...state,
+        currentEvent: {
+          basic: action.payload,
+        },
+      };
+    case "setPage":
+      return {
+        ...state,
+        status: { ...state.status, page: "event" },
+      };
+    case "BACK_DASHBOARD":
+      return {
+        ...state,
+        status: { ...state.status, page: "dashboard" },
+        currentEvent: {
+          basic: {
+            id: "",
+            event_name: "",
+            url: "",
+            event_start_date: "",
+            template: "",
+            organization: "",
+            organizers: [],
+            conferences: [],
+            speakers: [],
+            associates: [],
+          },
+        },
       };
     case "SAVEORGANIZATION_REQUEST":
       return {

@@ -38,7 +38,7 @@ function Login(props) {
   return (
     <div className="LoginBox">
       <h2>Hi! Again</h2>
-      <form className="LoginBox__Form" onSubmit={handleSubmit}>
+      <form className="LoginBox__Form">
         <Input
           onChange={handleInput}
           name="email"
@@ -52,7 +52,12 @@ function Login(props) {
           placeholder="Password"
         />
         <div className="LoginBox__Form__Btn">
-          <Button text="Log in" type="primary" color="first" />
+          <Button
+            onClick={handleSubmit}
+            text="Log in"
+            type="primary"
+            color="first"
+          />
         </div>
       </form>
       <div className="LoginBox__ToRegister">

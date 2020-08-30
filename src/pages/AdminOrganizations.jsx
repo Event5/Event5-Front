@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
-import { newEvent, addOrganization } from "../actions";
+import { newEvent, addOrganization, seeEvent, backDashboard } from "../actions";
 import getCookie from "../utils/getCookie";
 import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { NoData } from "../components/molecules";
@@ -54,14 +54,21 @@ function AdminOrganizations(props) {
 
   document.addEventListener("click", (event) => {
     const buttonname = event.target.id;
-    const numberId = buttonname.slice(1, 100) * 1;
-    const category = buttonname.slice(0, 1);
-    if (category == "e") {
-      //to see event
-      console.log(numberId);
-    } else if (category == "o") {
+    const numberId = buttonname.slice(4, 100) * 1;
+    const category = buttonname.slice(0, 4);
+    if (category == "b-ev") {
+      history.push("./event");
+      props.seeEvent(numberId);
+    } else if (category == "b-or") {
       props.newEvent(numberId);
       history.push("/event");
+    } else if (buttonname == "Organizations" || buttonname == "All Events") {
+      props.backDashboard(numberId);
+      if (buttonname == "Organizations") {
+        history.push("/organizations");
+      } else {
+        history.push("/events");
+      }
     }
   });
 
@@ -96,12 +103,15 @@ const mapStateToProps = (state) => {
   return {
     organizations: state.data,
     user: state.user,
+    currentEvent: state.currentEvent.basic,
   };
 };
 
 const mapDispatchToProps = {
   newEvent,
   addOrganization,
+  seeEvent,
+  backDashboard,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(AdminOrganizations);

@@ -16,7 +16,7 @@ export function SetupEvent({ title, description, inputAction, intialState }) {
             name="event_name"
             type="text"
             placeholder="Event Name"
-            value={intialState.name}
+            value={intialState.event_name}
           />
           <Input
             text="URL"
@@ -32,7 +32,7 @@ export function SetupEvent({ title, description, inputAction, intialState }) {
             name="event_start_date"
             type="datetime-local"
             placeholder="Event StartDate"
-            value={intialState.day}
+            value={intialState.event_start_date}
           />
         </form>
       </div>

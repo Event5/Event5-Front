@@ -19,13 +19,13 @@ function AdminBasicInfo(props) {
   const history = useHistory();
 
   const [form, setValues] = useState({
-    event_name: eventData.event_name || "",
-    url: eventData.url || "",
-    event_start_date: eventData.event_start_date || "",
-    template: eventData.template || "",
+    users: [props.user.id],
+    url: eventData.url,
+    event_name: eventData.event_name,
+    event_start_date: eventData.event_start_date,
+    template: eventData.template,
     organization_id: eventData.organization_id,
     published: eventData.published || false,
-    users: eventData.user || [48],
     modalIsOpen: false,
   });
 
@@ -66,11 +66,10 @@ function AdminBasicInfo(props) {
   const revertData = () => {
     setValues({
       ...form,
-      name: eventData.name,
+      event_name: eventData.event_name,
       url: eventData.url,
-      day: eventData.day,
+      event_start_date: eventData.event_start_date,
       template: eventData.template,
-      organization: eventData.organization,
     });
   };
 
@@ -85,7 +84,7 @@ function AdminBasicInfo(props) {
         <AppHeader btnText="All Organizers" onClick={handleOpenModal} />
         <Modal isOpen={form.modalIsOpen || false} onClose={handleCloseModal}>
           <ModalOrganizers
-            intialState={props.event.organizers}
+            intialState={props.event.organizers || []}
             inputAction={handleInput}
             handleSaveOrganizer={handleSaveOrganizer}
           />
@@ -113,6 +112,7 @@ const mapStateToProps = (state) => {
   return {
     event: state.currentEvent,
     user: state.user,
+    page: state.status.page,
   };
 };
 

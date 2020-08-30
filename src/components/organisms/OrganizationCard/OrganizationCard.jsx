@@ -11,7 +11,7 @@ export function OrganizationCard({ orgName, orgId, orgEventsArray }) {
         return (
           <SimpleEvent
             key={event.id}
-            eId={`e${event.id}`}
+            eId={`b-ev${event.id}`}
             eventImage={event.logo_url}
             eventName={event.name}
             associatesNumber={event.associates}
@@ -19,7 +19,12 @@ export function OrganizationCard({ orgName, orgId, orgEventsArray }) {
           />
         );
       })}
-      <Button id={`o${orgId}`} text="New Event" type="primary" color="second" />
+      <Button
+        id={`b-or${orgId}`}
+        text="New Event"
+        type="primary"
+        color="second"
+      />
     </section>
   );
 }
