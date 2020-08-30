@@ -26,6 +26,11 @@ export const logoutRequest = (payload) => ({
   payload,
 });
 
+export const saveOrganization = (payload) => ({
+  type: "SAVEORGANIZATION_REQUEST",
+  payload,
+});
+
 export const saveEvent = (payload) => ({
   type: "SAVEEVENT_REQUEST",
   payload,
@@ -92,6 +97,8 @@ export const loginUser = ({ email, password }) => {
     })
       .then(({ data }) => {
         document.cookie = `token=${data.token}`;
+        document.cookie = `user=${data.user.id}`;
+        document.cookie = `type_user=${data.user.type_user}`;
         dispatch(loginRequest(data.user));
         dispatch(getUserEvents(data.user));
       })
@@ -116,6 +123,26 @@ export const getUserEvents = ({ id }) => {
       .catch((err) => {
         alert("Ocurrio un error, vuelve a intertarlo");
         dispatch(setError(err));
+      });
+  };
+};
+
+export const addOrganization = (payload) => {
+  const token = getCookie("token");
+  return (dispatch) => {
+    axios({
+      url: "https://event5.azurewebsites.net/api/organization/",
+      method: "POST",
+      headers: { Authorization: `Bearer ${token}` },
+      data: payload,
+    })
+      .then(({ data }) => {
+        console.log("ok");
+        console.log(data.data);
+        dispatch(saveOrganization(data.data));
+      })
+      .catch((err) => {
+        alert("Ocurrio un error, vuelve a intertarlo");
       });
   };
 };

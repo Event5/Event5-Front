@@ -14,7 +14,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         status: { session: "on", modal: false },
-        currentEvent: action.payload,
+        data: action.payload,
       };
     case "REGISTER_REQUEST":
       return {
@@ -32,7 +32,11 @@ const reducer = (state, action) => {
         data: [],
         currentEvent: {},
       };
-
+    case "SAVEORGANIZATION_REQUEST":
+      return {
+        ...state,
+        data: [...state.data, action.payload],
+      };
     case "SAVEEVENT_REQUEST":
       return {
         ...state,
