@@ -7,7 +7,11 @@ export function CallToAction() {
     <div className="CallToAction">
       <h1>Create your events</h1>
       <div className="CallToAction__Btn">
-        <Button text="Create your first event" type="secondary" />
+      <Button
+            text="Create your first event"
+            type="secondary"
+            linkTo="/login"
+          />
       </div>
     </div>
   );
