@@ -46,8 +46,11 @@ export function CreateEventAssociates(props) {
 
   return (
     <main className="AppLayout">
-      <SidebarMenu pagename="eventPages" />
-      <SidebarMenuSmall pagename="eventPages" />
+      <SidebarMenu pagename="eventPages" type_user={props.user.type_user} />
+      <SidebarMenuSmall
+        pagename="eventPages"
+        type_user={props.user.type_user}
+      />
       <Content>
         <AppHeader btnText="New Associate" onClick={handleOpenModal} />
         <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
@@ -72,6 +75,7 @@ export function CreateEventAssociates(props) {
 const mapStateToProps = (state) => {
   return {
     associates: state.currentEvent.associates,
+    user: state.user,
   };
 };
 const mapDispatchToProps = {

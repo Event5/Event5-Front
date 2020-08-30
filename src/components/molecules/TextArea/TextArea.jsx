@@ -1,6 +1,6 @@
 import React from "react";
 
-export function TextArea({ idName, onChange }) {
+export function TextArea({ name, idName, onChange }) {
   return (
     <div className="TextArea">
       <label form={`${idName} Description`}>{idName} Description:</label>
@@ -8,7 +8,7 @@ export function TextArea({ idName, onChange }) {
         onChange={onChange}
         type="text"
         id={`${idName} Description`}
-        name={`${idName} Description`}
+        name={name}
         placeholder="Max 210 characters"
       ></input>
     </div>

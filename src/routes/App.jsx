@@ -6,10 +6,10 @@ import { HomePage, About, LoginPage, SignUpPage, NotFoundPage } from "../pages";
 import {
   OrganizerEditEvent,
   CreateEventData,
-  CreateEventSpeaker,
   CreateEventDiffusion,
 } from "../pages";
 
+import CreateEventSpeaker from "../pages/CreateEventSpeaker";
 import AdminOrganizations from "../pages/AdminOrganizations";
 import OrganizerEvents from "../pages/OrganizerEvents";
 import AdminEvents from "../pages/AdminEvents";

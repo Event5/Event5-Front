@@ -56,8 +56,11 @@ function CreateEventAgenda(props) {
   let confKey = 0;
   return (
     <main className="AppLayout">
-      <SidebarMenu pagename="eventPages" />
-      <SidebarMenuSmall pagename="eventPages" />
+      <SidebarMenu pagename="eventPages" type_user={props.user.type_user} />
+      <SidebarMenuSmall
+        pagename="eventPages"
+        type_user={props.user.type_user}
+      />
       <Content>
         <AppHeader btnText="Add Session" onClick={handleOpenModal} />
         <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
@@ -97,6 +100,7 @@ const mapStateToProps = (state) => {
   return {
     conferences: state.currentEvent.conferences,
     speakers: state.currentEvent.speakers,
+    user: state.user,
   };
 };
 

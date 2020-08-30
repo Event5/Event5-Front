@@ -37,6 +37,11 @@ export const saveAssociate = (payload) => ({
   payload,
 });
 
+export const saveSpeaker = (payload) => ({
+  type: "SAVESPEAKER_REQUEST",
+  payload,
+});
+
 export const setError = (payload) => ({
   type: "SET_ERROR",
   payload,

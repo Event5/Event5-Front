@@ -60,6 +60,14 @@ const reducer = (state, action) => {
           associates: [...state.currentEvent.associates, action.payload],
         },
       };
+    case "SAVESPEAKER_REQUEST":
+      return {
+        ...state,
+        currentEvent: {
+          ...state.currentEvent,
+          speakers: [...state.currentEvent.speakers, action.payload],
+        },
+      };
 
     default:
       return state;

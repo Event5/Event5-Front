@@ -17,7 +17,7 @@ export function Input({
   }
   return (
     <>
-      <label className="InputLabel" for={name}>
+      <label className="InputLabel" htmlFor={name}>
         {text}
       </label>
       <input
