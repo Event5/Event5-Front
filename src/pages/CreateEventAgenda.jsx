@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
-import { saveConference } from "../actions";
+import { addSession } from "../actions";
 import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SaveNext } from "../components/molecules";
 import {
@@ -43,7 +43,10 @@ function CreateEventAgenda(props) {
 
   const handleSubmit = () => {
     event.preventDefault();
-    props.saveConference(form);
+    delete form.modalIsOpen;
+    delete form.duration;
+    form.event_id = props.currentEvent.basic.id;
+    props.addSession(form);
   };
 
   const handleNextBtn = () => {
@@ -51,9 +54,12 @@ function CreateEventAgenda(props) {
   };
 
   //to get conferences from props
-  const conferences = props.conferences;
-  const speakers = props.speakers;
+
+  const conferences = props.conferences || [];
+  const speakers = [];
+  // const speakers = props.speakers;
   let confKey = 0;
+
   return (
     <main className="AppLayout">
       <SidebarMenu pagename="eventPages" type_user={props.user.type_user} />
@@ -98,14 +104,14 @@ function CreateEventAgenda(props) {
 
 const mapStateToProps = (state) => {
   return {
-    conferences: state.currentEvent.conferences,
-    speakers: state.currentEvent.speakers,
+    conferences: state.currentEvent.basic.schedule_event,
+    currentEvent: state.currentEvent,
     user: state.user,
   };
 };
 
 const mapDispatchToProps = {
-  saveConference,
+  addSession,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(CreateEventAgenda);

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
-import { addEventBasic, saveOrganizer } from "../actions";
+import { addEventBasic, addOrganizer } from "../actions";
 import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SaveNext } from "../components/molecules";
 import {
@@ -59,7 +59,11 @@ function AdminBasicInfo(props) {
 
   const handleSaveOrganizer = (event) => {
     event.preventDefault();
-    props.saveOrganizer(form.organizer);
+    const payload = {
+      email: form.organizer,
+      event_id: eventData.id,
+    };
+    props.addOrganizer(payload);
     handleCloseModal();
   };
 
@@ -118,7 +122,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {
   addEventBasic,
-  saveOrganizer,
+  addOrganizer,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(AdminBasicInfo);

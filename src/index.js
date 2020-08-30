@@ -27,7 +27,7 @@ const initialState = {
       organization: "",
     },
     organizers: [],
-    conferences: [],
+    schedule_event: [],
     speakers: [],
     associates: [],
   },

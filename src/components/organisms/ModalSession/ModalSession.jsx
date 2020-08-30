@@ -33,7 +33,7 @@ export function ModalSession({ handleInput, handleSubmit, speakers }) {
         <div>
           <strong>Start Date</strong>
           <Input
-            name="day"
+            name="date_time"
             onChange={handleInput}
             type="datetime-local"
             placeholder="Start Date"

@@ -192,7 +192,11 @@ export const addEventBasic = (payload) => {
       data: payload,
     })
       .then(({ data }) => {
-        dispatch(saveEvent(data.data));
+        if (data.data.includes("<!DOCTYPE")) {
+          alert("Cambiar url del evento");
+        } else {
+          dispatch(saveEvent(data.data));
+        }
       })
       .catch((err) => {
         alert("Ocurrio un error, vuelve a intertarlo");
@@ -200,21 +204,41 @@ export const addEventBasic = (payload) => {
   };
 };
 
-// export const addOrganizer = (payload) => {
-//   const token = getCookie("token");
-//   return (dispatch) => {
-//     axios({
-//       url: "https://event5.azurewebsites.net/api/event/new-event",
-//       method: "POST",
-//       headers: { Authorization: `Bearer ${token}` },
-//       data: payload,
-//     })
-//       .then(({ data }) => {
-//         alert("Evento Guardado");
-//         dispatch(saveEvent(data.data));
-//       })
-//       .catch((err) => {
-//         alert("Ocurrio un error, vuelve a intertarlo");
-//       });
-//   };
-// };
+export const addOrganizer = (payload) => {
+  const token = getCookie("token");
+  return (dispatch) => {
+    axios({
+      url: "https://event5.azurewebsites.net/api/event/organizer",
+      method: "POST",
+      headers: { Authorization: `Bearer ${token}` },
+      data: payload,
+    })
+      .then(({ data }) => {
+        alert("Organizador Agregado");
+        console.log(data.data);
+        dispatch(saveOrganizer(data.data));
+      })
+      .catch((err) => {
+        alert("Ocurrio un error, vuelve a intertarlo");
+      });
+  };
+};
+
+export const addSession = (payload) => {
+  const token = getCookie("token");
+  return (dispatch) => {
+    axios({
+      url: "https://event5.azurewebsites.net/api/event/schedule",
+      method: "POST",
+      headers: { Authorization: `Bearer ${token}` },
+      data: payload,
+    })
+      .then(({ data }) => {
+        console.log(data.data);
+        dispatch(saveConference(data.data));
+      })
+      .catch((err) => {
+        alert("Ocurrio un error, vuelve a intertarlo");
+      });
+  };
+};

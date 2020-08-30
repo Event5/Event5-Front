@@ -70,6 +70,11 @@ function AdminOrganizations(props) {
         history.push("/events");
       }
     }
+    if (buttonname == "Event") {
+      history.push("/event");
+    } else if (buttonname == "Difussion") {
+      history.push("/event-diffusion");
+    }
   });
 
   const { organizations } = props;

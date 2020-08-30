@@ -41,7 +41,7 @@ const reducer = (state, action) => {
             organization: "",
           },
           organizers: [],
-          conferences: [],
+          schedule_event: [],
           speakers: [],
           associates: [],
         },
@@ -71,7 +71,7 @@ const reducer = (state, action) => {
             template: "",
             organization: "",
             organizers: [],
-            conferences: [],
+            schedule_event: [],
             speakers: [],
             associates: [],
           },
@@ -108,7 +108,7 @@ const reducer = (state, action) => {
           basic: { organization_id: action.payload },
           info: {},
           users: [],
-          conferences: [],
+          schedule_event: [],
           speakers: [],
           associates: [],
         },
@@ -117,8 +117,13 @@ const reducer = (state, action) => {
       return {
         ...state,
         currentEvent: {
-          ...state.currentEvent,
-          conferences: [...state.currentEvent.conferences, action.payload],
+          basic: {
+            ...state.currentEvent.basic,
+            schedule_event: [
+              ...state.currentEvent.basic.schedule_event,
+              action.payload,
+            ],
+          },
         },
       };
     case "SAVEASSOCIATE_REQUEST":
