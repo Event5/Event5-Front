@@ -14,6 +14,7 @@ import { Content, GridOrganizations } from "../components/templates";
 
 function AdminOrganizations(props) {
   const history = useHistory();
+  // Handle modal
   const [form, setValues] = useState({
     modalIsOpen: false,
   });
