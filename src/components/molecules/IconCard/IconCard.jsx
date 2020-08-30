@@ -6,7 +6,7 @@ import "../../../assets/styles/Main.scss";
 export function IconCard({ icon, text }) {
   return (
     <div className="IconCard">
-      <Icon svg={icon} classes="svg-icon-big" title={icon} />
+      <Icon svg={icon} classes="SvgIcon--Big" title={icon} />
       <p>{text}</p>
     </div>
   );

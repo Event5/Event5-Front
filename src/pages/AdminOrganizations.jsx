@@ -18,6 +18,7 @@ function AdminOrganizations(props) {
   const noresults = props.organizations.length > 0 ? false : true;
 
   const history = useHistory();
+  // Handle modal
   const [form, setValues] = useState({
     modalIsOpen: false,
   });

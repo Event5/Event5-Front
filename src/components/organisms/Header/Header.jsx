@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../../../assets/images/E5Logo-blue-small.svg";
 
+import { Icon } from "../../atoms";
 import { ButtonList } from "../../molecules";
+import { Modal, ModalMenu } from "../../organisms";
 
 export function Header({ buttons, background }) {
+  const [form, setValues] = useState({
+    modalIsOpen: false,
+  });
+
+  const handleOpenModal = (e) => {
+    setValues({ modalIsOpen: true });
+  };
+
+  const handleCloseModal = (e) => {
+    setValues({ modalIsOpen: false });
+  };
+
   let backgroundColor;
   if (background === "first") {
     backgroundColor = "Backgroundfirst";
@@ -57,6 +71,14 @@ export function Header({ buttons, background }) {
       <nav className="Header__Nav">
         <ButtonList buttons={props} />
       </nav>
+      <div className="Header__Nav--Responsive">
+        <button onClick={handleOpenModal}>
+          <Icon svg="menu" classes="SvgIcon__Menu" title="Menu" />
+        </button>
+        <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
+          <ModalMenu />
+        </Modal>
+      </div>
     </header>
   );
 }

@@ -4,11 +4,13 @@ import { Button } from "../../atoms";
 import { Countdown } from "../../molecules";
 
 export function Information() {
+  const testDate = new Date("August 30, 2020 23:59:59");
+
   return (
     <main className="Information">
       <img src="" alt="Event Info" />
       <div className="Information__Container">
-        <Countdown />
+        <Countdown eventDate={testDate.toUTCString()} />
         <h2 className="Template__H2">Live the Event Info</h2>
         <p className="Template__P">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

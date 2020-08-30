@@ -1,4 +1,4 @@
-.svg-icon {
+.SvgIcon {
   margin-right: 8px;
   height: 1em;
   fill: currentcolor;
@@ -6,12 +6,12 @@
       color the parent node. 
   */
 }
-.svg-icon_twitter {
+.SvgIcon--Twitter {
   fill: $first;
   height: 1.4em;
 }
 
-.svg-icon-big {
+.SvgIcon--Big {
   height: 3em;
   fill: currentcolor;
   @include both-phones {
@@ -22,13 +22,13 @@
   */
 }
 
-.svg-icon-close {
+.SvgIcon--Close {
   height: 2em;
   fill: $error;
   margin: auto auto;
 }
 
-.svg-icon__menu {
+.SvgIcon__Menu {
   height: 32px;
   fill: $first;
   margin: 16px 0;
@@ -41,7 +41,7 @@
   }
 }
 
-.svg-icon__menu--small {
+.SvgIcon__Menu--Small {
   height: 24px;
   fill: $first;
   margin: 8px 0;

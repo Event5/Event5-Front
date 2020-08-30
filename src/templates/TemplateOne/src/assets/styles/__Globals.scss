@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  // --------------------------------- Colors
+  
+  $first: #FF75B6;
+  $first-dark: #FF0076;
+  $second: #3A17FF;
+  $third: #FB8B24;
+  $third-dark: #843f00;
+  $third-light: #FFDF9E;
+  $third-lighter: #FCFCB6;
+  $dark: #1E1926;
+  $dark-light: #7B7485;
+  $light: #FEF6FF;
+  $light-dark: #AFA8BA;
+  
+  // --------------------------------- Typography
+  
+  .h1-template {
+    font-weight: 800;
+    font-size: 65px;
+    color: $second;
+    margin-left: 50px;
+    @include tablet {
+      font-size: 44px;
+    }
+    @include both-phones {
+      font-size: 34px;
+    }
+  }
+  
+  .h2-template {
+    font-weight: 800;
+    font-size: 34px;
+      @include tablet {
+      font-size: 28px;
+    }
+    @include both-phones {
+      font-size: 24px;
+    }
+  }
+  
+  .h3-template {
+    font-weight: 800;
+    font-size: 24px;
+      @include tablet {
+      font-size: 20px;
+    }
+    @include both-phones {
+      font-size: 18px;
+    }
+  }
+  
+  .h4-template {
+    font-weight: 600;
+    font-size: 24px;
+      @include tablet {
+      font-size: 20px;
+    }
+    @include both-phones {
+      font-size: 18px;
+    }
+  }
+  
+  .h5-template {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .h6-template {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  .p-template {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  
+  .template-one-body {
+    background-color: $light;
+  }
+  .event-countdown{
+    text-align: center;
+    & h1, h4{
+      margin: 0;
+      color: $first-dark;
+    }
+  }
+  

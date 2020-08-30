@@ -1,0 +1,20 @@
+.Menu--Responsive {
+  margin: auto;
+  padding: 80px;
+  list-style: none;
+  li {
+    margin-top: 24px;
+    font-size: 34px;
+    border-left: 0px solid $first;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      padding-left: 16px;
+      border-left: 4px solid $first;
+    }
+  }
+  &__Logo {
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+  }
+}

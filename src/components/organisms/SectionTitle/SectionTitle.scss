@@ -5,6 +5,10 @@
     align-items: center;
     width: 90%;
     margin: 32px 5%;
+    @include tablet {
+      margin: 16px auto;
+      width: 80%;
+    }
     @include both-phones {
       width: 90%;
       margin: 16px auto;

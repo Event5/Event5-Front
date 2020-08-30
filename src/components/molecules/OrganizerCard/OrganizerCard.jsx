@@ -11,7 +11,7 @@ export function OrganizerCard({ name, email }) {
         </p>
         <p>{email}</p>
       </div>
-      {/* <Icons svg="close" classes="svg-icon-close" title="close" /> */}
+      {/* <Icons svg="close" classes="SvgIcon--Close" title="close" /> */}
     </div>
   );
 }

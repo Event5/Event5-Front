@@ -9,7 +9,7 @@ export function Github() {
       href="https://github.com/Event5"
     >
       <div className="github__container-Icon">
-        <Icon svg="github" classes="svg-icon" title="github" />
+        <Icon svg="github" classes="SvgIcon" title="github" />
         <span>See project in Github</span>
       </div>
       <p>Event5 team</p>

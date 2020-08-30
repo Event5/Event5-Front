@@ -21,7 +21,7 @@ export function SpeakerCard({
             <Icon
               className="SpeakerCard__Info-Name-Icon"
               svg="twitter"
-              classes="svg-icon"
+              classes="SvgIcon"
               title="Twitter"
             />
           </figure>

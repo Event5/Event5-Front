@@ -30,7 +30,7 @@ export function IconButton({ text, type, color }) {
   }
   return (
     <button className={`Button ${typeOfButton}${background}`}>
-      <Icon svg="plane" classes="svg-icon" title="plane" />
+      <Icon svg="plane" classes="SvgIcon" title="plane" />
       {text}
     </button>
   );
