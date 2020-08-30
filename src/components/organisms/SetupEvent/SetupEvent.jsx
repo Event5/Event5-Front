@@ -13,7 +13,7 @@ export function SetupEvent({ title, description, inputAction, intialState }) {
           <Input
             text="Event Name"
             onChange={inputAction}
-            name="name"
+            name="event_name"
             type="text"
             placeholder="Event Name"
             value={intialState.name}
@@ -29,8 +29,8 @@ export function SetupEvent({ title, description, inputAction, intialState }) {
           <Input
             text="Date"
             onChange={inputAction}
-            name="day"
-            type="date"
+            name="event_start_date"
+            type="datetime-local"
             placeholder="Event StartDate"
             value={intialState.day}
           />

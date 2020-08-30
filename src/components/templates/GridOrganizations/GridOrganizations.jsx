@@ -13,7 +13,7 @@ export function GridOrganizations({ organizationArray }) {
             key={keyOrg}
             orgName={organization.name}
             orgId={organization.id}
-            orgEventsArray={organization.events || []}
+            orgEventsArray={organization.organization_event || []}
           />
         );
       })}

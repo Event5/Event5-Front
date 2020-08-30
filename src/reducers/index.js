@@ -60,9 +60,9 @@ const reducer = (state, action) => {
       return {
         ...state,
         currentEvent: {
-          basic: { organization: action.payload },
+          basic: { organization_id: action.payload },
           info: {},
-          organizers: [],
+          users: [],
           conferences: [],
           speakers: [],
           associates: [],

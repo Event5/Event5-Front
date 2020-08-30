@@ -58,6 +58,7 @@ function AdminOrganizations(props) {
     const category = buttonname.slice(0, 1);
     if (category == "e") {
       //to see event
+      console.log(numberId);
     } else if (category == "o") {
       props.newEvent(numberId);
       history.push("/event");

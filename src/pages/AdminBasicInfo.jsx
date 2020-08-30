@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
-import { saveEvent, saveOrganizer } from "../actions";
+import { addEventBasic, saveOrganizer } from "../actions";
 import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SaveNext } from "../components/molecules";
 import {
@@ -19,12 +19,13 @@ function AdminBasicInfo(props) {
   const history = useHistory();
 
   const [form, setValues] = useState({
-    name: eventData.name,
-    url: eventData.url,
-    day: eventData.day,
-    template: eventData.template,
-    organization: eventData.organization,
-    organizer: "",
+    event_name: eventData.event_name || "",
+    url: eventData.url || "",
+    event_start_date: eventData.event_start_date || "",
+    template: eventData.template || "",
+    organization_id: eventData.organization_id,
+    published: eventData.published || false,
+    users: eventData.user || [48],
     modalIsOpen: false,
   });
 
@@ -51,7 +52,8 @@ function AdminBasicInfo(props) {
   };
 
   const handleSubmit = () => {
-    props.saveEvent(form);
+    delete form.modalIsOpen;
+    props.addEventBasic(form);
     history.push("/event-info");
   };
 
@@ -81,7 +83,7 @@ function AdminBasicInfo(props) {
       />
       <Content>
         <AppHeader btnText="All Organizers" onClick={handleOpenModal} />
-        <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
+        <Modal isOpen={form.modalIsOpen || false} onClose={handleCloseModal}>
           <ModalOrganizers
             intialState={props.event.organizers}
             inputAction={handleInput}
@@ -115,7 +117,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = {
-  saveEvent,
+  addEventBasic,
   saveOrganizer,
 };
 

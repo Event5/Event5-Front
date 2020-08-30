@@ -138,8 +138,6 @@ export const addOrganization = (payload) => {
       data: payload,
     })
       .then(({ data }) => {
-        console.log("ok");
-        console.log(data.data);
         dispatch(saveOrganization(data.data));
       })
       .catch((err) => {
@@ -147,3 +145,25 @@ export const addOrganization = (payload) => {
       });
   };
 };
+
+export const addEventBasic = (payload) => {
+  const token = getCookie("token");
+  return (dispatch) => {
+    axios({
+      url: "https://event5.azurewebsites.net/api/event/new-event",
+      method: "POST",
+      headers: { Authorization: `Bearer ${token}` },
+      data: payload,
+    })
+      .then(({ data }) => {
+        dispatch(saveEvent(data.data));
+      })
+      .catch((err) => {
+        alert("Ocurrio un error, vuelve a intertarlo");
+      });
+  };
+};
+
+// export const addOrganizer = (payload) => {
+
+// }
