@@ -6,7 +6,7 @@ import { SponsorSecond } from "../../atoms/SponsorSecond"
 export function Sponsors() {
   return (
     <section className="Sponsors">
-      <h2 className="Template__H2">Sponsors</h2>
+      <h2 className="h2-template">Sponsors</h2>
       <div className="Sponsors-First">
         <SponsorFirst />
         <SponsorFirst />

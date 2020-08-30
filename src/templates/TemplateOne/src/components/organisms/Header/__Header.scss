@@ -16,6 +16,17 @@
       flex-direction: row;
       justify-content: space-around;
       width: 50%;
+      & ul{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        @include phone-small {
+          flex-direction: column;
+        }
+        & li{
+          list-style: none;
+        }
+      } 
       @include tablet {
         width: 70%;
       }

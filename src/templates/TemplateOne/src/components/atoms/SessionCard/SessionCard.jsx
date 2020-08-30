@@ -4,13 +4,13 @@ import React from "react";
 export function SessionCard({sessionDate, sessionName, sessionSpeaker, sessionDescription, type}) {
   return (
       <div className={`SessionCard-${type}`}>
-        <p>{sessionDate.toLocaleString()}</p>
+        <p className="p-template">{sessionDate.toLocaleString()}</p>
         <div className="SessionCard-Details">
             <div className="SessionCard-Details-Title">
-                <h4>{sessionName}</h4>
+                <h4 className="h4-template">{sessionName}</h4>
                 <a>{sessionSpeaker}</a>
             </div>
-            <p>
+            <p className="p-template">
                 {sessionDescription}
             </p>
 

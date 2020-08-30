@@ -24,6 +24,7 @@
     font-weight: 800;
     font-size: 65px;
     color: $second;
+    margin-left: 50px;
     @include tablet {
       font-size: 44px;
     }
@@ -82,5 +83,12 @@
   
   .template-one-body {
     background-color: $light;
+  }
+  .event-countdown{
+    text-align: center;
+    & h1, h4{
+      margin: 0;
+      color: $first-dark;
+    }
   }
   

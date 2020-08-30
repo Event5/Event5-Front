@@ -45,13 +45,13 @@ export function Countdown ({eventDate}){
     })
     return(
         <div className="Countdown">
-            <h6>{timerDays}</h6>
-            <p>:</p>
-            <h6>{timerHours}</h6>
-            <p>:</p>
-            <h6>{timerMinutes}</h6>
-            <p>:</p>
-            <h6>{timerSeconds}</h6>
+            <h6 className="h6-template">{timerDays}</h6>
+            <p className="p-template">:</p>
+            <h6 className="h6-template">{timerHours}</h6>
+            <p className="p-template">:</p>
+            <h6 className="h6-template">{timerMinutes}</h6>
+            <p className="p-template">:</p>
+            <h6 className="h6-template">{timerSeconds}</h6>
         </div>
     )
 }

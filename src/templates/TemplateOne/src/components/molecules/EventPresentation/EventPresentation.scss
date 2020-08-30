@@ -1,0 +1,26 @@
+.EventPresentation{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include both-phones{
+        flex-direction: column;
+    }
+    &-Details{
+        align-self: center;
+    }
+    & h1{
+        margin: 0;
+    }
+    & span{
+        min-width: 200px;
+        min-height: 200px;
+        background-color: $dark-light;
+        & img{
+            width: 200px;
+            height: 200px;
+            object-fit: contain ;
+        }
+    }
+}
