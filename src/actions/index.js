@@ -111,9 +111,10 @@ export const loginUser = ({ email, password }) => {
 
 export const getUserEvents = ({ id }) => {
   const token = getCookie("token");
+  const user = getCookie("type_user");
   return (dispatch) => {
     axios({
-      url: `https://event5.azurewebsites.net/api/data/admin/?user_id=${id}`,
+      url: `https://event5.azurewebsites.net/api/data/${user}/?user_id=${id}`,
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     })

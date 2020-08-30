@@ -91,14 +91,10 @@ function SideBarMenuFilter(pagename, user) {
 
   const currentEvent = MainBtns.concat(Event);
 
-  if (pagename === "adminDash") {
-    return OrganizationView;
-  } else if (pagename === "organizerDash") {
-    return EventsView;
-  } else if (pagename === "eventPages") {
+  if (pagename === "eventPages") {
     return currentEvent;
   } else {
-    return [];
+    return MainBtns;
   }
 }
 

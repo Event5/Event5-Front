@@ -13,7 +13,7 @@ function Login(props) {
     if (typeUser == "admin") {
       history.push("/organizations");
     } else {
-      history.push("/events");
+      history.push("/Adminevents");
     }
   }
 
