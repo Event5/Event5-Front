@@ -22,7 +22,7 @@ export function ImageText({
           alt={templateName}
         />
       </span>
-      <a>{templateName}</a>
+      <p>{templateName}</p>
     </div>
   );
 }

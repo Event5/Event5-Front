@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Icon } from "../../atoms/Icons/Icon";
-
 export function OrganizerCard({ name, email }) {
   return (
     <div className="OrganizerCard__Container">
@@ -11,7 +9,6 @@ export function OrganizerCard({ name, email }) {
         </p>
         <p>{email}</p>
       </div>
-      {/* <Icons svg="close" classes="SvgIcon--Close" title="close" /> */}
     </div>
   );
 }

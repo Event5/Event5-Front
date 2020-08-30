@@ -17,8 +17,7 @@ export function Home() {
           <div className="Home__Article-Info ">
             <h2>All your events in one place</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+            Manage all your events in a dashboard with your organizations. That allow you to have the events in separate and totally independent groups.{" "}
             </p>
           </div>
           <figure className="Home__Article-Img">
@@ -29,8 +28,7 @@ export function Home() {
           <div className="Home__Article-Info ">
             <h2>Build your dream staff</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+            Add the organizers you want for each event and create, manage and carry out your dream event.{" "}
             </p>
           </div>
           <figure className="Home__Article-Img">
@@ -41,8 +39,7 @@ export function Home() {
           <div className="Home__Article-Info">
             <h2>Publish and share it everywhere</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+            Share your event on all social networks with a custom page and url. In addition, you can send information to all participants via email, and an automatic reminder 24 hours before starting.{" "}
             </p>
           </div>
           <figure className="Home__Article-Img ">

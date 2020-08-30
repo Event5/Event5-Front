@@ -26,6 +26,7 @@ export function Header({ buttons, background }) {
   } else if (background === "second") {
     backgroundColor = "Backgroundsecond";
   }
+
   const mock = [
     //this array are ButtonAlt Components
     [
@@ -61,6 +62,7 @@ export function Header({ buttons, background }) {
   ];
 
   const props = buttons ? buttons : mock;
+
   return (
     <header className={`Header ${backgroundColor}`}>
       <figure className="Header__Logo">
@@ -68,9 +70,13 @@ export function Header({ buttons, background }) {
           <img src={logo} alt="Event5' Logo" />
         </Link>
       </figure>
+
+      {/* Menu */}
       <nav className="Header__Nav">
         <ButtonList buttons={props} />
       </nav>
+
+      {/* Responsive Menu */}
       <div className="Header__Nav--Responsive">
         <button onClick={handleOpenModal}>
           <Icon svg="menu" classes="SvgIcon__Menu" title="Menu" />

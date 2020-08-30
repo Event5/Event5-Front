@@ -61,7 +61,7 @@ export function CreateEventAssociates(props) {
         </Modal>
         <SectionTitle
           title="Associates: Event Name"
-          description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+          description="Do you have sponsors? Associates? You can give their recognition by adding them on your event page here."
           btnText="New Associate"
           btnType="primary"
           btnColor="light"

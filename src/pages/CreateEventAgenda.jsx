@@ -78,7 +78,7 @@ function CreateEventAgenda(props) {
         </Modal>
         <SectionTitle
           title="Agenda: Event Name"
-          description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+          description="Now make the agenda of your event. Remember that you must add the start time and the speaker in charge of giving the session."
           btnText="New Event"
           btnType="primary"
           btnColor="light"
