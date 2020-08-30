@@ -160,6 +160,8 @@ const initialState = {
   },
 };
 
+export default initialState;
+
 const initialState2 = {
   user: {
     name: "den",

@@ -31,3 +31,4 @@ export * from "./ModalSession";
 export * from "./ModalEventOrganizers";
 export * from "./SetupEvent";
 export * from "./Modal";
+export * from "./ModalMenu";

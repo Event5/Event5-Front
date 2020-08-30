@@ -1,26 +1,29 @@
 .SignUpBox {
-  margin: 0 auto;
+  padding: 80px;
+  margin: 0;
   max-width: 500px;
-  padding: 60px 80px;
+  height: 60vh;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   border-radius: 16px;
   background-color: $light;
   @include desktop {
     width: 90%;
-    padding: 60px 40px;
+    padding: 80px;
   }
   @include tablet {
     width: 90%;
-    padding: 40px 10px;
+    padding: 40px;
   }
   @include phone {
+    margin: 32px auto;
+    padding: 24px;
     width: 90%;
-    padding: 40px 5px;
-    background-color: transparent;
   }
   @include phone-small {
+    margin: 32px auto;
     width: 90%;
     padding: 40px 5px;
   }
@@ -28,15 +31,13 @@
     width: 100%;
   }
   &__Form {
-    margin-top: 16px;
+    margin-top: 30px;
     width: 100%;
-    height: 340px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 30px 30px 30px 10px 60px;
-    align-items: flex-end;
-    justify-items: center;
-    grid-row-gap: 40px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     &__Options {
       margin: 0 auto;
       width: 80%;

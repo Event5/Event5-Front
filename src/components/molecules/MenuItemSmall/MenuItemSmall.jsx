@@ -7,7 +7,7 @@ export function MenuItemSmall({ icon, text, link }) {
   return (
     <Link to={link}>
       <li className="MenuItemSmall">
-        <Icon svg={icon} classes="svg-icon" title={icon} />
+        <Icon svg={icon} classes="SvgIcon" title={icon} />
         {text}
       </li>
     </Link>

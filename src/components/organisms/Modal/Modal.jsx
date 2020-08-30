@@ -12,7 +12,7 @@ export function Modal({ isOpen, onClose, children }) {
     <div className="Modal">
       <div className="Modal__Container">
         <button onClick={onClose} className="Modal__CloseButton">
-          <Icon svg="close" classes="svg-icon-close" title="Close" />
+          <Icon svg="close" classes="SvgIcon--Close" title="Close" />
         </button>
         {children}
       </div>

@@ -10,10 +10,10 @@ export function TeamCard({ image, name, role, github, twitter }) {
       <p>{role}</p>
       <div>
         <a href={github}>
-          <Icon svg="github" classes="svg-icon" title="github" />
+          <Icon svg="github" classes="SvgIcon" title="github" />
         </a>
         <a href={twitter}>
-          <Icon svg="twitter" classes="svg-icon" title="twitter" />
+          <Icon svg="twitter" classes="SvgIcon" title="twitter" />
         </a>
       </div>
     </div>

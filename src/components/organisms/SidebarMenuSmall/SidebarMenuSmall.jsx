@@ -16,7 +16,7 @@ export function SidebarMenuSmall({ pagename, type_user }) {
               <Link to={item.link}>
                 <Icon
                   svg={item.icon}
-                  classes="svg-icon__menu"
+                  classes="SvgIcon__Menu"
                   title={item.text}
                 />
               </Link>
@@ -26,7 +26,7 @@ export function SidebarMenuSmall({ pagename, type_user }) {
               <Link to={item.link}>
                 <Icon
                   svg={item.icon}
-                  classes="svg-icon__menu"
+                  classes="SvgIcon__Menu"
                   title={item.text}
                 />
               </Link>
