@@ -17,10 +17,8 @@ export function About() {
       <AboutHero />
       <AboutDescription
         title="Why Event5 exists?"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in volup"
+        description="The communities organizers in these times create events and conferences for their communities or companies, this is a task that can take time and energy, and most of these sites have a very similar structure: One day, an agenda, registration, speakers, information about the event, etc."
+        descriptionPartTwo="The objective of Event5 is to create a platform for organizers that allows managing, create, organize, and promote events, saving time and creating a very valuable tool for the industry."
       />
       <TeamContainer />
       <Links />

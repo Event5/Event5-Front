@@ -25,21 +25,21 @@ export function TeamContainer() {
           name="Den Velez"
           role="Frontend"
           github="https://github.com/den-velez"
-          twitter=""
+          twitter="https://twitter.com/den_velez1"
         />
         <TeamCard
           image={sergio}
           name="Sergio Estrella"
           role="Frontend"
           github="https://github.com/Djkde01"
-          twitter=""
+          twitter="https://twitter.com/djkde"
         />
         <TeamCard
           image={jose}
           name="Jose L. Chavez"
           role="Backend"
           github="https://github.com/Siulch"
-          twitter=""
+          twitter="https://twitter.com/guerracode"
         />
         <TeamCard
           image={cristian}
