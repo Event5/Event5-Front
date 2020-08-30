@@ -1,0 +1,9 @@
+.SessionsList{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    @include both-phones{
+        width: 100%;
+    }
+}

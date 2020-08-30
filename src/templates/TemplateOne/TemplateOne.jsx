@@ -6,6 +6,7 @@ import { Countdown } from "./src/components/atoms/Countdown";
 import { Header } from "./src/components/organisms/Header";
 import { Hero } from "./src/components/atoms/Hero";
 import { SpeakersCarousel } from "./src/components/molecules/SpeakersCarousel";
+import { SessionsList } from "./src/components/molecules/SessionsList";
 
 const testDate = new Date("August 30, 2020 23:59:59");
 
@@ -15,6 +16,7 @@ export function TemplateOne() {
       <Header/>
       <Hero eventName="Evento de Prueba" eventDate={new Date()}/>
       <SpeakersCarousel/>
+      <SessionsList/>
       <Countdown eventDate={testDate.toUTCString()}/>
     </main>
   );
