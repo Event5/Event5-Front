@@ -4,7 +4,7 @@ import { Button } from "../../atoms";
 import { Countdown } from "../../molecules";
 
 export function Information() {
-  const testDate = new Date("August 30, 2020 23:59:59");
+  const testDate = new Date("September 30, 2020 23:59:59");
 
   return (
     <main className="Information">

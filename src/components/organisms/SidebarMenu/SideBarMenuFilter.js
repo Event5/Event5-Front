@@ -80,6 +80,20 @@ function SideBarMenuFilter(pagename, user) {
       icon: "envelope",
       component: "Item",
     },
+    {
+      key: 10,
+      text: "Template 1",
+      link: "/template-one",
+      icon: "envelope",
+      component: "ItemSmall",
+    },
+    {
+      key: 11,
+      text: "Template 2",
+      link: "/template-two",
+      icon: "envelope",
+      component: "ItemSmall",
+    },
   ];
 
   let MainBtns;

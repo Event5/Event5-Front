@@ -17,7 +17,7 @@ import AdminBasicInfo from "../pages/AdminBasicInfo";
 import CreateEventAgenda from "../pages/CreateEventAgenda";
 import CreateEventAssociates from "../pages/CreateEventAssociates";
 import { TemplateTwo } from "../templates/TemplateTwo";
-import {TemplateOne} from "../templates/TemplateOne";
+import { TemplateOne } from "../templates/TemplateOne";
 
 const App = () => {
   return (
@@ -35,7 +35,7 @@ const App = () => {
         <Route exact path="/event-info" component={CreateEventData} />
         <Route exact path="/event-speakers" component={CreateEventSpeaker} />
         <Route exact path="/event-conferences" component={CreateEventAgenda} />
-        
+
         {/* Test Tempalate*/}
         <Route exact path="/template" component={TemplateOne} />
 
@@ -45,10 +45,9 @@ const App = () => {
           component={CreateEventAssociates}
         />
         <Route exact path="/event-diffusion" component={CreateEventDiffusion} />
+        <Route exact path="/template-one" component={TemplateOne} />
         <Route exact path="/template-two" component={TemplateTwo} />
         <Route component={NotFoundPage} />
-
-
       </Switch>
     </BrowserRouter>
   );
