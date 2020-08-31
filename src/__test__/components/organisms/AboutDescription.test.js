@@ -19,6 +19,6 @@ describe("<AboutDescription />", () => {
 
   //Render description
   test("Render title", () => {
-    expect(about.find("p").text()).toEqual("Section Description");
+    expect(about.find("p").first().text()).toEqual("Section Description");
   });
 });

@@ -4,8 +4,6 @@ import ProviderMock from "../../../__mocks__/providerMock";
 import Login from "../../../components/organisms/Login/Login";
 
 describe("<Login />", () => {
-  ReactDOM.render = jest.fn((login) => null);
-
   const login = shallow(
     <ProviderMock>
       <Login />
@@ -19,6 +17,6 @@ describe("<Login />", () => {
 
   // Modal exist
   test("Modal of waiting", () => {
-    expect(login.find("Waiting").length).toEqual(1);
+    expect(login.find("Waiting").length).toEqual(0);
   });
 });
