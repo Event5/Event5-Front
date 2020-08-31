@@ -7,8 +7,12 @@ export function NameTwitter({ speakerName, twitterUrl }) {
     <div className="NameTwitter">
       <h5>{speakerName}</h5>
       <a href={twitterUrl}>
-        <Icon svg="twitter" classes="svg-icon_twitter" title={`${speakerName}'s Twitter`}/>
+        <Icon
+          svg="twitter"
+          classes="SvgIcon--Twitter"
+          title={`${speakerName}'s Twitter`}
+        />
       </a>
-    </div>  
+    </div>
   );
 }

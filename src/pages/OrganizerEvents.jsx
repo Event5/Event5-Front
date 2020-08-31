@@ -9,8 +9,8 @@ function OrganizerEvents(props) {
   let eventsArray = props.events || [];
 
   return (
-    <main className="app-layout">
-      <SidebarMenu pagename="organizerDash" />
+    <main className="AppLayout">
+      <SidebarMenu pagename="organizerDash" type_user={props.user.type_user} />
       <Content>
         <AppHeader />
         <GridEvents EventsArray={eventsArray} />
@@ -21,6 +21,7 @@ function OrganizerEvents(props) {
 const mapStateToProps = (state) => {
   return {
     events: state.data,
+    user: state.user,
   };
 };
 

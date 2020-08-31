@@ -1,14 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { SidebarMenuSmall, ModalEventInfo } from "../components/organisms";
+import AppHeader from "../components/molecules/AppHeader/AppHeader";
+import {
+  SidebarMenu,
+  SidebarMenuSmall,
+  Modal,
+  ModalEventInfo,
+} from "../components/organisms";
+import { Content } from "../components/templates";
 import { TemplateTwo } from "../templates/TemplateTwo";
 
 export function CreateEventData() {
+  const [form, setValues] = useState({
+    modalIsOpen: false,
+  });
+
+  const handleOpenModal = (e) => {
+    setValues({ modalIsOpen: true });
+  };
+
+  const handleCloseModal = (e) => {
+    setValues({ modalIsOpen: false });
+  };
+
   return (
-    <main className="app-layout-template">
+    <main className="AppLayout">
+      <SidebarMenu pagename="eventPages" />
       <SidebarMenuSmall pagename="eventPages" />
-      <TemplateTwo />
-      <ModalEventInfo />
+      <Content>
+        <AppHeader btnText="Edit Information" onClick={handleOpenModal} />
+        <Modal isOpen={form.modalIsOpen} onClose={handleCloseModal}>
+          <ModalEventInfo />
+        </Modal>
+        <TemplateTwo />
+      </Content>
     </main>
   );
 }

@@ -12,7 +12,7 @@ export function ImageCard({
   btnColor,
 }) {
   return (
-    <section className={`image-card ${classes}`}>
+    <section className={`ImageCard ${classes}`}>
       <h1>{title}</h1>
       <div></div>
       <Button text={btnText} type={btnType} color={btnColor} />

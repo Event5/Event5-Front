@@ -1,9 +1,13 @@
-.grid-associates{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 32px;
-    @include both-phones {
-        grid-template-columns: 1fr;
-        grid-gap: 16px;
-      }
+.GridAssociates {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+  }
+  @include both-phones {
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+  }
 }

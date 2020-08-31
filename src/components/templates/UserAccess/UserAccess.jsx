@@ -3,7 +3,9 @@ import { Header } from "../../organisms";
 import Login from "../../organisms/Login/Login";
 import SignUp from "../../organisms/SignUp/SignUp";
 
-export function UserAccess({ headerBackground, page, buttons, src, alt }) {
+function UserAccess(props) {
+  const { headerBackground, page, buttons, src, alt } = props;
+
   return (
     <>
       <Header buttons={buttons} background={headerBackground} />
@@ -21,3 +23,5 @@ export function UserAccess({ headerBackground, page, buttons, src, alt }) {
     </>
   );
 }
+
+export default UserAccess;

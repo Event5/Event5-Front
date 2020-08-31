@@ -1,11 +1,11 @@
-.about-page__why {
+.AboutPage__Why {
   width: 80%;
   margin: 40px auto;
   @include tablet {
     width: 90%;
   }
   h2 {
-    color: $first;
+    color: $first-dark;
     text-align: center;
   }
   p {

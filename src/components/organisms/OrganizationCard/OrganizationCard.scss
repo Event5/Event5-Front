@@ -1,8 +1,17 @@
-.organization-card {
+.OrganizationCard {
   margin: 24px;
   padding: 24px;
   border-radius: 16px;
   background-color: $light;
+  @include tablet {
+    width: 80%;
+  }
+  @include both-phones {
+    margin: 8px;
+    padding: 16px;
+    width: 90%;
+    border-radius: 8px;
+  }
   h2 {
     color: $first-dark;
   }

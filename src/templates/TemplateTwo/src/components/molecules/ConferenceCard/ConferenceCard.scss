@@ -1,4 +1,4 @@
-.conference-card {
+.ConferenceCardTemplate {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -15,12 +15,11 @@
     margin: 16px auto;
   }
   @include both-phones {
-    width: 90%;
+    width: 100%;
     margin: 16px auto;
   }
   div {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     @include phone-and-tablet {

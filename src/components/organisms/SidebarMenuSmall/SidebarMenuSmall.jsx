@@ -1,25 +1,40 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import eventIcon from "../../../assets/images/favicon.png";
-import { Icon } from "../../atoms/Icons/Icon";
+import { Icon } from "../../atoms";
+import SideBarMenuFilter from "../SidebarMenu/SideBarMenuFilter";
 
-export function SidebarMenuSmall() {
+export function SidebarMenuSmall({ pagename, type_user }) {
+  const buttons = SideBarMenuFilter(pagename, type_user);
+  let keyButtons = 0;
   return (
-    <div className="sidebar-menu-small__container">
+    <div className="SidebarMenuSmall">
       <img src={eventIcon} alt="" />
-      <div className="sidebar-menu-small__menu">
-        <Icon svg="building" classes="svg-icon__menu" title="building" />
-        <Icon svg="calendar" classes="svg-icon__menu" title="calendar" />
-        <Icon svg="calendarNew" classes="svg-icon__menu" title="calendarNew" />
-        <Icon svg="arrow" classes="svg-icon__menu--small" title="arrow" />
-        <Icon svg="info" classes="svg-icon__menu--small" title="info" />
-        <Icon svg="book" classes="svg-icon__menu--small" title="book" />
-        <Icon
-          svg="organization"
-          classes="svg-icon__menu--small"
-          title="organization"
-        />
-        <Icon svg="envelope" classes="svg-icon__menu" title="envelope" />
+      <div className="SidebarMenuSmall__Menu">
+        {buttons.map((item) => {
+          keyButtons = keyButtons + 1;
+          if (item.component === "Item") {
+            return (
+              <Link key={keyButtons} to={item.link}>
+                <Icon
+                  svg={item.icon}
+                  classes="SvgIcon__Menu"
+                  title={item.text}
+                />
+              </Link>
+            );
+          } else {
+            return (
+              <Link key={keyButtons} to={item.link}>
+                <Icon
+                  svg={item.icon}
+                  classes="SvgIcon__Menu"
+                  title={item.text}
+                />
+              </Link>
+            );
+          }
+        })}
       </div>
     </div>
   );

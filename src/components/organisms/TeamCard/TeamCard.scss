@@ -1,10 +1,10 @@
-.team-card {
+.TeamCard {
   width: 90%;
   min-height: 300px;
   margin: 8px;
   border-radius: 8px;
   padding: 24px;
-  background-color: $second;
+  background-color: $first-dark;
   @include phone-and-tablet {
     margin: 24px;
     padding: 16px;

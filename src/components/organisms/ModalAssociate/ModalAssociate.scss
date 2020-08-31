@@ -1,25 +1,36 @@
-.ModalAssociate{
-    width: 484px;
-    height: 1040px;
-    & h2{
-        color: $first;
+.ModalAssociate {
+  padding-top: 40px;
+  width: 480px;
+  height: 100vh;
+  @include both-phones {
+    width: 100%;
+  }
+  & h2 {
+    text-align: center;
+    color: $first;
+  }
+  &__Form {
+    height: 50%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    color: $third;
+    @include tablet {
+      height: 40%;
     }
-    &__Form{
-        height: 100%;
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin: 0 auto;
-        color: $third;
-        &__Btn{
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            & a:nth-child(2){
-                color: #EE4266;
-            }
-        }
+    @include both-phones {
+      height: 60%;
     }
+    &__Btn {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      & a:nth-child(2) {
+        color: #ee4266;
+      }
+    }
+  }
 }

@@ -7,7 +7,9 @@
     "build:webpack": "webpack --mode production",
     "start:client": "webpack-dev-server --open --mode development",
     "start": "node server.js",
-    "server:dev": "nodemon server.js"
+    "server:dev": "nodemon server.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "engines": {
     "node": "12.18.3"
@@ -24,6 +26,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-external-link": "^1.1.1",
     "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
@@ -36,6 +39,8 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.6.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
     "eslint": "^7.5.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.0",
@@ -44,6 +49,7 @@
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.4.2",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
@@ -55,5 +61,18 @@
   "bugs": {
     "url": "https://github.com/Event5/Event5-Front/issues"
   },
-  "homepage": "https://github.com/Event5/Event5-Front#readme"
+  "homepage": "https://github.com/Event5/Event5-Front#readme",
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/__test__/setupTest.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(svg|gif|scss|png)$": "<rootDir>/src/__mocks__/imgMock.js"
+    },
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/src/templates/",
+      "<rootDir>/src/pages/",
+      "<rootDir>/src/utils/"
+    ]
+  }
 }

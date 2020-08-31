@@ -1,18 +1,34 @@
 .SaveNext {
+  max-width: 360px;
   margin-top: 16px;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-column-gap: 10%;
+  grid-template-columns: 45% 45%;
   &__BtnText {
     background-color: transparent;
     border-radius: 16px;
     border: none;
     font-weight: 600;
+    font-size: 18px;
     cursor: pointer;
     &-First {
-      color: $first-dark;
+      color: $light;
+      &:hover {
+        background-color: transparent;
+        color: $first-light;
+      }
     }
     &-Light {
       color: $light;
+      &:hover {
+        background-color: $first-light;
+      }
+    }
+    &-Black {
+      color: $dark;
+      &:hover {
+        background-color: $first-light;
+      }
     }
   }
 }

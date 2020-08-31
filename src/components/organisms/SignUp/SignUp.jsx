@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
-import { registerUser } from "../../../actions";
-import { Button, Input } from "../../atoms";
+import { registerUser, openWaiting } from "../../../actions";
+import { Button, Input, Waiting } from "../../atoms";
+import { Modal } from "../../organisms";
 
 import registerValidation from ".././../../utils/registerValidation";
 
 function SignUp(props) {
   const history = useHistory();
-  if (props.user) {
-    history.push("./login");
-  }
 
+  if (props.user.email) {
+    history.push("/login");
+  }
   const [form, setValues] = useState({
     username: "",
     email: "",
@@ -32,6 +33,7 @@ function SignUp(props) {
     if (validation) {
       alert(validation);
     } else {
+      props.openWaiting();
       props.registerUser(form);
     }
   };
@@ -60,19 +62,19 @@ function SignUp(props) {
         />
         <div className="SignUpBox__Form__Options">
           <input
+            text="Admin"
             onChange={handleInput}
             name="type_user"
             value="admin"
             type="radio"
           />
-          <label htmlFor="">Admin</label>
           <input
+            text="Organizer"
             onChange={handleInput}
             name="type_user"
             value="organizer"
             type="radio"
           />
-          <label htmlFor="">Organizer</label>
         </div>
         <Button text="SignUp" type="primary" color="second" />
       </form>
@@ -82,17 +84,21 @@ function SignUp(props) {
           <span className="SignUpBox__ToRegister-bold">Log In</span>
         </Link>
       </div>
+      <Modal isOpen={props.session.modal}>
+        <Waiting />
+      </Modal>
     </div>
   );
 }
-
 const mapStateToProps = (state) => {
   return {
     user: state.user,
+    session: state.status,
   };
 };
 
 const mapDispatchToProps = {
   registerUser,
+  openWaiting,
 };
 export default connect(mapStateToProps, mapDispatchToProps)(SignUp);

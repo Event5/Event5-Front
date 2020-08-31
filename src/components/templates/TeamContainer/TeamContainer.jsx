@@ -10,9 +10,9 @@ import { TeamCard } from "../../organisms/TeamCard";
 
 export function TeamContainer() {
   return (
-    <section className="about-page__team">
+    <section className="About__Team">
       <h2>Meet the team: The 5 guys</h2>
-      <div className="about-page__grid">
+      <div className="About__Team__Grid">
         <TeamCard
           image={hector}
           name="Héctor Reyes"
@@ -25,21 +25,21 @@ export function TeamContainer() {
           name="Den Velez"
           role="Frontend"
           github="https://github.com/den-velez"
-          twitter=""
+          twitter="https://twitter.com/den_velez1"
         />
         <TeamCard
           image={sergio}
           name="Sergio Estrella"
           role="Frontend"
           github="https://github.com/Djkde01"
-          twitter=""
+          twitter="https://twitter.com/djkde"
         />
         <TeamCard
           image={jose}
           name="Jose L. Chavez"
           role="Backend"
           github="https://github.com/Siulch"
-          twitter=""
+          twitter="https://twitter.com/guerracode"
         />
         <TeamCard
           image={cristian}

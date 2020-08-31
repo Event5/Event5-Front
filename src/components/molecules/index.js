@@ -18,3 +18,5 @@ export * from "./TitleIntro";
 export * from "./Share";
 export * from "./SubtitleText";
 export * from "./NoData";
+export * from "./NameTwitter";
+export * from "./TextArea";

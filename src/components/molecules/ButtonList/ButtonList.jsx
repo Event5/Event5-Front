@@ -36,25 +36,33 @@ import { Button, ButtonAlt } from "../../atoms";
 // ];
 
 export function ButtonList({ buttons }) {
+  let keybtn = 0;
+  let keybtn2 = 100;
   return (
     <ul className="ButtonList">
       {buttons.map((item) => {
+        keybtn++;
         return item.map((btn) => {
+          keybtn2++;
           return btn.colorText ? (
-            <ButtonAlt
-              key={btn.key}
-              text={btn.text}
-              textcolor={btn.colorText}
-              linkTo={btn.linkTo}
-            />
+            <li key={keybtn2}>
+              <ButtonAlt
+                // key={btn.key}
+                text={btn.text}
+                textcolor={btn.colorText}
+                linkTo={btn.linkTo}
+              />
+            </li>
           ) : (
-            <Button
-              key={btn.key}
-              text={btn.text}
-              type={btn.type}
-              color={btn.color}
-              linkTo={btn.linkTo}
-            />
+            <li key={keybtn2}>
+              <Button
+                // key={btn.key}
+                text={btn.text}
+                type={btn.type}
+                color={btn.color}
+                linkTo={btn.linkTo}
+              />
+            </li>
           );
         });
       })}

@@ -1,34 +1,47 @@
-.event-card {
-  margin: 0 auto;
+.EventCard {
+  margin: 24px auto;
   padding: 24px;
   width: 40%;
   border-radius: 16px;
   background-color: $light;
+  @include tablet {
+    width: 100%;
+  }
+  @include both-phones {
+    padding: 16px;
+    width: 90%;
+  }
   h3 {
     color: $first;
   }
-  div {
-    h6 {
-      color: $third-dark;
-    }
-    p {
-      color: $first;
-    }
-  }
-  &__data {
+
+  &__Data {
     margin-bottom: 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include both-phones {
+      margin-bottom: 16px;
+      flex-direction: column;
+    }
   }
-  &__numeralia {
+  &__Numeralia {
     margin: 24px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include both-phones {
+      flex-direction: column;
+    }
   }
-  &__footer {
+  &__Footer {
     display: flex;
     flex-direction: row;
+    @include both-phones {
+      flex-direction: column;
+      div {
+        margin-bottom: 8px;
+      }
+    }
   }
 }

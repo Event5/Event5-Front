@@ -3,14 +3,15 @@ import React from "react";
 import { Button } from "../../atoms/Button";
 import { SimpleEvent } from "../SimpleEvent";
 
-export function OrganizationCard({ orgName, orgEventsArray }) {
+export function OrganizationCard({ orgName, orgId, orgEventsArray }) {
   return (
-    <section className="organization-card">
+    <section className="OrganizationCard">
       <h2>{orgName}</h2>
       {orgEventsArray.map((event) => {
         return (
           <SimpleEvent
             key={event.id}
+            eId={`b-ev${event.id}`}
             eventImage={event.logo_url}
             eventName={event.name}
             associatesNumber={event.associates}
@@ -18,7 +19,12 @@ export function OrganizationCard({ orgName, orgEventsArray }) {
           />
         );
       })}
-      <Button text="New Event" type="primary" color="second" />
+      <Button
+        id={`b-or${orgId}`}
+        text="New Event"
+        type="primary"
+        color="second"
+      />
     </section>
   );
 }

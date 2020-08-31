@@ -2,7 +2,6 @@ export * from "./HomePage";
 export * from "./LoginPage";
 export * from "./SignUpPage";
 export * from "./NotFoundPage";
-export * from "./HComponents";
 export * from "./DComponents";
 export * from "./SComponents";
 export * from "./OrganizerEditEvent";

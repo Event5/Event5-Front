@@ -1,4 +1,4 @@
-.information {
+.Information {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 80%;
@@ -7,7 +7,7 @@
     width: 90%;
     grid-template-columns: 1fr;
   }
-  &__container {
+  &__Container {
     grid-column-start: 2;
     @include both-phones {
       grid-column-start: 1;

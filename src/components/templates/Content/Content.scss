@@ -1,8 +1,18 @@
-.content {
+.Content {
   display: inline-block;
   width: 100%;
   padding: 40px 56px;
   padding-right: 10%;
   min-height: 100vh;
-  background-color: $first-light;
+  background-color: $first;
+  @include desktop {
+    padding: 24px 32px;
+    padding-right: 5%;
+  }
+  @include tablet {
+    padding: 16px 24px;
+  }
+  @include both-phones {
+    padding: 32px 8px;
+  }
 }

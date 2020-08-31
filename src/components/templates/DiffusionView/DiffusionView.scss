@@ -1,5 +1,5 @@
-.diffusion {
-  &__info {
+.Diffusion {
+  &__Info {
     margin: 16px;
     padding: 24px;
     display: flex;
@@ -7,10 +7,18 @@
     justify-content: center;
     border-radius: 16px;
     background-color: $light;
+    @include both-phones {
+      margin: 8px;
+      padding: 16px;
+      border-radius: 8px;
+    }
   }
-  &__container {
+  &__Container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @include phone-and-tablet {
+      grid-template-columns: 1fr;
+    }
     img {
       margin: auto 0;
       max-width: 100%;

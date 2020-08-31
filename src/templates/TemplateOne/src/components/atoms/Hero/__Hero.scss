@@ -1,0 +1,13 @@
+.HeroOne{
+    width: 100%;
+    min-height: 50vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    color: $light;
+    border-radius: 0;
+    background-color: $dark;
+}   

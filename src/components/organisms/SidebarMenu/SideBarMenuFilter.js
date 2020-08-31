@@ -1,7 +1,7 @@
 // SideBar select the buttons to show in sidebar
 //options: "adminDash", "organizerDash", "eventPages"
 
-function SideBarMenuFilter(pagename) {
+function SideBarMenuFilter(pagename, user) {
   const OrganizationView = [
     {
       key: 1,
@@ -12,7 +12,7 @@ function SideBarMenuFilter(pagename) {
     },
     {
       key: 2,
-      text: "Events",
+      text: "All Events",
       link: "/adminevents",
       icon: "calendar",
       component: "Item",
@@ -22,73 +22,93 @@ function SideBarMenuFilter(pagename) {
   const EventsView = [
     {
       key: 1,
-      text: "Events",
-      link: "/events",
+      text: "All Events",
+      link: "/adminevents",
       icon: "calendar",
       component: "Item",
     },
   ];
 
-  const currentEvent = [
+  const Event = [
     {
-      key: 1,
+      key: 3,
       text: "Event",
       link: "/event",
       icon: "arrow",
       component: "Item",
     },
     {
-      key: 2,
+      key: 4,
       text: "Information",
       link: "/event-info",
       icon: "info",
       component: "ItemSmall",
     },
     {
-      key: 3,
-      text: "Speakers",
-      link: "/event-speakers",
-      icon: "microphone",
-      component: "ItemSmall",
-    },
-    {
-      key: 4,
+      key: 5,
       text: "Conferences",
       link: "/event-conferences",
       icon: "book",
       component: "ItemSmall",
     },
     {
-      key: 5,
+      key: 6,
+      text: "Speakers",
+      link: "/event-speakers",
+      icon: "microphone",
+      component: "ItemSmall",
+    },
+
+    {
+      key: 7,
       text: "Associates",
       link: "/event-associates",
       icon: "organization",
       component: "ItemSmall",
     },
     {
-      key: 6,
+      key: 8,
       text: "Organizers",
       link: "/event",
       icon: "collaborators",
       component: "ItemSmall",
     },
     {
-      key: 7,
+      key: 9,
       text: "Diffusion",
       link: "/event-diffusion",
       icon: "envelope",
       component: "Item",
     },
+    {
+      key: 10,
+      text: "Template 1",
+      link: "/template-one",
+      icon: "envelope",
+      component: "ItemSmall",
+    },
+    {
+      key: 11,
+      text: "Template 2",
+      link: "/template-two",
+      icon: "envelope",
+      component: "ItemSmall",
+    },
   ];
 
-  if (pagename === "adminDash") {
-    return OrganizationView;
-  } else if (pagename === "organizerDash") {
-    return EventsView;
-  } else if (pagename === "eventPages") {
+  let MainBtns;
+  if (user == "admin") {
+    MainBtns = OrganizationView;
+  } else {
+    MainBtns = EventsView;
+  }
+
+  const currentEvent = MainBtns.concat(Event);
+
+  if (pagename === "eventPages") {
     return currentEvent;
   } else {
-    return [];
+    return MainBtns;
   }
 }
 

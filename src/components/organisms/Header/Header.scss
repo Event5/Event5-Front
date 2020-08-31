@@ -17,11 +17,27 @@
   &__Nav {
     width: 50%;
     @include desktop {
-      margin-right: 10px;
+      margin-right: 16px;
       width: 70%;
+    }
+    @include tablet {
+      margin-right: 16px;
+      width: 90%;
     }
     @include both-phones {
       display: none;
+    }
+    &--Responsive {
+      display: none;
+      @include both-phones {
+        display: block;
+      }
+      button {
+        margin-right: 32px;
+        background: transparent;
+        border: none;
+        outline: none;
+      }
     }
   }
   &__Logo {
@@ -43,5 +59,8 @@
       width: 160px;
       height: 100%;
     }
+  }
+  li {
+    list-style: none;
   }
 }

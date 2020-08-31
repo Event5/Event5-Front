@@ -43,8 +43,8 @@
 @import "../../components/organisms/SignUp/SignUp.scss";
 @import "../../components/organisms/ConferenceCard/ConferenceCard.scss";
 @import "../../components/organisms/SetupEvent/SetupEvent.scss";
-@import "../../components/organisms/SpeakerCard/SpeakerCard.scss";
 @import "../../components/organisms/SidebarMenu/SidebarMenu.scss";
+@import "../../components/organisms/SpeakerCard/SpeakerCard.scss";
 @import "../../components/organisms/AssociateCard/AssociateCard.scss";
 @import "../../components/organisms/SectionTitle/SectionTitle.scss";
 @import "../../components/organisms/SidebarMenuSmall/SidebarMenuSmall.scss";
@@ -66,6 +66,8 @@
 @import "../../components/organisms/ModalEventInfo/ModalEventInfo.scss";
 @import "../../components/organisms/TemplatesContainer/TemplatesContainer.scss";
 @import "../../components/organisms/ModalEventOrganizers/ModalEventOrganizers.scss";
+@import "../../components/organisms/Modal/Modal.scss";
+@import "../../components/organisms/ModalMenu/ModalMenu.scss";
 
 //templates
 @import "../../components/templates/UserAccess/UserAccess.scss";

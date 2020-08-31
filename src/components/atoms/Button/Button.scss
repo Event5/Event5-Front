@@ -8,7 +8,15 @@
   line-height: 22px;
   border-radius: 16px;
   cursor: pointer;
+  outline: none;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+  @include both-phones {
+    padding: 16px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
   &-Primary {
     &-First {
       background-color: $first;
@@ -20,7 +28,7 @@
     }
     &-Second {
       background-color: $second;
-      color: $light;
+      color: $dark;
       &:hover {
         background-color: $second-light;
         color: $second-dark;
@@ -28,7 +36,7 @@
     }
     &-Light {
       background-color: $light;
-      color: $first;
+      color: $first-dark;
       &:hover {
         background-color: $first-dark;
         color: $light;
@@ -36,9 +44,9 @@
     }
     &-Transparent {
       background-color: transparent;
-      color: $dark;
+      color: $light;
       &:hover {
-        background-color: $second-light;
+        background-color: transparent;
         color: $light;
       }
     }
@@ -46,10 +54,10 @@
   &-Secondary {
     border-radius: 4px;
     background-color: $second;
-    color: $light;
+    color: $dark;
     &:hover {
-      background-color: $second-lightest;
-      color: $third-dark;
+      background-color: $second-light;
+      color: $first-dark;
     }
   }
 }

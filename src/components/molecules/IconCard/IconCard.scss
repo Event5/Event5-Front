@@ -1,4 +1,4 @@
-.icon-card {
+.IconCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,10 +8,13 @@
   padding: 16px;
   margin: 16px;
   border-radius: 16px;
-  background-color: $second;
+  background-color: $second-light;
+  svg {
+    fill: $second-dark;
+  }
   p {
     text-align: center;
     margin-top: 16px;
-    color: $light;
+    color: $second-dark;
   }
 }

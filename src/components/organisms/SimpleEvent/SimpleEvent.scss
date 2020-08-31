@@ -1,7 +1,9 @@
 .SimpleEvent {
   margin: 24px auto;
-  width: 420px;
-  height: 243px;
+  width: 100%px;
+  @include both-phones {
+    margin: 16px 0;
+  }
   & img {
     object-fit: cover;
   }
@@ -12,6 +14,11 @@
 .EventDescription {
   display: flex;
   flex-direction: row;
-  gap: 20px;
   margin-top: 10px;
+  @include both-phones {
+    flex-wrap: wrap;
+  }
+  div {
+    margin: 0 16px;
+  }
 }

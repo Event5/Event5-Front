@@ -1,12 +1,12 @@
-.about-page__team {
+.About__Team {
   width: 80%;
   margin: 40px auto;
   h2 {
     margin-bottom: 24px;
     text-align: center;
-    color: $first;
+    color: $first-dark;
   }
-  .about-page__grid {
+  &__Grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     @include tablet {

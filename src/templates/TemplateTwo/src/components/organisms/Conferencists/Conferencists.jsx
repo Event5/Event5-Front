@@ -4,9 +4,9 @@ import { ConferencistCard } from "../../molecules";
 
 export function Conferencists() {
   return (
-    <section className="conferencists">
-      <h2 className="h2-template">Conferencists</h2>
-      <div className="conferencists__container">
+    <section className="Conferencists">
+      <h2 className="Template__H2">Conferencists</h2>
+      <div className="Conferencists__Container">
         <ConferencistCard />
         <ConferencistCard />
       </div>

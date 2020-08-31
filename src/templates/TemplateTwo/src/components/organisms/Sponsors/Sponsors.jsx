@@ -4,13 +4,13 @@ import { SponsorFirst, SponsorSecond } from "../../atoms";
 
 export function Sponsors() {
   return (
-    <section className="sponsors">
-      <h2 className="h2-template">Sponsors</h2>
-      <div className="sponsors-first">
+    <section className="Sponsors">
+      <h2 className="Template__H2">Sponsors</h2>
+      <div className="Sponsors-First">
         <SponsorFirst />
         <SponsorFirst />
       </div>
-      <div className="sponsors-second">
+      <div className="Sponsors-Second">
         <SponsorSecond />
         <SponsorSecond />
         <SponsorSecond />

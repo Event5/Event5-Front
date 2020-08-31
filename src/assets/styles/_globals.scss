@@ -40,7 +40,7 @@ h3 {
   font-size: 34px;
   font-weight: 600;
   @include desktop {
-    font-size: 28px;
+    font-size: 22px;
   }
   @include tablet {
     font-size: 24px;
@@ -85,8 +85,12 @@ h6 {
 
 a {
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
+  color: $first;
+  &:hover {
+    color: $first-dark;
+  }
+  // font-size: 18px;
+  // font-weight: 600;
 }
 
 p {
@@ -94,14 +98,15 @@ p {
   font-weight: 400;
 }
 
-.app-layout {
+.AppLayout {
   display: grid;
   grid-template-columns: 20% 80%;
-}
-
-.app-layout-template {
-  display: grid;
-  grid-template-columns: 5% 63% 32%;
+  @include tablet {
+    grid-template-columns: 10% 90%;
+  }
+  @include both-phones {
+    grid-template-columns: 15% 85%;
+  }
 }
 
 // .Button {

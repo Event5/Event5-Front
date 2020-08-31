@@ -1,19 +1,30 @@
-.section-title {
-  &__container {
+.SectionTitle {
+  &__Container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
     margin: 32px 5%;
+    @include tablet {
+      margin: 16px auto;
+      width: 80%;
+    }
+    @include both-phones {
+      width: 90%;
+      margin: 16px auto;
+    }
   }
-  &__info {
+  &__Info {
     padding-right: 40px;
     min-width: 70%;
-    h1 {
-      color: $light;
+    @include both-phones {
+      padding: 0;
+      min-width: 100%;
+      margin: 16px 0;
     }
+    h1,
     p {
-      color: $first-dark;
+      color: $light;
     }
   }
 }

@@ -1,4 +1,4 @@
-.sponsors {
+.Sponsors {
   margin: 0px auto;
   padding: 80px 0;
   width: 80%;
@@ -15,7 +15,7 @@
     text-align: center;
     padding-bottom: 24px;
   }
-  &-first {
+  &-First {
     display: grid;
     grid-template-columns: 1fr 1fr;
     @include both-phones {
@@ -28,7 +28,7 @@
       margin: 16px auto;
     }
   }
-  &-second {
+  &-Second {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     @include both-phones {

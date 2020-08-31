@@ -1,4 +1,4 @@
-.app-header {
+.AppHeader {
   width: 40%;
   margin-bottom: 24px;
   margin-left: auto;
@@ -6,15 +6,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include desktop-large {
+    width: 40%;
+  }
+  @include tablet {
+    width: 80%;
+    margin-right: 5%;
+  }
+  @include both-phones {
+    width: 100%;
+    margin-right: 0;
+  }
   &__logout {
     margin-right: 40px;
     min-width: 70%;
     text-align: right;
-    Link {
-      color: $light;
-      &:hover {
-        color: $second-light;
-      }
-    }
   }
 }

@@ -3,21 +3,40 @@ import React from "react";
 import { Input } from "../../atoms";
 import SetupImage from "../../../assets/images/setupEvent.svg";
 
-export function SetupEvent({ title, description }) {
+export function SetupEvent({ title, description, inputAction, intialState }) {
   return (
     <div className="SetupEvent">
       <div className="SetupEvent__Data">
         <h3>{title}</h3>
         <p>{description}</p>
-        <form className="SetupEvent__Data-Form" action="">
-          <Input type="text" placeholder="Event Name" />
-          <Input type="text" placeholder="Event URL" />
-          <Input type="text" placeholder="Event StartDate" />
+        <form id="eventTest" className="SetupEvent__Data-Form" action="">
+          <Input
+            text="Event Name"
+            onChange={inputAction}
+            name="event_name"
+            type="text"
+            placeholder="Event Name"
+            value={intialState.event_name}
+          />
+          <Input
+            text="URL"
+            onChange={inputAction}
+            name="url"
+            type="text"
+            placeholder="Event URL"
+            value={intialState.url}
+          />
+          <Input
+            text="Date"
+            onChange={inputAction}
+            name="event_start_date"
+            type="datetime-local"
+            placeholder="Event StartDate"
+            value={intialState.event_start_date}
+          />
         </form>
       </div>
-      <figure className="SetupEvent__Image">
-        <img src={SetupImage} alt="Editing Event Image" />
-      </figure>
+      <img src={SetupImage} alt="Editing Event Image" />
     </div>
   );
 }

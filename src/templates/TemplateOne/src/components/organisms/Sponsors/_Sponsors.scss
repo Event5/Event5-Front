@@ -1,0 +1,45 @@
+.Sponsors {
+    margin: 0px auto;
+    padding: 80px 0;
+    width: 80%;
+    @include tablet {
+      width: 90%;
+      padding-bottom: 160px;
+    }
+    @include both-phones {
+      width: 98%;
+      padding-bottom: 160px;
+    }
+    h2 {
+      color: $second;
+      text-align: center;
+      padding-bottom: 24px;
+    }
+    &-First {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      @include both-phones {
+        grid-template-columns: 1fr;
+        img {
+          margin: 16px auto;
+        }
+      }
+      img {
+        margin: 16px auto;
+      }
+    }
+    &-Second {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      @include both-phones {
+        grid-template-columns: 1fr 1fr;
+        img {
+          margin: 16px auto;
+        }
+      }
+      img {
+        margin: 16px auto;
+      }
+    }
+  }
+  

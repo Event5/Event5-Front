@@ -6,10 +6,10 @@ import { Icon } from "../../atoms/Icons/Icon";
 export function MenuItemSmall({ icon, text, link }) {
   return (
     <Link to={link}>
-      <h6 className="menu-item-small">
-        <Icon svg={icon} classes="svg-icon" title={icon} />
+      <li className="MenuItemSmall">
+        <Icon svg={icon} classes="SvgIcon" title={icon} />
         {text}
-      </h6>
+      </li>
     </Link>
   );
 }

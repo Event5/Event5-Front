@@ -4,7 +4,7 @@ import develop from "../../../assets/images/develop.svg";
 
 export function AboutHero() {
   return (
-    <section className="about-page__hero">
+    <section className="AboutPage__Hero">
       <div>
         <h1>We making events easy for you</h1>
       </div>

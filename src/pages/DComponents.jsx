@@ -1,7 +1,11 @@
-// import React from "react";
+import React from "react";
 
-// import { Waiting } from "../components/atoms";
+import { SidebarMenuSmall } from "../components/organisms";
 
-// export function DComponents() {
-//   return <Waiting />;
-// }
+export function DComponents() {
+  return (
+    <>
+      <SidebarMenuSmall pagename="eventPages" type_user="admin" />
+    </>
+  );
+}

@@ -1,32 +1,42 @@
 .ModalEventInfo {
-  position: sticky;
-  width: 484px;
+  width: 100%;
   height: 100vh;
-  background-color: $light;
+  padding-top: 40px;
   & h2,
   h5 {
     color: $first;
   }
   &__Form {
-    height: 100%;
+    margin: 0 auto;
+    min-height: 80%;
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
     color: $third;
+    @include both-phones {
+      min-height: 90%;
+    }
     &__Container {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      row-gap: 20px;
+      row-gap: 16px;
+      button {
+        margin-top: 8px;
+      }
     }
     &__Btn {
+      margin-top: 40px;
       text-align: center;
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 40px;
+      @include both-phones {
+        margin-top: 16px;
+      }
     }
   }
 }
