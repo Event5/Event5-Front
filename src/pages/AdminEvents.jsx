@@ -13,6 +13,7 @@ import { Content, GridEvents } from "../components/templates";
 function OrganizerEvents(props) {
   let eventsArray = [];
 
+  console.log(props.data);
   if (props.user.type_user == "admin") {
     const organizations = props.data || [];
     organizations.map((organization) => {
@@ -22,6 +23,7 @@ function OrganizerEvents(props) {
   } else {
     eventsArray = props.data;
   }
+  console.log(eventsArray);
   const noresults = eventsArray.length > 0 ? false : true;
 
   return (
