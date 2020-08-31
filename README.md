@@ -5,9 +5,15 @@
 
 **Table of Contents**
 
-[TOCM]
-
-[TOC]
+- [Project Description 📔](#project-description-)
+- [Deploy 📦](#deploy-)
+- [How To Install ⚙️](#how-to-install-%EF%B8%8F)
+  * [Requirements 📋](#requirements-)
+  * [Install 🔧](#install-)
+- [Preview 💻](#preview-)
+- [Team ✒️](#team-%EF%B8%8F)
+- [Links 🔗](#links-)
+- [Notes 📢](#notes-)
 
 ### Project Description 📔
 
