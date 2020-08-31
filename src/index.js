@@ -25,11 +25,11 @@ const initialState = {
       event_start_date: "",
       template: "",
       organization: "",
+      organizers: [],
+      schedule_event: [],
+      associates: [],
     },
-    organizers: [],
-    schedule_event: [],
     speakers: [],
-    associates: [],
   },
 };
 

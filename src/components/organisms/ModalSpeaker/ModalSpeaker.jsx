@@ -5,12 +5,21 @@ import { Input } from "../../atoms/Input";
 import { TextArea } from "../../molecules/TextArea";
 import { Upload } from "../../molecules/Upload";
 
-export function ModalSpeaker({ conferences, handleSubmit, handleInput }) {
+export function ModalSpeaker({
+  conferences,
+  handleSubmit,
+  handleInput,
+  handleInputFiles,
+}) {
   let keyConf = 0;
   return (
     <div className="ModalSpeaker">
       <h2>Speaker</h2>
-      <form className="ModalSpeaker__Form">
+      <form
+        className="ModalSpeaker__Form"
+        action="/profile"
+        encType="multipart/form-data"
+      >
         <Input
           name="name"
           onChange={handleInput}
@@ -37,13 +46,19 @@ export function ModalSpeaker({ conferences, handleSubmit, handleInput }) {
         />
         <Input
           onChange={handleInput}
-          name="photo"
+          name="twitter"
           type="url"
           placeholder="Twitter Url"
         />
         <div>
           <p>Conferencist Photo</p>
-          <Upload buttonText="Upload Image" photoSize="150px x 150px" />
+          <input
+            id="picture"
+            name="photo_urll"
+            type="file"
+            onChange={handleInputFiles}
+          ></input>
+          {/* <Upload buttonText="Upload Image" photoSize="150px x 150px" /> */}
         </div>
         <div className="ModalSpeaker__Form__Btn">
           <Button

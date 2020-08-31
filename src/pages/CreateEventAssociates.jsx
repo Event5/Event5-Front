@@ -39,6 +39,7 @@ export function CreateEventAssociates(props) {
   };
 
   const handleSubmit = () => {
+    console.log(form);
     event.preventDefault();
     props.saveAssociate(form);
     handleCloseModal();
@@ -66,7 +67,7 @@ export function CreateEventAssociates(props) {
           btnType="primary"
           btnColor="light"
         />
-        <GridAssociates AssociatesArray={props.associates} />
+        <GridAssociates AssociatesArray={props.associates || []} />
         <SaveNext colorText="light" />
       </Content>
     </main>
@@ -74,7 +75,7 @@ export function CreateEventAssociates(props) {
 }
 const mapStateToProps = (state) => {
   return {
-    associates: state.currentEvent.associates,
+    associates: state.currentEvent.basic.event_associates,
     user: state.user,
   };
 };

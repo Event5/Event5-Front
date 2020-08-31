@@ -242,3 +242,25 @@ export const addSession = (payload) => {
       });
   };
 };
+
+// export const addSpeakers = (payload) => {
+//   const token = getCookie("token");
+//   return (dispatch) => {
+//     axios({
+//       url: "https://event5.azurewebsites.net/api/event/speaker",
+//       method: "POST",
+//       headers: {
+//         Authorization: `Bearer ${token}`,
+//         "Content-Type": "multipart/form-data",
+//       },
+//       data: payload,
+//     })
+//       .then(({ data }) => {
+//         console.log(data.data);
+//         // dispatch(saveSpeaker(data.data));
+//       })
+//       .catch((err) => {
+//         alert("Ocurrio un error, vuelve a intertarlo");
+//       });
+//   };
+// };

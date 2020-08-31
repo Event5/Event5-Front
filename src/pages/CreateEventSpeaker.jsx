@@ -41,14 +41,24 @@ function CreateEventSpeaker(props) {
     });
   };
 
+  const handleInputFiles = (event) => {
+    // setValues({
+    //   ...form,
+    //   [event.target.name]: event.target.files,
+    // });
+  };
+
   const handleSubmit = () => {
     event.preventDefault();
+    // form.photo_id = form.photo_urll[0];
+    form.schedule_id = ["10"];
+    console.log(form);
     props.saveSpeaker(form);
     handleCloseModal();
   };
 
-  const speakers = props.speakers;
-  const conferences = props.conferences;
+  const speakers = props.speakers || [];
+  const conferences = props.conferences || [];
 
   let keySpeaker = 0;
   return (
@@ -62,6 +72,7 @@ function CreateEventSpeaker(props) {
             conferences={conferences}
             handleSubmit={handleSubmit}
             handleInput={handleInput}
+            handleInputFiles={handleInputFiles}
           />
         </Modal>
         <SectionTitle
@@ -93,7 +104,7 @@ const mapStateToProps = (state) => {
   return {
     speakers: state.currentEvent.speakers,
     user: state.user,
-    conferences: state.currentEvent.conferences,
+    conferences: state.currentEvent.basic.schedule_event,
   };
 };
 const mapDispatchToProps = {

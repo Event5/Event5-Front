@@ -39,11 +39,11 @@ const reducer = (state, action) => {
             event_start_date: "",
             template: "",
             organization: "",
+            organizers: [],
+            schedule_event: [],
+            speakers: [],
+            associates: [],
           },
-          organizers: [],
-          schedule_event: [],
-          speakers: [],
-          associates: [],
         },
       };
     case "OPEN_EVENT":
@@ -94,11 +94,13 @@ const reducer = (state, action) => {
       return {
         ...state,
         currentEvent: {
-          ...state.currentEvent,
-          organizers: [
-            ...state.currentEvent.organizers,
-            { email: action.payload },
-          ],
+          basic: {
+            ...state.currentEvent.basic,
+            organizers: [
+              ...state.currentEvent.organizers,
+              { email: action.payload },
+            ],
+          },
         },
       };
     case "NEWEVENT_REQUEST":
@@ -130,8 +132,13 @@ const reducer = (state, action) => {
       return {
         ...state,
         currentEvent: {
-          ...state.currentEvent,
-          associates: [...state.currentEvent.associates, action.payload],
+          basic: {
+            ...state.currentEvent.basic,
+            event_associates: [
+              ...state.currentEvent.basic.event_associates,
+              action.payload,
+            ],
+          },
         },
       };
     case "SAVESPEAKER_REQUEST":
