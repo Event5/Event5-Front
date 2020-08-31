@@ -6,7 +6,8 @@ import thunk from "redux-thunk";
 import reducer from "./reducers";
 
 import App from "./routes/App";
-const appContainer = document.getElementById("EventApp");
+const appContainer =
+  document.getElementById("EventApp") || document.createElement("div");
 import "./assets/styles/Main.scss";
 
 const initialState = {

@@ -61,6 +61,11 @@
     ],
     "moduleNameMapper": {
       "\\.(svg|gif|scss|png)$": "<rootDir>/src/__mocks__/imgMock.js"
-    }
+    },
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/src/templates/",
+      "<rootDir>/src/pages/",
+      "<rootDir>/src/utils/"
+    ]
   }
 }

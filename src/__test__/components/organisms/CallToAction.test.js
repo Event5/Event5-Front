@@ -21,6 +21,6 @@ describe("<CallToAction />", () => {
     expect(cta.find("h1").text()).toEqual("Create your events");
   });
   test("Render one button", () => {
-    expect(cta.find("button").length).toEqual(1);
+    expect(cta.find("Button").length).toEqual(1);
   });
 });
