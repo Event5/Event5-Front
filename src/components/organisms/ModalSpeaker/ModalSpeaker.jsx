@@ -17,8 +17,8 @@ export function ModalSpeaker({
       <h2>Speaker</h2>
       <form
         className="ModalSpeaker__Form"
-        action="/profile"
-        encType="multipart/form-data"
+        // action="/profile"
+        // encType="multipart/form-data"
       >
         <Input
           name="name"
@@ -54,7 +54,7 @@ export function ModalSpeaker({
           <p>Conferencist Photo</p>
           <input
             id="picture"
-            name="photo_urll"
+            name="photo_url"
             type="file"
             onChange={handleInputFiles}
           ></input>

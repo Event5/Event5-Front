@@ -11,6 +11,7 @@ const reducer = (state, action) => {
         user: action.payload,
       };
     case "USER_ACCESS":
+      // console.log(payload);
       return {
         ...state,
         status: { session: "on", modal: false },

@@ -12,10 +12,10 @@ export function OrganizationCard({ orgName, orgId, orgEventsArray }) {
           <SimpleEvent
             key={event.id}
             eId={`b-ev${event.id}`}
-            eventImage={event.logo_url}
-            eventName={event.name}
-            associatesNumber={event.associates}
-            publicAmount={event.public}
+            // eventImage={event.logo_url}
+            eventName={event.event_name}
+            associatesNumber={event.associates || 0}
+            publicAmount={event.public || 0}
           />
         );
       })}

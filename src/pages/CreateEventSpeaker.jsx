@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
-import { saveSpeaker } from "../actions";
+import { saveSpeaker, addSpeakers } from "../actions";
 
 import AppHeader from "../components/molecules/AppHeader/AppHeader";
 import { SaveNext } from "../components/molecules";
@@ -42,18 +42,24 @@ function CreateEventSpeaker(props) {
   };
 
   const handleInputFiles = (event) => {
-    // setValues({
-    //   ...form,
-    //   [event.target.name]: event.target.files,
-    // });
+    setValues({
+      ...form,
+      [event.target.name]: event.target.files[0],
+    });
   };
 
   const handleSubmit = () => {
-    event.preventDefault();
-    // form.photo_id = form.photo_urll[0];
-    form.schedule_id = ["10"];
     console.log(form);
-    props.saveSpeaker(form);
+    const user = [10];
+    const payload = new FormData();
+    payload.append("photo_url", form.photo_url);
+    payload.append("name", form.name);
+    payload.append("biography", form.biography);
+    payload.append("twitter", form.twitter);
+    payload.append("role", form.role);
+    payload.append("schedule_id[]", user);
+    console.log(payload.getAll);
+    props.addSpeakers(payload);
     handleCloseModal();
   };
 
@@ -109,6 +115,7 @@ const mapStateToProps = (state) => {
 };
 const mapDispatchToProps = {
   saveSpeaker,
+  addSpeakers,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(CreateEventSpeaker);

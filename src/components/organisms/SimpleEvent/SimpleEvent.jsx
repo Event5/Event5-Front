@@ -4,6 +4,8 @@ import { ImageTitle } from "../../molecules/ImageTitle";
 import { Numeralia } from "../../molecules/Numeralia";
 import { Button } from "../../atoms/Button";
 
+import img from "../../../assets/images/tecnologia.png";
+
 export function SimpleEvent({
   eventImage,
   eventName,
@@ -15,7 +17,7 @@ export function SimpleEvent({
     <div className="SimpleEvent">
       <div className="EventImage">
         <ImageTitle
-          image={eventImage}
+          image={img}
           imageAlt={`Picture of ${eventName}`}
           text={eventName}
         />

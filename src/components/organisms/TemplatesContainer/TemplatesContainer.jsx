@@ -1,6 +1,7 @@
 import React from "react";
 
-import Image from "../../../assets/images/TemplateHector.png";
+import TemplanteOne from "../../../assets/images/TemplateOne.png";
+import TemplanteTwo from "../../../assets/images/TemplateTwo.png";
 import { ImageText, ImageMore } from "../../molecules";
 
 export function TemplatesContainer({ ImageonClick, selected }) {
@@ -15,13 +16,13 @@ export function TemplatesContainer({ ImageonClick, selected }) {
         <ImageText
           onClick={ImageonClick}
           templateName="Template One"
-          templateImage={Image}
+          templateImage={TemplanteOne}
           id="1"
           selected={selected}
         />
         <ImageText
           templateName="Template Two"
-          templateImage={Image}
+          templateImage={TemplanteTwo}
           onClick={ImageonClick}
           id="2"
           selected={selected}
