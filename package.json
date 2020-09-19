@@ -4,15 +4,10 @@
   "description": "event5 web app",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "webpack:build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development",
-=======
     "build:webpack": "webpack --mode production",
     "start:client": "webpack-dev-server --open --mode development",
     "start": "node server.js",
     "server:dev": "nodemon server.js",
->>>>>>> 46abe913db223cbfeb7420d432cc91f8b6f13b89
     "test": "jest",
     "test:watch": "jest --watch"
   },
