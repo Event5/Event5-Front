@@ -4,7 +4,7 @@
   "description": "event5 web app",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
+    "webpack:build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
     "test": "jest",
     "test:watch": "jest --watch"
